@@ -1,16 +1,7 @@
 #!/bin/bash
 
-#SBATCH --mem=5GB
-#SBATCH --nodes=1
-#SBATCH --ntasks=1
-#SBATCH --cpus-per-task=1
-#SBATCH --account=BIOL-SPECGEN-2018
-#SBATCH --time=0-2:00:00
+#!/usr/bin/env python
 
-python3 ./blastp_multi_fasta.py ../Results/output_chunk_${SLURM_ARRAY_TASK_ID}.fasta ${SLURM_ARRAY_TASK_ID}
-[ybc502@login2[viking2] Script]$ ls
-blastp_multi_fasta.py  blastp.sh  divide_fasta.py  master.sh  slurm-3520882_1.out  slurm-3520882_2.out  unique_fasta.py
-[ybc502@login2[viking2] Script]$ cat divide_fasta.py
 import sys
 import os
 from Bio import SeqIO
