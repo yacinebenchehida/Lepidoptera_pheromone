@@ -17,4 +17,4 @@ To run the script just run:
 ./master.sh FAD
 ```
 
-This script requires Biopython, edirect, and chromoMap. 
+This script requires [Biopython](http://biopython.org/), [edirect](https://www.ncbi.nlm.nih.gov/books/NBK179288/), and [chromoMap](https://cran.r-project.org/web/packages/chromoMap/vignettes/chromoMap.html). 
