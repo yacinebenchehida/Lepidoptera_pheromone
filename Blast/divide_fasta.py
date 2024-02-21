@@ -1,5 +1,3 @@
-#!/bin/bash
-
 #!/usr/bin/env python
 
 import sys
