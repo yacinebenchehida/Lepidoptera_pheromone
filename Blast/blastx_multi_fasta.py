@@ -32,7 +32,7 @@ def main(input_file, array_task_id, db_path):
 	# Extract directory path and filename from input file
 	input_dir, input_filename = os.path.split(input_file)
 	# Construct output file path using input directory and array task ID
-	output_file_name = os.path.join(input_dir, f"blast_FAR_hits_{array_task_id}.txt")
+	output_file_name = os.path.join(input_dir, f"blast_hits_{array_task_id}.txt")
 	
 	# Open output file in write mode
 	with open(output_file_name, "w") as blast_output_file:
