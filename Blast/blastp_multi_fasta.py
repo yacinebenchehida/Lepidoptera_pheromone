@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import sys  # Importing the sys module to access command-line arguments
 import os  # Importing the os module to perform operating system related tasks
 import subprocess  # Importing the subprocess module to run external commands
