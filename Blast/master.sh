@@ -1,10 +1,27 @@
+#!/bin/bash
+
+#SBATCH --mem=5GB
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --account=BIOL-SPECGEN-2018
+#SBATCH --time=0-2:00:00
+#SBATCH --job-name=blastx
+
+RESULTS="/mnt/scratch/projects/biol-specgen-2018/yacine/Pheromones/Blast/Results/$1"
+python3 ./blastx_multi_fasta.py $RESULTS/output_chunk_${SLURM_ARRAY_TASK_ID}.fasta ${SLURM_ARRAY_TASK_ID} $RESULTS/"$1"_db
+[ybc502@login1[viking2] Script]$ cat master.sh
+
 ################################
 # Load libraries and set paths #
 ################################
 module load Biopython/1.81-foss-2022b
 module load BLAST+/2.14.0-gompi-2022b
 EDIRECT="/mnt/scratch/projects/biol-specgen-2018/yacine/Tools/edirect"
-RESULTS="/mnt/scratch/projects/biol-specgen-2018/yacine/Pheromones/Blast/Results"
+RESULTS="/mnt/scratch/projects/biol-specgen-2018/yacine/Pheromones/Blast/Results/$1"
+PHEROMONE=$1
+
+mkdir -p $RESULTS
 
 ###############################
 # Download CDS from melpomene #
@@ -18,49 +35,73 @@ rm $RESULTS/Heliconius_melpomene_melpomene_Hmel2.5.cds.fa.gz
 ##############################
 # download data from uniprot #
 ##############################
-touch $RESULTS/db_FAR.fasta
+touch $RESULTS/db_"$PHEROMONE".fasta
 
-for i in uniprotkb uniparc uniref
-do
-	curl -L "https://rest.uniprot.org/${i}/stream?download=true&format=fasta&includeIsoform=true&query=%28%22fatty+acyl-coa+reductase%22+AND+%28taxonomy_id%3A7088%29%29" >> $RESULTS/db_FAR.fasta
-done
-echo UNIPROT DATA DOWNLOADED
+if [ "$PHEROMONE" = "FAR" ]; then
+    for i in uniprotkb uniparc uniref
+	do
+  		curl -L "https://rest.uniprot.org/${i}/stream?download=true&format=fasta&includeIsoform=true&query=%28%22fatty+acyl-coa+reductase%22+AND+%28taxonomy_id%3A7088%29%29" >> $RESULTS/db_"$PHEROMONE".fasta
+		echo "UNIPROT DATA FROM $i DOWNLOADED"
+	done
+elif [ "$PHEROMONE" = "FAD" ]; then
+    for i in uniprotkb uniparc uniref
+	do
+		curl -L "https://rest.uniprot.org/${i}/stream?download=true&format=fasta&includeIsoform=true&query=%28%22fatty+acyl-CoA+desaturase%22+AND+%28taxonomy_id%3A7088%29%29" >> $RESULTS/db_"$PHEROMONE".fasta
+		echo "UNIPROT DATA FROM $i DOWNLOADED"
+	done
+else
+    echo "unknown pheromone"
+fi
 
 ################################
 # download data from gene bank #
 ################################
-$EDIRECT/esearch -db Protein -query "fatty acyl-coa reductase[All Fields] AND Lepidoptera[Organism]"| $EDIRECT/efetch -format fasta >> $RESULTS/db_FAR.fasta
-echo GENBANK DATA DOWNLOADED
+if [ "$PHEROMONE" = "FAR" ]; then
+		$EDIRECT/esearch -db Protein -query "fatty acyl-coa reductase[All Fields] AND Lepidoptera[Organism]"| $EDIRECT/efetch -format fasta >> $RESULTS/db_"$PHEROMONE".fasta
+		echo GENBANK DATA DOWNLOADED
+elif [ "$PHEROMONE" = "FAD" ]; then
+		$EDIRECT/esearch -db Protein -query "fatty acyl-coa desaturase[All Fields] AND Lepidoptera[Organism]"| $EDIRECT/efetch -format fasta >> $RESULTS/db_"$PHEROMONE".fasta
+		echo GENBANK DATA DOWNLOADED
+else
+    echo "unknown pheromone"
+fi
 
 #####################################################################
 # Keep unique entries in the constitute database (removed doublons) #
 #####################################################################
-python3 unique_fasta.py $RESULTS/db_FAR.fasta FAR > $RESULTS/unique_db_FAR.fasta
+python3 unique_fasta.py $RESULTS/db_"$PHEROMONE".fasta "$PHEROMONE" > $RESULTS/unique_db_"$PHEROMONE".fasta
 mv *txt $RESULTS
-rm $RESULTS/db_FAR.fasta
+rm $RESULTS/db_"$PHEROMONE".fasta
 
 echo FINAL DATABASE CREATED
 
 ################################################################
 # Create a blast data base with Heliconius melpomenes proteins #
 ################################################################
-makeblastdb -in $RESULTS/unique_db_FAR.fasta -dbtype prot -input_type fasta -out $RESULTS/FAR_db -title FAR_db
+makeblastdb -in $RESULTS/unique_db_"$PHEROMONE".fasta -dbtype prot -input_type fasta -out $RESULTS/"$PHEROMONE"_db -title "$PHEROMONE"_db
 echo BLAST DB CREATED
 
 ####################################################################
-# Create chunks of 200 fasta sequences (to parallelize the blastp) #
+# Create chunks of 200 fasta sequences (to parallelize the blastx) #
 ####################################################################
-python3 divide_fasta.py ../Results/Heliconius_melpomene_proteins.fa
+python3 divide_fasta.py $RESULTS/Heliconius_melpomene_proteins.fa
 echo HELICONIUS PROTEINS FASTA SLICED
 
 #################################################
-# Run blastp on each sequence (and each chunks) #
+# Run blastx on each sequence (and each chunks) #
 #################################################
 array_number=$(ls  $RESULTS/output_chunk_*|wc -l)
 
 for CHUNK in $RESULTS/chunk*
 do
-	sbatch --array=1-$array_number ./blastp.sh
+	sbatch --array=1-$array_number ./blastx.sh $PHEROMONE
 done
 
-echo BLASTP RAN
+echo BLASTx RAN
+
+#########################################
+# Combine results and extract best hits #
+#########################################
+running_jobs1=$(squeue|grep ybc502| grep blastx| awk '{print $1}'|perl -pe 's/\n/,/g'|sed 's/,$//g')
+echo $(eval echo "$running_jobs1")
+sbatch --job-name=COMB --dependency=aftercorr:$running_jobs1 ./combine_clean.sh $PHEROMONE
