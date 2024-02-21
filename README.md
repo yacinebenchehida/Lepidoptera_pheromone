@@ -1,4 +1,4 @@
-This repository describes how the analyses for the Lepidoptera pherome paper were performed. 
+This repository describes how the analyses for the Lepidoptera pheromone paper were performed. 
 
 # blast
 
