@@ -13,8 +13,7 @@ The Blast folder contains all the scripts used to:
 
 To run the script just run:
 ```
-./master.sh FAR
-./master.sh FAD
+./master.sh FAR FAD
 ```
 
 This script requires [Biopython](http://biopython.org/) and [edirect](https://www.ncbi.nlm.nih.gov/books/NBK179288/)
