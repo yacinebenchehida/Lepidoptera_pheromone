@@ -9,7 +9,7 @@ The Blast folder contains all the scripts used to:
 4) Blast(x) each *Heliconius melpomene* CDS sequence against the FAR of the FAD database.
 5) Extract the best blastx hits
 6) Check the location in the *Heliconius melpomene* reference genome of best hit.
-7) Plot the result in R using the package chromoMap
+7) Plot the result in R
 
 To run the script just run:
 ```
@@ -17,4 +17,4 @@ To run the script just run:
 ./master.sh FAD
 ```
 
-This script requires [Biopython](http://biopython.org/), [edirect](https://www.ncbi.nlm.nih.gov/books/NBK179288/), and [chromoMap](https://cran.r-project.org/web/packages/chromoMap/vignettes/chromoMap.html). 
+This script requires [Biopython](http://biopython.org/) and [edirect](https://www.ncbi.nlm.nih.gov/books/NBK179288/)
