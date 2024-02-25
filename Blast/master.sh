@@ -3,6 +3,7 @@
 ################################
 module load Biopython/1.81-foss-2022b
 module load BLAST+/2.14.0-gompi-2022b
+module load R/4.2.1-foss-2022a
 EDIRECT="/mnt/scratch/projects/biol-specgen-2018/yacine/Tools/edirect"
 RESULTS="/mnt/scratch/projects/biol-specgen-2018/yacine/Pheromones/Blast/Results/$1"
 PHEROMONE=$1
@@ -85,9 +86,23 @@ done
 
 echo BLASTx RAN
 
+#######################################################
+# Get size of each scaffold (used later for plotting) #
+#######################################################
+python3 scaffold_size.py ../Inputs/Heliconius_melpomene_melpomene_Hmel2.5.scaffolds.fa |awk '$3 > 1000000' > ../Inputs/scaffold_size_information.txt
+
 #########################################
 # Combine results and extract best hits #
 #########################################
 running_jobs1=$(squeue|grep ybc502| grep blastx| awk '{print $1}'|perl -pe 's/\n/,/g'|sed 's/,$//g')
 echo $(eval echo "$running_jobs1")
-sbatch --job-name=COMB --dependency=aftercorr:$running_jobs1 ./combine_clean.sh $PHEROMONE
+
+if [ "$PHEROMONE" = "FAR" ]; then
+                sbatch --job-name=COMB --dependency=aftercorr:$running_jobs1 ./combine_clean.sh $PHEROMONE 500
+                echo DATA COMBINED
+elif [ "$PHEROMONE" = "FAD" ]; then
+                sbatch --job-name=COMB --dependency=aftercorr:$running_jobs1 ./combine_clean.sh $PHEROMONE 200
+                echo DATA COMBINED
+else
+    echo "unknown pheromone"
+fi
