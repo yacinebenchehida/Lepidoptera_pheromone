@@ -36,5 +36,5 @@ ggplot(data = Heliconius_Karytype, aes(xmin = (0-200000)/1000000, xmax = (End)/1
   facet_grid(Chr~., switch= "y", drop =TRUE,labeller = label_parsed, scales = "free", space = "free") +
   theme(axis.ticks.y = element_blank(), strip.placement = "outside", axis.text.y = element_blank(), panel.spacing = unit(0, "lines")) +
   xlab("Position (Mb)") + ylab("Chromosome") +
-  geom_rect(data = anno_files, aes(xmin = (Start-30000)/1000000, xmax = (End+30000)/1000000, ymin = 0, ymax = 0.5, fill = Type))
+  geom_rect(data = anno_files, aes(xmin = (Start-30000)/1000000, xmax = (End+50000)/1000000, ymin = 0, ymax = 0.5, fill = Type))
 dev.off()
