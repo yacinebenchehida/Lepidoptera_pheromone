@@ -1,14 +1,20 @@
-# Load packages
+#################
+# Load packages #
+#################
 library(ggchicklet)
 library(ggplot2)
 
-# Read genome size files
+##########################
+# Read genome size files #
+##########################
 Heliconius_Karytype = read.table("../Inputs/scaffold_size_information.txt",sep = "\t")
 Heliconius_Karytype$V1 = gsub(x = Heliconius_Karytype$V1, pattern = "Hmel2(\\d{2})(.+)",replacement = "\\1",perl = TRUE)
 colnames(Heliconius_Karytype) = c("Chr","Start","End")
 print("genome size file read")
 
-# Read annotation files
+#########################
+# Read annotation files #
+#########################
 anno_files <- lapply(system("readlink -f ../Results/*/location*",intern = T), read.table, header = FALSE, sep = "\t")
 anno_files = as.data.frame(do.call(rbind,anno_files))
 anno_files$V2 =  gsub(x = anno_files$V2, pattern = "Hmel2(\\d{2})(.+)",replacement = "\\1",perl = TRUE)
@@ -18,14 +24,17 @@ anno_files$BitScore = as.numeric(as.character(anno_files$BitScore))
 
 print("annotation files read")
 
-# Adjust Bitscore for plotting
+################################
+# Adjust Bitscore for plotting #
+################################
 anno_files[anno_files$Type=="FAD",6] = anno_files[anno_files$Type=="FAD",6] - 150
 anno_files[anno_files$Type=="FAR",6] = anno_files[anno_files$Type=="FAR",6] - 350
 #anno_files[anno_files$BitScore > 500, 6] = 500
 print(anno_files)
 
-
-# Add genome size information to the annotation file
+######################################################
+# Add genome size information to the annotation file #
+######################################################
 anno_files$Size = 0
 
 for (i in Heliconius_Karytype$Chr){
@@ -33,11 +42,14 @@ for (i in Heliconius_Karytype$Chr){
 }
 print("information about genome size added to annotation files")
 
-
-# Remove genes falling in very small contigs, 
+##############################################
+# Remove genes falling in very small contigs #
+##############################################
 anno_files = anno_files[anno_files$Size > 0,]
 
-# Plot
+########
+# Plot #
+########
 print("start plotting")
 pdf("FAD_FAR_Location.pdf",7,7)
 ggplot(data = Heliconius_Karytype, aes(xmin = (0-200000)/1000000, xmax = (End+50000)/1000000,ymin = 0, ymax = 0.5)) +
