@@ -4,7 +4,9 @@ import sys  # Importing the sys module to access command-line arguments
 import os  # Importing the os module to perform operating system related tasks
 from Bio import SeqIO  # Importing SeqIO module from Biopython for sequence parsing
 
-# Function to write chunks of sequences to separate FASTA files
+#################################################################
+# Function to write chunks of sequences to separate FASTA files #
+#################################################################
 def write_chunks(input_file):
     # Get the directory of the input file
     input_dir = os.path.dirname(input_file)
