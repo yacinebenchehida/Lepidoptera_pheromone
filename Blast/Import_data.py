@@ -1,4 +1,5 @@
 import subprocess
+import os
 
 # Define the function to process each row
 def process_row(species, genome_url, gff3_url, cds_url):
@@ -15,7 +16,7 @@ def process_row(species, genome_url, gff3_url, cds_url):
 	print(f"CDS URL: {cds_url}")
 
 	# Create the output directory if it doesn't exist
-	subprocess.run(['mkdir', '-p', output_directory])
+	os.makedirs(output_directory, exist_ok=True)
 
 	# Here you can execute your commands using the extracted information
 	# For example:
@@ -24,7 +25,10 @@ def process_row(species, genome_url, gff3_url, cds_url):
 	subprocess.run(['wget', gff3_url, '-O', f"{output_directory}{species_name}.gff3.gz"])
 	subprocess.run(['wget', cds_url, '-O', f"{output_directory}{species_name}-cds.fa.gz"])
 
-	# Add more commands as needed
+	# Unzip the downloaded files
+	subprocess.run(['gunzip', f"{output_directory}{species_name}-genome.fa.gz"])
+	subprocess.run(['gunzip', f"{output_directory}{species_name}.gff3.gz"])
+	subprocess.run(['gunzip', f"{output_directory}{species_name}-cds.fa.gz"])
 
 # Open the input file and process each line
 with open('data.txt', 'r') as file:
