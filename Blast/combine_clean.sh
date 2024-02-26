@@ -23,7 +23,9 @@ gunzip Heliconius_melpomene_melpomene_Hmel2.5.gff3.gz
 echo ANNOTATION FILE DECOMPRESSED
 
 #cat Protein_best_hits.txt |while read line; do grep $line Heliconius_melpomene_melpomene_Hmel2.5.gff3; done|grep mRNA|awk '{print $1"\t"$4"\t"$5}' >  location_Protein_best_hits.txt
-cat Protein_best_hits.txt | while read line; do paste <(echo "$line") <(grep "$line" Heliconius_melpomene_melpomene_Hmel2.5.gff3 | grep mRNA) | awk -v PHE="$PHE" '{print $1"\t"$2"\t"$5"\t"y
-$6"\$
+cat Protein_best_hits.txt | while read line; do paste <(echo "$line") <(grep "$line" Heliconius_melpomene_melpomene_Hmel2.5.gff3 | grep mRNA) | awk -v PHE="$PHE" '{print $1"\t"$2"\t"$5"\t"$6"\t"PHE"\t"$12 }'; done > location_Protein_best_hits.txt
 echo LOCATION OF $1 written
-rm  output_chunk*
+#rm  output_chunk* blast_"$1"_hits_*
+rm output_chunk*
+
+python ../../Script/extract_fasta.py Protein_best_hits.txt Heliconius_melpomene_proteins.fa fasta_"$1"_protein.fa
