@@ -104,12 +104,12 @@ running_jobs2=$(squeue|grep ybc502| grep BlFAD| awk '{print $1}'|perl -pe 's/\n/
 echo $(eval echo "$running_jobs1")
 
 if [[  "$PHEROMONE" =~ "FAR" ]]; then
-               sbatch --job-name=COFAR --dependency=aftercorr:$running_jobs1 ./combine_clean.sh FAD  500
-                echo DATA COMBINED
+               sbatch --job-name=COFAR --dependency=aftercorr:$running_jobs1 ./combine_clean.sh FAR  350
+                echo DATA FAR COMBINED
 fi
 if [[  "$PHEROMONE" =~ "FAD" ]]; then
-                sbatch --job-name=COFAD --dependency=aftercorr:$running_jobs2 ./combine_clean.sh FAR 200
-                echo DATA COMBINED
+                sbatch --job-name=COFAD --dependency=aftercorr:$running_jobs2 ./combine_clean.sh FAD 150
+                echo DATA FAD COMBINED
 fi
 
 ########
