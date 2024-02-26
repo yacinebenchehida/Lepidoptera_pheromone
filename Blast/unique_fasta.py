@@ -3,9 +3,10 @@
 import sys
 from collections import defaultdict
 from Bio import SeqIO
+import os
 
 # Function to print unique sequences to the screen
-def print_unique_sequences(input_file):
+def print_unique_sequences(input_file, output_folder):
 	# Initialize dictionaries to store sequences and their headers
 	sequences = {}
 	headers = defaultdict(list)
@@ -25,8 +26,12 @@ def print_unique_sequences(input_file):
 				# Otherwise, store the sequence and its header
 				sequences[sequence] = header
 
+	# Create the output folder if it does not exist
+	os.makedirs(output_folder, exist_ok=True)
+	non_unique_file_path = os.path.join(output_folder, "non_unique.txt")
+
 	# Print unique sequences to the screen and store non-unique headers
-	with open("non_unique.txt", "w") as non_unique_file:
+	with open(non_unique_file_path, "w") as non_unique_file:
 		for i, (sequence, header) in enumerate(sequences.items(), start=1):
 			PREFIX = sys.argv[2]
 			print(">" + PREFIX + "_" + str(i))
@@ -47,11 +52,12 @@ def main():
 		print("Usage: python ./unique_fasta.py input.fasta prefix")
 		sys.exit(1)
 
-	# Extract the input file path from the command-line arguments
+	# Extract the input file path and prefix from the command-line arguments
 	input_file = sys.argv[1]
+	output_folder = os.path.dirname(input_file)
 
 	# Print unique sequences from the input FASTA file
-	print_unique_sequences(input_file)
+	print_unique_sequences(input_file, output_folder)
 
 # Entry point of the script
 if __name__ == "__main__":
