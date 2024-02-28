@@ -10,5 +10,4 @@
 
 module load R/4.2.1-foss-2022a
 
-Rscript --vanilla Plot_chromosome.R
-mv FAD_FAR_Location.pdf ../Results
+Rscript --vanilla Plot_chromosome.R $1
