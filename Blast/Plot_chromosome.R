@@ -36,7 +36,7 @@ anno_files[anno_files$Type=="FAR",6] = anno_files[anno_files$Type=="FAR",6] - 35
 anno_files$Size = 0
 
 for (i in Karytype$Chr){
-  anno_files[which(grepl(i, anno_files$Chr)),7] = Karytype[Karytype$Chr==i,3]
+  anno_files[which(grepl(paste(i,"$",sep=""), anno_files$Chr)),7] = Karytype[Karytype$Chr==i,3]
 }
 print("information about genome size added to annotation files")
 
@@ -58,7 +58,7 @@ for(i in 1:dim(Karytype)[1]){
 Karytype$NEW_name <- factor(Karytype$NEW_name, levels = sort(unique(as.numeric(Karytype$NEW_name))))
 
 for (i in Karytype$Chr){
-  anno_files[which(grepl(i, anno_files$Chr)),2] = Karytype[Karytype$Chr==i,4]
+  anno_files[which(grepl(paste(i,"$",sep=""), anno_files$Chr)),2] = Karytype[Karytype$Chr==i,4]
 }
 
 anno_files$Chr <- factor(anno_files$Chr, levels = sort(unique(as.numeric(anno_files$Chr))))
