@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 import subprocess
 import os
 
@@ -31,6 +29,9 @@ def process_row(species, genome_url, gff3_url, cds_url):
 	subprocess.run(['gunzip', f"{output_directory}{species_name}-genome.fa.gz"])
 	subprocess.run(['gunzip', f"{output_directory}{species_name}.gff3.gz"])
 	subprocess.run(['gunzip', f"{output_directory}{species_name}-cds.fa.gz"])
+
+	# Run the master.sh script with output filename as an argument
+	subprocess.run(['sbatch', '--job-name', f"{species_name}", 'master.sh', 'FAR', 'FAD', f"{species_name}"])
 
 # Open the input file and process each line
 with open('data.txt', 'r') as file:
