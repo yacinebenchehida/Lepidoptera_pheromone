@@ -42,12 +42,16 @@ combine_and_align_genes() {
     # Translate nucleotide sequences to protein (for protein alignments with muscle later)
     python3 ./translate.py "$RESULTS/${PHE}/All_${PHE}_combined_larger_500.txt" > "$RESULTS/${PHE}/All_${PHE}_combined_aa.txt"
 
-    # Alignement every pair of sequences. The script muscle.py submits a new job for each 500 pairwise comparisons.
-    python3 ./muscle.py "$RESULTS/${PHE}/All_${PHE}_combined_aa.txt" $RESULTS/${PHE}/Alignments 500
+    if [ -f $RESULTS/${PHE}/Alignments ]; then
+        rm $RESULTS/${PHE}/Alignments
+    fi
+
+    # Alignement every pair of sequences. The script muscle.py submits a new job for each n pairwise comparisons.
+    python3 ./muscle.py "$RESULTS/${PHE}/All_${PHE}_combined_aa.txt" $RESULTS/${PHE}/Alignments 1000
 }
 
-for i in FAD; do
+for i in FAR FAD; do
     combine_and_align_genes "$i"
     running_jobs_alignments=$(squeue|grep $(whoami)| grep -P "muscle_j"| awk '{print $1}'|perl -pe 's/\n/,/g'|sed 's/,$//g')
-    sbatch --job-name="$i"clean --dependency=aftercorr:$running_jobs_alignments ./run_calculate_identity.sh $RESULTS/${i}/Alignments
+    sbatch --job-name="$i"clean --dependency=aftercorr:$running_jobs_alignments ./master_follow_up.sh
 done
