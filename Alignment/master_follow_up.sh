@@ -36,19 +36,22 @@ Align_candidate_orthologs(){
 	
 	local PHE=$1
 	cat $RESULTS/${PHE}/Candidate_orthogs_${PHE}.txt |while read line; do \
-    		((counter++))
+    		((counter++)) # Counting every line in the Candidate_orthogs* file
 			mkdir -p $RESULTS/${PHE}/${PHE}_${counter}
 			RES_PATH=$RESULTS/${PHE}/${PHE}_${counter}
+
 			# Extract sequences for each group of paralog
-    		python3 ./extract_fasta_by_header.py $RES_PATH/All_${PHE}_combined_aa.txt --list $line | python3 ./filter_short_sequences_below_pct_mean.py -o $RES_PATH/fasta_${PHE}_"$counter"_aa -s kept_sequences -r 0.95
-    		python3 ./extract_fasta_by_header.py $RES_PATH/All_${PHE}_combined_larger_500.txt --list $line > tmp
+    		python3 ./extract_fasta_by_header.py $RESULTS/${PHE}/All_${PHE}_combined_aa.txt --list $line | python3 ./filter_short_sequences_below_pct_mean.py -o $RES_PATH/fasta_${PHE}_"$counter"_aa -s kept_sequences -r 0.95
+    		python3 ./extract_fasta_by_header.py $RESULTS/${PHE}/All_${PHE}_combined_larger_500.txt --list $line > tmp
 			python3 ./extract_fasta_by_header.py tmp --file kept_sequences > $RES_PATH/fasta_${PHE}_${counter}_nt
 			echo SEQUENCES FOR ${PHE} PARALOG GROUP ${counter} READY TO BE ALIGNED
+
 			# Align, revert alignment back to nt and trim poorly aligning regions
 			muscle -in $RES_PATH/fasta_${PHE}_${counter}_aa -out $RES_PATH/fasta_${PHE}_${counter}_aa.aln
     		pal2nal.pl $RES_PATH/fasta_${PHE}_${counter}_aa.aln $RES_PATH/fasta_${PHE}_${counter}_nt -output fasta -codontable 1 > $RES_PATH/fasta_${PHE}_${counter}_nt.aln
     		trimal -in $RES_PATH/fasta_${PHE}_${counter}_nt.aln -out $RES_PATH/fasta_${PHE}_${counter}_nt_trimmed.aln -automated1
 			echo ALIGNMENT FOR ${PHE} ${counter} PERFORMED
+
 			# Built ML tree and plot
 			sbatch ./iqtree.sh $RES_PATH ${PHE} ${counter}
 			echo TREE JOB FOR ${PHE} ${counter} SUBMITTED
@@ -60,8 +63,8 @@ Align_candidate_orthologs(){
 
 # Main
 for i in FAD; do
-	echo $i
-    check_pairwise_aln $i
-    Ok_alignments_extract $i
+	#echo $i
+    #check_pairwise_aln $i
+    #Ok_alignments_extract $i
     Align_candidate_orthologs $i
 done
