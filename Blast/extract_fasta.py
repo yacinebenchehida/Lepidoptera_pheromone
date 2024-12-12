@@ -3,28 +3,29 @@ import sys
 from Bio import SeqIO
 
 #############################################################################################################################
-# Function that fishes specific sequences when they contain a specified pattern in the header (taken from a larger fasta file) #
+# Function that fishes specific sequences when their headers contain a specified pattern (taken from a larger fasta file)    #
 #############################################################################################################################
 def extract_sequences(id_file, fasta_file, output_file):
     """
-    Extracts sequences from a FASTA file based on specified IDs and writes them to an output file.
+    Extracts sequences from a FASTA file if the header contains any pattern from the ID file.
 
     Args:
-        id_file (str): Path to the file containing the IDs.
+        id_file (str): Path to the file containing the ID patterns.
         fasta_file (str): Path to the input FASTA file.
         output_file (str): Path to the output file to write the extracted sequences.
 
     Returns:
         None
     """
-    # Read IDs from the file
+    # Read IDs (patterns) from the file
     with open(id_file, 'r') as f:
-        ids = {line.strip() for line in f}
+        ids = {line.strip() for line in f if line.strip()}  # Remove empty lines and strip whitespace
 
-    # Extract sequences from the FASTA file
+    # Extract sequences whose headers contain any of the patterns
     with open(output_file, 'w') as out_f:
         for record in SeqIO.parse(fasta_file, 'fasta'):
-            if record.id in ids:
+            # Check if any ID pattern is a substring of the header
+            if any(id_pattern in record.description for id_pattern in ids):
                 SeqIO.write(record, out_f, 'fasta')
 
 if __name__ == "__main__":
