@@ -24,7 +24,7 @@ cat Protein_best_hits.txt|while read line; do grep $line combine_best_hits.txt|h
 cat Protein_best_hits.txt | while read line; do paste <(echo "$line") <(grep "$line" $INPUT/*gff3 | grep mRNA) <(grep $line BitScore.txt|awk '{print $2}')| awk -v PHE="$PHE" '{print $1"\t"$2"\t"$5"\t"$6"\t"PHE"\t"$11}'; done > location_Protein_best_hits.txt
 echo LOCATION OF $1 written
 #rm  output_chunk* blast_"$1"_hits_*
-rm output_chunk*
+#rm output_chunk*
 
 
-python $SCRIPT/extract_fasta.py Protein_best_hits.txt $INPUT/*-cds.fa  "$1"_"$2"_proteins.fasta
+python $SCRIPT/extract_fasta.py Protein_best_hits.txt $INPUT/*cds.fa  "$1"_"$2"_proteins.fasta
