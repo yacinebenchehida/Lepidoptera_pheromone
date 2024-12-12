@@ -62,9 +62,9 @@ Align_candidate_orthologs(){
 }
 
 # Main
-for i in FAD; do
-	#echo $i
-    #check_pairwise_aln $i
-    #Ok_alignments_extract $i
+for i in FAD FAR; do
+	echo $i
+    check_pairwise_aln $i
+    Ok_alignments_extract $i
     Align_candidate_orthologs $i
 done
