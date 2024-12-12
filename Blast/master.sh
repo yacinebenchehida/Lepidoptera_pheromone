@@ -102,7 +102,6 @@ echo BLASTx RAN
 # Get size of each scaffold (used later for plotting) #
 #######################################################
 python3 scaffold_size.py ../Inputs/$SPECIES/*genome.fa |awk '$3 > 1000000' > ../Inputs/$SPECIES/scaffold_size_information.txt
-rm ../Inputs/$SPECIES/*genome.fa
 
 #########################################
 # Combine results and extract best hits #
@@ -117,11 +116,11 @@ running_jobs2=$(squeue|grep ybc502| grep -P "${SP}FAD"| awk '{print $1}'|perl -p
 echo $(eval echo "$running_jobs1")
 
 if [[  "$PHEROMONE" =~ "FAR" ]]; then
-               sbatch --job-name="$SP"_R --dependency=aftercorr:$running_jobs1 ./combine_clean.sh $SPECIES FAR  350
+               sbatch --job-name="$SP"_R --dependency=aftercorr:$running_jobs1 ./combine_clean.sh $SPECIES FAR  500
                 echo DATA FAR COMBINED
 fi
 if [[  "$PHEROMONE" =~ "FAD" ]]; then
-                sbatch --job-name="$SP"_D --dependency=aftercorr:$running_jobs2 ./combine_clean.sh $SPECIES FAD 150
+                sbatch --job-name="$SP"_D --dependency=aftercorr:$running_jobs2 ./combine_clean.sh $SPECIES FAD 250
                 echo DATA FAD COMBINED
 fi
 
