@@ -54,17 +54,34 @@ Align_candidate_orthologs(){
 
 			# Built ML tree and plot
 			sbatch ./iqtree.sh $RES_PATH ${PHE} ${counter}
-			echo TREE JOB FOR ${PHE} ${counter} SUBMITTED
+			echo SEPARATED TREE JOBS FOR ${PHE} ${counter} SUBMITTED
 	done
 	rm tmp
 	rm kept_sequences
     echo ALL ALIGNMENTS FOR ${PHE} FINISHED
 }
 
+# Function to make a single tree for all FAD or FAR genes
+Combine_all_genes_in_one_tree(){
+	local PHE=$1
+
+	# Built ML tree and plot all ${PHE} combined in a single file (so a in single tree)
+	running_jobs_trees=$(squeue|grep $(whoami)| grep -P "iqtree"| awk '{print $1}'|perl -pe 's/\n/,/g'|sed 's/,$//g')
+	
+	# If there are running jobs, submit with the dependency
+	if [ -n "$running_jobs_trees" ]; then
+    	sbatch --job-name=All${PHE} --dependency=aftercorr:$running_jobs_trees ./Combiner_all_seq_by_pheromone_family.sh $RESULTS/${PHE} ${PHE}
+	else
+       # No running jobs, submit without dependency
+    	sbatch --job-name=All${PHE} ./Combiner_all_seq_by_pheromone_family.sh $RESULTS/${PHE} ${PHE}
+	fi
+}
+
 # Main
-for i in FAD FAR; do
-	echo $i
+for i in FAR; do
+    echo $i
     check_pairwise_aln $i
     Ok_alignments_extract $i
     Align_candidate_orthologs $i
+    Combine_all_genes_in_one_tree $i
 done
