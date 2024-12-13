@@ -19,7 +19,7 @@ module load R/4.2.1-foss-2022a
 # Check number of sequences in the tree
 NUM_SEQ=$(grep -c ">" $RES_PATH/fasta_${PHE}_${COUNTER}_nt_trimmed.aln)
 
-# Conditional execution
+# Conditional execution if more than 5 sequences run analyses with bootstraps and multiple threads (otherwise a single thread)
 if [ "$NUM_SEQ" -gt 5 ]; then
     iqtree2 -s $RES_PATH/fasta_${PHE}_${COUNTER}_nt_trimmed.aln -m MFP -B 1000 -nt 8 --prefix $RES_PATH/${PHE}_${COUNTER}
     Rscript ./plot_tree.R --tree $RES_PATH/${PHE}_${COUNTER}.treefile --prefix $RES_PATH/${PHE}_${COUNTER}
