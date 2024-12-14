@@ -63,12 +63,10 @@ Align_candidate_orthologs(){
 			echo ALIGNMENT FOR ${PHE} ${counter} PERFORMED
 
 			# Built ML tree and plot
-			#sbatch ./iqtree.sh $RES_PATH ${PHE} ${counter}
+			sbatch ./iqtree.sh $RES_PATH ${PHE} ${counter}
 			echo SEPARATED TREE JOBS FOR ${PHE} ${counter} SUBMITTED
 	done
-	rm tmp
-	rm kept_sequences
-	rm cleaned_alignments.fasta
+	rm tmp kept_sequences cleaned_alignments.fasta
     echo ALL ALIGNMENTS FOR ${PHE} FINISHED
 }
 
