@@ -24,6 +24,7 @@ Ok_alignments_extract() {
 	module load Cython/3.0.8-GCCcore-12.2.0
 	local PHE=$1
 	python -c "import filter_orthologs; filter_orthologs.main()" $RESULTS/${PHE}/Alignments 300 0.70 3 > $RESULTS/${PHE}/Candidate_orthogs_${PHE}.txt
+	python3 ./filter_unique_species.py $RESULTS/${PHE}/Candidate_orthogs_${PHE}.txt $RESULTS/${PHE}/Candidate_orthogs_${PHE}_filtered_uniq_sp.txt
     echo CANDIDATE ORTHOLOGS FILE GENERATED
 }
 
@@ -33,9 +34,14 @@ Align_candidate_orthologs(){
 	module load PAL2NAL/14-GCCcore-10.3.0
 	module load MUSCLE/3.8.1551-GCC-9.3.0
 	module load trimAl/1.4.1-GCC-9.3.0
-	
+	module load R/4.2.1-foss-2022a
+	module load Biopython/1.81-foss-2022b
+	module load seqtk/1.3-GCC-11.3.0
+
 	local PHE=$1
-	cat $RESULTS/${PHE}/Candidate_orthogs_${PHE}.txt |while read line; do \
+	export PATH=~/local/bin:$PATH # To use pandoc (plotting msa)
+
+	cat $RESULTS/${PHE}/Candidate_orthogs_${PHE}_filtered_uniq_sp.txt |while read line; do \
     		((counter++)) # Counting every line in the Candidate_orthogs* file
 			mkdir -p $RESULTS/${PHE}/${PHE}_${counter}
 			RES_PATH=$RESULTS/${PHE}/${PHE}_${counter}
@@ -48,16 +54,21 @@ Align_candidate_orthologs(){
 
 			# Align, revert alignment back to nt and trim poorly aligning regions
 			muscle -in $RES_PATH/fasta_${PHE}_${counter}_aa -out $RES_PATH/fasta_${PHE}_${counter}_aa.aln
+			perl -pe 's/-/./g' $RES_PATH/fasta_${PHE}_${counter}_aa.aln > cleaned_alignment_${counter}.fasta
+			Rscript ./msa_plot.R cleaned_alignment_${counter}.fasta $RES_PATH/${PHE}_${counter}_aa_alignment.html
+			rm cleaned_alignment_${counter}.fasta
     		pal2nal.pl $RES_PATH/fasta_${PHE}_${counter}_aa.aln $RES_PATH/fasta_${PHE}_${counter}_nt -output fasta -codontable 1 > $RES_PATH/fasta_${PHE}_${counter}_nt.aln
     		trimal -in $RES_PATH/fasta_${PHE}_${counter}_nt.aln -out $RES_PATH/fasta_${PHE}_${counter}_nt_trimmed.aln -automated1
+			Rscript ./msa_plot.R $RES_PATH/fasta_${PHE}_${counter}_nt_trimmed.aln $RES_PATH/${PHE}_${counter}_nt_trimmed_alignment.html
 			echo ALIGNMENT FOR ${PHE} ${counter} PERFORMED
 
 			# Built ML tree and plot
-			sbatch ./iqtree.sh $RES_PATH ${PHE} ${counter}
+			#sbatch ./iqtree.sh $RES_PATH ${PHE} ${counter}
 			echo SEPARATED TREE JOBS FOR ${PHE} ${counter} SUBMITTED
 	done
 	rm tmp
 	rm kept_sequences
+	rm cleaned_alignments.fasta
     echo ALL ALIGNMENTS FOR ${PHE} FINISHED
 }
 
@@ -72,16 +83,16 @@ Combine_all_genes_in_one_tree(){
 	if [ -n "$running_jobs_trees" ]; then
     	sbatch --job-name=All${PHE} --dependency=aftercorr:$running_jobs_trees ./Combiner_all_seq_by_pheromone_family.sh $RESULTS/${PHE} ${PHE}
 	else
-       # No running jobs, submit without dependency
+    # No running jobs, submit without dependency
     	sbatch --job-name=All${PHE} ./Combiner_all_seq_by_pheromone_family.sh $RESULTS/${PHE} ${PHE}
 	fi
 }
 
 # Main
-for i in FAR; do
-    echo $i
+for i in FAD FAR; do
+	echo $i
     check_pairwise_aln $i
     Ok_alignments_extract $i
     Align_candidate_orthologs $i
-    Combine_all_genes_in_one_tree $i
+	Combine_all_genes_in_one_tree $i
 done
