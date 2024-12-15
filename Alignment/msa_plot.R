@@ -16,3 +16,4 @@ print(msa_output)
 
 # Save the msaR output as an HTML file
 saveWidget(msa_output, output, selfcontained = TRUE)
+
