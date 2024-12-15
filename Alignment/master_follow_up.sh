@@ -47,8 +47,8 @@ Align_candidate_orthologs(){
 			RES_PATH=$RESULTS/${PHE}/${PHE}_${counter}
 
 			# Extract sequences for each group of paralog
-    		python3 ./extract_fasta_by_header.py $RESULTS/${PHE}/All_${PHE}_combined_aa.txt --list $line | python3 ./filter_short_sequences_below_pct_mean.py -o $RES_PATH/fasta_${PHE}_"$counter"_aa -s kept_sequences -r 0.95
-    		python3 ./extract_fasta_by_header.py $RESULTS/${PHE}/All_${PHE}_combined_larger_500.txt --list $line > tmp
+    			python3 ./extract_fasta_by_header.py $RESULTS/${PHE}/All_${PHE}_combined_aa.txt --list $line | python3 ./filter_short_sequences_below_pct_mean.py -o $RES_PATH/fasta_${PHE}_"$counter"_aa -s kept_sequences -r 0.95
+    			python3 ./extract_fasta_by_header.py $RESULTS/${PHE}/All_${PHE}_combined_larger_500.txt --list $line > tmp
 			python3 ./extract_fasta_by_header.py tmp --file kept_sequences > $RES_PATH/fasta_${PHE}_${counter}_nt
 			echo SEQUENCES FOR ${PHE} PARALOG GROUP ${counter} READY TO BE ALIGNED
 
@@ -57,8 +57,8 @@ Align_candidate_orthologs(){
 			perl -pe 's/-/./g' $RES_PATH/fasta_${PHE}_${counter}_aa.aln > cleaned_alignment_${counter}.fasta
 			Rscript ./msa_plot.R cleaned_alignment_${counter}.fasta $RES_PATH/${PHE}_${counter}_aa_alignment.html
 			rm cleaned_alignment_${counter}.fasta
-    		pal2nal.pl $RES_PATH/fasta_${PHE}_${counter}_aa.aln $RES_PATH/fasta_${PHE}_${counter}_nt -output fasta -codontable 1 > $RES_PATH/fasta_${PHE}_${counter}_nt.aln
-    		trimal -in $RES_PATH/fasta_${PHE}_${counter}_nt.aln -out $RES_PATH/fasta_${PHE}_${counter}_nt_trimmed.aln -automated1
+    			pal2nal.pl $RES_PATH/fasta_${PHE}_${counter}_aa.aln $RES_PATH/fasta_${PHE}_${counter}_nt -output fasta -codontable 1 > $RES_PATH/fasta_${PHE}_${counter}_nt.aln
+    			trimal -in $RES_PATH/fasta_${PHE}_${counter}_nt.aln -out $RES_PATH/fasta_${PHE}_${counter}_nt_trimmed.aln -automated1
 			Rscript ./msa_plot.R $RES_PATH/fasta_${PHE}_${counter}_nt_trimmed.aln $RES_PATH/${PHE}_${counter}_nt_trimmed_alignment.html
 			echo ALIGNMENT FOR ${PHE} ${counter} PERFORMED
 
@@ -66,7 +66,7 @@ Align_candidate_orthologs(){
 			sbatch ./iqtree.sh $RES_PATH ${PHE} ${counter}
 			echo SEPARATED TREE JOBS FOR ${PHE} ${counter} SUBMITTED
 	done
-	rm tmp kept_sequences cleaned_alignments.fasta
+	rm tmp kept_sequences
     echo ALL ALIGNMENTS FOR ${PHE} FINISHED
 }
 
@@ -87,10 +87,10 @@ Combine_all_genes_in_one_tree(){
 }
 
 # Main
-for i in FAD FAR; do
-	echo $i
+for i in FAR FAD; do
+    echo $i
     check_pairwise_aln $i
     Ok_alignments_extract $i
     Align_candidate_orthologs $i
-	Combine_all_genes_in_one_tree $i
+    Combine_all_genes_in_one_tree $i
 done
