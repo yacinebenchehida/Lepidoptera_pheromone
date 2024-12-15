@@ -17,4 +17,4 @@ To run the script just run:
 ./master.sh FAR FAD
 ```
 
-This script requires [Biopython](http://biopython.org/) and [edirect](https://www.ncbi.nlm.nih.gov/books/NBK179288/)
+This script requires [Biopython](http://biopython.org/) and [edirect](https://www.ncbi.nlm.nih.gov/books/NBK179288/) (need to update dependencies)
