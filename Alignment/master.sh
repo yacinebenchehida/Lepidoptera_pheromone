@@ -50,7 +50,7 @@ combine_and_align_genes() {
     python3 ./muscle.py "$RESULTS/${PHE}/All_${PHE}_combined_aa.txt" $RESULTS/${PHE}/Alignments 1000
 }
 
-for i in FAR FAD; do
+for i in FAD FAR; do
     combine_and_align_genes "$i"
     running_jobs_alignments=$(squeue|grep $(whoami)| grep -P "muscle_j"| awk '{print $1}'|perl -pe 's/\n/,/g'|sed 's/,$//g')
     sbatch --job-name="$i"clean --dependency=aftercorr:$running_jobs_alignments ./master_follow_up.sh
