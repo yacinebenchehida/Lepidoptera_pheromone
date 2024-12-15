@@ -1,4 +1,3 @@
-# Load required libraries
 library(Biostrings)
 library(tibble)
 library(dplyr)
@@ -35,33 +34,68 @@ find_fasta_files <- function(base_folder, pheromone_name) {
   return(fasta_files)
 }
 
+# Function to filter out FASTA files with fewer than 2 sequences
+# AND with only one unique genus_species in headers
+filter_fasta_files <- function(fasta_files) {
+  filtered_files <- list()
+  
+  for (f in fasta_files) {
+    sequences <- readDNAStringSet(f)  # Read sequences
+    
+    # Skip file if it has fewer than 2 sequences
+    if (length(sequences) < 2) {
+      cat("Skipping file (fewer than 2 sequences):", f, "\n")
+      next
+    }
+    
+    # Extract genus_species from headers like "ample1_Genus_species"
+    headers <- names(sequences)
+    
+    # Extract the Genus_species from the header using the correct regex
+    species_names <- gsub("^[^_]+_([^_]+_[^_]+)$", "\\1", headers)  # Correct regex
+    print(species_names)
+    
+    # Check if there are at least 2 unique genus_species names
+    if (length(unique(species_names)) >= 2) {
+      cat("File passed filter:", f, "\n")
+      filtered_files <- append(filtered_files, f)  # Add file to filtered list
+    } else {
+      cat("Skipping file (not enough unique genus_species):", f, "\n")
+    }
+  }
+  
+  if (length(filtered_files) == 0) {
+    stop("No FASTA files with at least 2 sequences and at least 2 unique genus_species found.")
+  }
+  
+  return(filtered_files)
+}
+
 # Function to read and process all FASTA files
 concatenate_alignments <- function(fasta_files, output_file) {
-  # Step 1: Read all files into a list
   alignment_list <- lapply(fasta_files, function(f) {
-    readDNAStringSet(f)  # Reads sequences in FASTA format
+    readDNAStringSet(f)  # Read sequences in FASTA format
   })
   
-  # Step 2: Determine the length of each alignment
+  # Determine the length of each alignment
   gene_lengths <- sapply(alignment_list, function(x) {
     max(width(x))
   })
-  total_length <- sum(gene_lengths)
   
-  # Step 3: Collect all unique sequence headers
+  # Collect all unique sequence headers
   all_headers <- unique(unlist(lapply(alignment_list, names)))
   
-  # Step 4: Initialize a list to store padded sequences
+  # Initialize a list to store padded sequences
   concatenated_sequences <- setNames(vector("list", length(all_headers)), all_headers)
   
-  # Step 5: Loop through each alignment and pad sequences with gaps
+  # Loop through each alignment and pad sequences with gaps
   for (i in seq_along(alignment_list)) {
     alignment <- alignment_list[[i]]
     gene_length <- gene_lengths[i]
     
     for (header in all_headers) {
       if (header %in% names(alignment)) {
-        # If the sequence exists for this gene, pad to correct length
+        # If sequence exists, pad to correct length
         seq <- alignment[[header]]
         padded_seq <- pad_with_gaps(seq, gene_length)
       } else {
@@ -69,15 +103,11 @@ concatenate_alignments <- function(fasta_files, output_file) {
         padded_seq <- strrep("-", gene_length)
       }
       # Concatenate to existing sequence
-      if (is.null(concatenated_sequences[[header]])) {
-        concatenated_sequences[[header]] <- padded_seq
-      } else {
-        concatenated_sequences[[header]] <- paste0(concatenated_sequences[[header]], padded_seq)
-      }
+      concatenated_sequences[[header]] <- paste0(concatenated_sequences[[header]], padded_seq)
     }
   }
   
-  # Step 6: Write concatenated sequences to output FASTA file
+  # Write concatenated sequences to output FASTA file
   final_sequences <- DNAStringSet(unlist(concatenated_sequences))
   names(final_sequences) <- names(concatenated_sequences)
   writeXStringSet(final_sequences, filepath = output_file, format = "fasta")
@@ -86,7 +116,6 @@ concatenate_alignments <- function(fasta_files, output_file) {
 }
 
 # Main Script
-# Set base folder and pheromone name as arguments
 args <- commandArgs(trailingOnly = TRUE)
 if (length(args) < 2) {
   stop("Usage: Rscript script.R <base_folder> <pheromone_name>")
@@ -98,13 +127,11 @@ pheromone_name <- args[2]    # Pheromone name like "FAD" or "FAR"
 # Find all relevant FASTA files
 fasta_files <- find_fasta_files(base_folder, pheromone_name)
 
-# Check if files were found
-if (length(fasta_files) == 0) {
-  stop("No matching FASTA files found.")
-}
+# Filter FASTA files to retain only those with at least 2 sequences and at least 2 unique genus_species
+filtered_fasta_files <- filter_fasta_files(fasta_files)
 
 # Specify output file
 output_file <- paste0("concatenated_", pheromone_name, "_alignment.fasta")
 
 # Run the concatenation
-concatenate_alignments(fasta_files, output_file)
+concatenate_alignments(filtered_fasta_files, output_file)
