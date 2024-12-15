@@ -24,8 +24,9 @@ tree <- read.tree(args$tree)
 species_labels <- gsub("^[^_]+_([^_]+_[^_]+)$", "\\1", tree$tip.label)  # Extract genus_species from the label
 tree$tip.label <- gsub("_[^_]+_[^_]+$", "", tree$tip.label)  # Simplify tip labels
 
+plotting <- function(methode){
 # Convert tree to ggtree object
-tree2 <- ggtree(tree, layout = "unrooted")
+tree2 <- ggtree(tree, layout = methode)
 
 # Assign species labels to tips
 tree2$data$species <- NA
@@ -59,26 +60,41 @@ if (file.exists(args$color_file)) {
 tree2$data <- left_join(tree2$data, species_color_map, by = c("species" = "Species"))
 
 # Start the plot
-p <- ggtree(tree2$data, layout = "unrooted") +  
-  # Tip labels with species-specific colors (discrete scale)
+p <- ggtree(tree2$data, layout = methode) +  
   geom_tiplab(aes(label = label, color = species), size = 2) +
-  scale_color_manual(values = color_palette)
+  scale_color_manual(values = color_palette) +
+  theme(
+    legend.title = element_text(size = 8),
+    legend.text = element_text(size = 6),
+    legend.key.size = unit(0.4, "cm"),
+    legend.spacing.y = unit(0.1, "cm"),
+    plot.margin = margin(1, 1, 1, 1, "cm"),
+    panel.background = element_blank(),
+    panel.grid = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text = element_blank(),
+    axis.title = element_blank()
+  ) 
 
 # Add a new color scale for bootstrap values (continuous scale)
 if (bootstrap_exists) {
   p <- p +
     ggnewscale::new_scale_fill() +  # Reset color scale
     geom_point2(aes(subset = (!isTip & !is.na(bootstrap)), x = x, y = y, fill = bootstrap),
-                shape = 21, size = 4, color = "black") +  # Circles for bootstrap
-    scale_fill_gradientn(colours = c("green","yellow","red"),limits = c(0, 100)) +  # Bootstrap color gradient
-    geom_nodelab(aes(label = bootstrap), size = 3, color = "black",nudge_y = 0, nudge_x = 0.012) 
+                shape = 21, size = 2, color = "black") +  # Circles for bootstrap
+    scale_fill_gradientn(colours = c("green","yellow","red"),limits = c(0, 100))  #+  # Bootstrap color gradient
+     #geom_nodelab(aes(label = bootstrap), size = 3, color = "black",nudge_y = 0, nudge_x = 0.012) 
+  }
+
+  # Save the output
+pdf_file <- paste0(args$prefix, "_", methode, ".pdf")
+png_file <- paste0(args$prefix, "_", methode, ".png")
+ggsave(pdf_file, plot = p, device = "pdf", width = 10, height = 8)
+ggsave(png_file, plot = p, device = "png", width = 10, height = 8)
+
 }
 
-# Save the output
-pdf_file <- paste0(args$prefix, ".pdf")
-png_file <- paste0(args$prefix, ".png")
 
-ggsave(pdf_file, plot = p, device = "pdf", width = 16, height = 12)
-ggsave(png_file, plot = p, device = "png", width = 16, height = 12)
-
-cat("Tree plot saved to", pdf_file, "\n")
+for (i in c("circular","unrooted","slanted")){
+  plotting(i)  
+}
