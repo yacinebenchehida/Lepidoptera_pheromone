@@ -17,10 +17,10 @@ module load R/4.2.1-foss-2022a
 
 mkdir -p ${CHEMIN}/All_combined
 RES_PATH=${CHEMIN}/All_combined
-echo $RES_PATH
+echo ${CHEMIN}
 
 # Combine all data per pheromone
-Rscript ./combine_all_seq_by_pheromone_family.R ${CHEMIN}/${PHE} ${PHE}
+Rscript ./combine_all_seq_by_pheromone_family.R ${CHEMIN} ${PHE}
 mv concatenated_${PHE}_alignment.fasta $RES_PATH
 echo FASTA COMBINED
 
@@ -30,4 +30,3 @@ echo IQTREE DONE
 
 # Plot Tree
 Rscript ./plot_tree.R --tree $RES_PATH/All_${PHE}.treefile --prefix $RES_PATH/All_${PHE}
-echo FINAL COMBINED TREE GENERATED
