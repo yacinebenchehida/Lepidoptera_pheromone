@@ -10,11 +10,12 @@ The Blast folder contains all the scripts used to:
 5) Extract the best blastx hits
 6) Check the location in each species reference genome of best hits.
 7) Plot the result as an ideogram for each species.
-8) Make a phylogeny of all FAR/FAD genes for all species.
+8) Idenetify paralogs based on sequences identity. 
+9) Make a phylogenies of all FAR/FAD genes for all species.
 
-To run the script just run:
+To run the script:
 ```
-./master.sh FAR FAD
+./master.sh FAR FAD 
 ```
 
 This script requires [Biopython](http://biopython.org/) and [edirect](https://www.ncbi.nlm.nih.gov/books/NBK179288/) (need to update dependencies)
