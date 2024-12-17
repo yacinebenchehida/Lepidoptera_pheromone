@@ -95,6 +95,6 @@ ggsave(png_file, plot = p, device = "png", width = 10, height = 8)
 }
 
 
-for (i in c("circular","unrooted","slanted")){
+for (i in c("circular","equal_angle","slanted")){
   plotting(i)  
 }
