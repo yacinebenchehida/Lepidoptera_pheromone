@@ -120,7 +120,7 @@ if [[  "$PHEROMONE" =~ "FAR" ]]; then
                 echo DATA FAR COMBINED
 fi
 if [[  "$PHEROMONE" =~ "FAD" ]]; then
-                sbatch --job-name="$SP"_D --dependency=aftercorr:$running_jobs2 ./combine_clean.sh $SPECIES FAD 250
+                sbatch --job-name="$SP"_D --dependency=aftercorr:$running_jobs2 ./combine_clean.sh $SPECIES FAD 100
                 echo DATA FAD COMBINED
 fi
 
