@@ -133,7 +133,7 @@ Combine_all_genes_in_one_tree_for_manual_curation(){
 }
 
 # Main
-for i in FAR; do
+for i in FAD FAR; do
 	echo $i
     check_pairwise_aln $i
     Ok_alignments_extract $i
