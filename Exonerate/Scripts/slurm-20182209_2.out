@@ -1,0 +1,135 @@
+
+The following have been reloaded with a version change:
+  1) GCC/12.3.0 => GCC/11.3.0
+  2) GCCcore/12.3.0 => GCCcore/11.3.0
+  3) binutils/2.40-GCCcore-12.3.0 => binutils/2.38-GCCcore-11.3.0
+  4) zlib/1.2.13-GCCcore-12.3.0 => zlib/1.2.12-GCCcore-11.3.0
+
+
+The following have been reloaded with a version change:
+  1) Biopython/1.81-foss-2022b => Biopython/1.83-foss-2023a
+  2) FFTW.MPI/3.3.10-gompi-2022b => FFTW.MPI/3.3.10-gompi-2023a
+  3) FFTW/3.3.10-GCC-12.2.0 => FFTW/3.3.10-GCC-12.3.0
+  4) FlexiBLAS/3.2.1-GCC-12.2.0 => FlexiBLAS/3.3.1-GCC-12.3.0
+  5) GCC/11.3.0 => GCC/12.3.0
+  6) GCCcore/11.3.0 => GCCcore/12.3.0
+  7) OpenBLAS/0.3.21-GCC-12.2.0 => OpenBLAS/0.3.23-GCC-12.3.0
+  8) OpenMPI/4.1.4-GCC-12.2.0 => OpenMPI/4.1.5-GCC-12.3.0
+  9) PMIx/4.2.2-GCCcore-12.2.0 => PMIx/4.2.4-GCCcore-12.3.0
+ 10) Python/3.10.8-GCCcore-12.2.0 => Python/3.11.3-GCCcore-12.3.0
+ 11) SQLite/3.39.4-GCCcore-12.2.0 => SQLite/3.42.0-GCCcore-12.3.0
+ 12) ScaLAPACK/2.2.0-gompi-2022b-fb => ScaLAPACK/2.2.0-gompi-2023a-fb
+ 13) SciPy-bundle/2023.02-gfbf-2022b => SciPy-bundle/2023.07-gfbf-2023a
+ 14) Tcl/8.6.12-GCCcore-12.2.0 => Tcl/8.6.13-GCCcore-12.3.0
+ 15) UCC/1.1.0-GCCcore-12.2.0 => UCC/1.2.0-GCCcore-12.3.0
+ 16) UCX/1.13.1-GCCcore-12.2.0 => UCX/1.14.1-GCCcore-12.3.0
+ 17) binutils/2.38-GCCcore-11.3.0 => binutils/2.40-GCCcore-12.3.0
+ 18) foss/2022b => foss/2023a
+ 19) gfbf/2022b => gfbf/2023a
+ 20) gompi/2022b => gompi/2023a
+ 21) hwloc/2.8.0-GCCcore-12.2.0 => hwloc/2.9.1-GCCcore-12.3.0
+ 22) libevent/2.1.12-GCCcore-12.2.0 => libevent/2.1.12-GCCcore-12.3.0
+ 23) libfabric/1.16.1-GCCcore-12.2.0 => libfabric/1.18.0-GCCcore-12.3.0
+ 24) libffi/3.4.4-GCCcore-12.2.0 => libffi/3.4.4-GCCcore-12.3.0
+ 25) libpciaccess/0.17-GCCcore-12.2.0 => libpciaccess/0.17-GCCcore-12.3.0
+ 26) libreadline/8.2-GCCcore-12.2.0 => libreadline/8.2-GCCcore-12.3.0
+ 27) libxml2/2.10.3-GCCcore-12.2.0 => libxml2/2.11.4-GCCcore-12.3.0
+ 28) ncurses/6.3-GCCcore-12.2.0 => ncurses/6.4-GCCcore-12.3.0
+ 29) numactl/2.0.16-GCCcore-12.2.0 => numactl/2.0.16-GCCcore-12.3.0
+ 30) pybind11/2.10.3-GCCcore-12.2.0 => pybind11/2.11.1-GCCcore-12.3.0
+ 31) zlib/1.2.12-GCCcore-11.3.0 => zlib/1.2.13-GCCcore-12.3.0
+
+
+The following have been reloaded with a version change:
+  1) BamTools/2.5.2-GCC-12.3.0 => BamTools/2.5.2-GCC-11.3.0
+  2) FFTW.MPI/3.3.10-gompi-2023a => FFTW.MPI/3.3.10-gompi-2022a
+  3) FFTW/3.3.10-GCC-12.3.0 => FFTW/3.3.10-GCC-11.3.0
+  4) FlexiBLAS/3.3.1-GCC-12.3.0 => FlexiBLAS/3.2.0-GCC-11.3.0
+  5) GCC/12.3.0 => GCC/11.3.0
+  6) GCCcore/12.3.0 => GCCcore/11.3.0
+  7) GMP/6.2.1-GCCcore-12.2.0 => GMP/6.2.1-GCCcore-11.3.0
+  8) OpenBLAS/0.3.23-GCC-12.3.0 => OpenBLAS/0.3.20-GCC-11.3.0
+  9) OpenMPI/4.1.5-GCC-12.3.0 => OpenMPI/4.1.4-GCC-11.3.0
+ 10) PMIx/4.2.4-GCCcore-12.3.0 => PMIx/4.1.2-GCCcore-11.3.0
+ 11) SQLite/3.42.0-GCCcore-12.3.0 => SQLite/3.38.3-GCCcore-11.3.0
+ 12) ScaLAPACK/2.2.0-gompi-2023a-fb => ScaLAPACK/2.2.0-gompi-2022a-fb
+ 13) Tcl/8.6.13-GCCcore-12.3.0 => Tcl/8.6.12-GCCcore-11.3.0
+ 14) UCC/1.2.0-GCCcore-12.3.0 => UCC/1.0.0-GCCcore-11.3.0
+ 15) UCX/1.14.1-GCCcore-12.3.0 => UCX/1.12.1-GCCcore-11.3.0
+ 16) XZ/5.4.2-GCCcore-12.3.0 => XZ/5.2.5-GCCcore-11.3.0
+ 17) binutils/2.40-GCCcore-12.3.0 => binutils/2.38-GCCcore-11.3.0
+ 18) bzip2/1.0.8-GCCcore-12.3.0 => bzip2/1.0.8-GCCcore-11.3.0
+ 19) foss/2023a => foss/2022a
+ 20) gompi/2023a => gompi/2022a
+ 21) hwloc/2.9.1-GCCcore-12.3.0 => hwloc/2.7.1-GCCcore-11.3.0
+ 22) libevent/2.1.12-GCCcore-12.3.0 => libevent/2.1.12-GCCcore-11.3.0
+ 23) libfabric/1.18.0-GCCcore-12.3.0 => libfabric/1.15.1-GCCcore-11.3.0
+ 24) libpciaccess/0.17-GCCcore-12.3.0 => libpciaccess/0.16-GCCcore-11.3.0
+ 25) libreadline/8.2-GCCcore-12.3.0 => libreadline/8.1.2-GCCcore-11.3.0
+ 26) libxml2/2.11.4-GCCcore-12.3.0 => libxml2/2.9.13-GCCcore-11.3.0
+ 27) ncurses/6.4-GCCcore-12.3.0 => ncurses/6.3-GCCcore-11.3.0
+ 28) numactl/2.0.16-GCCcore-12.3.0 => numactl/2.0.14-GCCcore-11.3.0
+ 29) zlib/1.2.13-GCCcore-12.3.0 => zlib/1.2.12-GCCcore-11.3.0
+
+Reference genome: /mnt/scratch/projects/biol-specgen-2018/yacine/Pheromones/Blast/Inputs/Bicyclus_anynana/Bicyclus_anynana_genome.fa
+366
+367
+380
+393
+396
+386
+364
+336
+356
+419
+Processing FASTA: Heliconius_melpomene_FAD_ctg7.fa
+[INFO] Genes written: 8
+Processing FASTA: Heliconius_melpomene_FAD_ctg4.fa
+[INFO] Genes written: 8
+Processing FASTA: Heliconius_melpomene_FAD_ctg0.fa
+[INFO] Genes written: 9
+Processing FASTA: Heliconius_melpomene_FAD_ctg1.fa
+[INFO] Genes written: 8
+Processing FASTA: Heliconius_melpomene_FAD_ctg2.fa
+[INFO] Genes written: 9
+Processing FASTA: Heliconius_melpomene_FAD_ctg6.fa
+[INFO] Genes written: 7
+Processing FASTA: Heliconius_melpomene_FAD_ctg3.fa
+[INFO] Genes written: 7
+Processing FASTA: Heliconius_melpomene_FAD_ctg5.fa
+[INFO] Genes written: 4
+Processing FASTA: Heliconius_melpomene_FAD_ctg9_HMEL015726-PA.fa
+[INFO] Genes written: 10
+Processing FASTA: tr|A0A437BUS7|A0A437BUS7_CHISP.fa
+[INFO] Genes written: 10
+Processing FASTA: Heliconius_melpomene_FAD_ctg8.fa
+[INFO] Genes written: 2
+Processing FASTA: tr|F8TIZ5|F8TIZ5_OPEBR.fa
+[INFO] Genes written: 4
+Processing FASTA: tr|F8TIZ4|F8TIZ4_OPEBR.fa
+[INFO] Genes written: 6
+Processing FASTA: tr|A0A5Q0V425|A0A5Q0V425_CHISP.fa
+[INFO] Genes written: 6
+Processing FASTA: tr|F8TIZ6|F8TIZ6_OPEBR.fa
+[INFO] Genes written: 7
+
+============================
+ Job utilisation efficiency
+============================
+
+Job ID: 20182214
+Array Job ID: 20182209_2
+Cluster: viking2.yor.alces.network
+User/Group: ybc502/clusterusers
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 8
+CPU Utilized: 00:12:59
+CPU Efficiency: 83.94% of 00:15:28 core-walltime
+Job Wall-clock time: 00:01:56
+Memory Utilized: 1.76 GB
+Memory Efficiency: 17.63% of 10.00 GB
+ Requested wall clock time: 02:10:00
+    Actual wall clock time: 00:01:56
+Wall clock time efficiency: 1.5%
+           Job queued time: 00:00:11

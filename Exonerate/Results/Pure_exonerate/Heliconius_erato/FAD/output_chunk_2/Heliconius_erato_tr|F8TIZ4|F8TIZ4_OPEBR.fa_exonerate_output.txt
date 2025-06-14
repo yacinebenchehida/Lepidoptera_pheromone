@@ -1,0 +1,217 @@
+Command line: [exonerate --model protein2genome tr|F8TIZ4|F8TIZ4_OPEBR.fa /mnt/scratch/projects/biol-specgen-2018/yacine/Pheromones/Blast/Inputs/Heliconius_erato/Heliconius_erato_genome.fa --querytype protein --bestn 10 --showvulgar no --showtargetgff yes --showalignment no --percent 20]
+Hostname: [node051.viking2.yor.alces.network]
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-13
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hdem.Herato1905	exonerate:protein2genome:local	gene	119153	122760	844	-	.	gene_id 0 ; sequence tr|F8TIZ4|F8TIZ4_OPEBR ; gene_orientation + ; identity 53.10 ; similarity 74.83
+Hdem.Herato1905	exonerate:protein2genome:local	cds	122637	122760	.	-	.	
+Hdem.Herato1905	exonerate:protein2genome:local	exon	122637	122760	.	-	.	insertions 0 ; deletions 0 ; identity 51.22 ; similarity 65.85
+Hdem.Herato1905	exonerate:protein2genome:local	splice5	122635	122636	.	-	.	intron_id 1 ; splice_site "GT"
+Hdem.Herato1905	exonerate:protein2genome:local	intron	121622	122636	.	-	.	intron_id 1
+Hdem.Herato1905	exonerate:protein2genome:local	splice3	121622	121623	.	-	.	intron_id 0 ; splice_site "AG"
+Hdem.Herato1905	exonerate:protein2genome:local	cds	121447	121621	.	-	.	
+Hdem.Herato1905	exonerate:protein2genome:local	exon	121447	121621	.	-	.	insertions 0 ; deletions 0 ; identity 50.88 ; similarity 78.95
+Hdem.Herato1905	exonerate:protein2genome:local	splice5	121445	121446	.	-	.	intron_id 2 ; splice_site "GT"
+Hdem.Herato1905	exonerate:protein2genome:local	intron	120963	121446	.	-	.	intron_id 2
+Hdem.Herato1905	exonerate:protein2genome:local	splice3	120963	120964	.	-	.	intron_id 1 ; splice_site "AG"
+Hdem.Herato1905	exonerate:protein2genome:local	cds	120801	120962	.	-	.	
+Hdem.Herato1905	exonerate:protein2genome:local	exon	120801	120962	.	-	.	insertions 0 ; deletions 0 ; identity 69.81 ; similarity 88.68
+Hdem.Herato1905	exonerate:protein2genome:local	splice5	120799	120800	.	-	.	intron_id 3 ; splice_site "GT"
+Hdem.Herato1905	exonerate:protein2genome:local	intron	119574	120800	.	-	.	intron_id 3
+Hdem.Herato1905	exonerate:protein2genome:local	splice3	119574	119575	.	-	.	intron_id 2 ; splice_site "AG"
+Hdem.Herato1905	exonerate:protein2genome:local	cds	119153	119573	.	-	.	
+Hdem.Herato1905	exonerate:protein2genome:local	exon	119153	119573	.	-	.	insertions 3 ; deletions 0 ; identity 48.20 ; similarity 70.50
+Hdem.Herato1905	exonerate:protein2genome:local	similarity	119153	122760	844	-	.	alignment_id 0 ; Query tr|F8TIZ4|F8TIZ4_OPEBR ; Align 122761 25 123 ; Align 121620 67 171 ; Align 120962 125 159 ; Align 119573 179 57 ; Align 119513 198 360
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-13
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hdem.Herato1708	exonerate:protein2genome:local	gene	1468951	1476399	830	-	.	gene_id 0 ; sequence tr|F8TIZ4|F8TIZ4_OPEBR ; gene_orientation + ; identity 55.17 ; similarity 74.14
+Hdem.Herato1708	exonerate:protein2genome:local	cds	1476276	1476399	.	-	.	
+Hdem.Herato1708	exonerate:protein2genome:local	exon	1476276	1476399	.	-	.	insertions 0 ; deletions 0 ; identity 51.22 ; similarity 65.85
+Hdem.Herato1708	exonerate:protein2genome:local	splice5	1476274	1476275	.	-	.	intron_id 1 ; splice_site "GT"
+Hdem.Herato1708	exonerate:protein2genome:local	intron	1475114	1476275	.	-	.	intron_id 1
+Hdem.Herato1708	exonerate:protein2genome:local	splice3	1475114	1475115	.	-	.	intron_id 0 ; splice_site "AG"
+Hdem.Herato1708	exonerate:protein2genome:local	cds	1474939	1475113	.	-	.	
+Hdem.Herato1708	exonerate:protein2genome:local	exon	1474939	1475113	.	-	.	insertions 0 ; deletions 0 ; identity 54.39 ; similarity 77.19
+Hdem.Herato1708	exonerate:protein2genome:local	splice5	1474937	1474938	.	-	.	intron_id 2 ; splice_site "GT"
+Hdem.Herato1708	exonerate:protein2genome:local	intron	1474623	1474938	.	-	.	intron_id 2
+Hdem.Herato1708	exonerate:protein2genome:local	splice3	1474623	1474624	.	-	.	intron_id 1 ; splice_site "AG"
+Hdem.Herato1708	exonerate:protein2genome:local	cds	1474461	1474622	.	-	.	
+Hdem.Herato1708	exonerate:protein2genome:local	exon	1474461	1474622	.	-	.	insertions 0 ; deletions 0 ; identity 69.81 ; similarity 88.68
+Hdem.Herato1708	exonerate:protein2genome:local	splice5	1474459	1474460	.	-	.	intron_id 3 ; splice_site "GT"
+Hdem.Herato1708	exonerate:protein2genome:local	intron	1469372	1474460	.	-	.	intron_id 3
+Hdem.Herato1708	exonerate:protein2genome:local	splice3	1469372	1469373	.	-	.	intron_id 2 ; splice_site "AG"
+Hdem.Herato1708	exonerate:protein2genome:local	cds	1468951	1469371	.	-	.	
+Hdem.Herato1708	exonerate:protein2genome:local	exon	1468951	1469371	.	-	.	insertions 3 ; deletions 0 ; identity 51.08 ; similarity 69.78
+Hdem.Herato1708	exonerate:protein2genome:local	similarity	1468951	1476399	830	-	.	alignment_id 0 ; Query tr|F8TIZ4|F8TIZ4_OPEBR ; Align 1476400 25 123 ; Align 1475112 67 171 ; Align 1474622 125 159 ; Align 1469371 179 57 ; Align 1469311 198 360
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-13
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hdem.Herato1908	exonerate:protein2genome:local	gene	1594398	1597491	726	-	.	gene_id 0 ; sequence tr|F8TIZ4|F8TIZ4_OPEBR ; gene_orientation + ; identity 53.78 ; similarity 74.90
+Hdem.Herato1908	exonerate:protein2genome:local	cds	1597351	1597491	.	-	.	
+Hdem.Herato1908	exonerate:protein2genome:local	exon	1597351	1597491	.	-	.	insertions 0 ; deletions 0 ; identity 47.92 ; similarity 70.83
+Hdem.Herato1908	exonerate:protein2genome:local	splice5	1597349	1597350	.	-	.	intron_id 1 ; splice_site "GT"
+Hdem.Herato1908	exonerate:protein2genome:local	intron	1595555	1597350	.	-	.	intron_id 1
+Hdem.Herato1908	exonerate:protein2genome:local	splice3	1595555	1595556	.	-	.	intron_id 0 ; splice_site "AG"
+Hdem.Herato1908	exonerate:protein2genome:local	cds	1595349	1595554	.	-	.	
+Hdem.Herato1908	exonerate:protein2genome:local	exon	1595349	1595554	.	-	.	insertions 0 ; deletions 0 ; identity 66.18 ; similarity 86.76
+Hdem.Herato1908	exonerate:protein2genome:local	splice5	1595347	1595348	.	-	.	intron_id 2 ; splice_site "GT"
+Hdem.Herato1908	exonerate:protein2genome:local	intron	1594813	1595348	.	-	.	intron_id 2
+Hdem.Herato1908	exonerate:protein2genome:local	splice3	1594813	1594814	.	-	.	intron_id 1 ; splice_site "AG"
+Hdem.Herato1908	exonerate:protein2genome:local	cds	1594398	1594812	.	-	.	
+Hdem.Herato1908	exonerate:protein2genome:local	exon	1594398	1594812	.	-	.	insertions 6 ; deletions 0 ; identity 49.26 ; similarity 69.85
+Hdem.Herato1908	exonerate:protein2genome:local	similarity	1594398	1597491	726	-	.	alignment_id 0 ; Query tr|F8TIZ4|F8TIZ4_OPEBR ; Align 1597492 63 141 ; Align 1595555 110 204 ; Align 1594812 179 57 ; Align 1594752 198 36 ; Align 1594713 210 315
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-13
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hdem.Herato1910	exonerate:protein2genome:local	gene	514758	601892	721	+	.	gene_id 0 ; sequence tr|F8TIZ4|F8TIZ4_OPEBR ; gene_orientation + ; identity 48.94 ; similarity 69.01
+Hdem.Herato1910	exonerate:protein2genome:local	cds	514758	514872	.	+	.	
+Hdem.Herato1910	exonerate:protein2genome:local	exon	514758	514872	.	+	.	insertions 3 ; deletions 0 ; identity 32.43 ; similarity 56.76
+Hdem.Herato1910	exonerate:protein2genome:local	splice5	514873	514874	.	+	.	intron_id 1 ; splice_site "GT"
+Hdem.Herato1910	exonerate:protein2genome:local	intron	514873	598751	.	+	.	intron_id 1
+Hdem.Herato1910	exonerate:protein2genome:local	splice3	598750	598751	.	+	.	intron_id 0 ; splice_site "AG"
+Hdem.Herato1910	exonerate:protein2genome:local	cds	598752	598882	.	+	.	
+Hdem.Herato1910	exonerate:protein2genome:local	exon	598752	598882	.	+	.	insertions 0 ; deletions 0 ; identity 52.27 ; similarity 68.18
+Hdem.Herato1910	exonerate:protein2genome:local	splice5	598883	598884	.	+	.	intron_id 2 ; splice_site "GT"
+Hdem.Herato1910	exonerate:protein2genome:local	intron	598883	600881	.	+	.	intron_id 2
+Hdem.Herato1910	exonerate:protein2genome:local	splice3	600880	600881	.	+	.	intron_id 1 ; splice_site "AG"
+Hdem.Herato1910	exonerate:protein2genome:local	cds	600882	601087	.	+	.	
+Hdem.Herato1910	exonerate:protein2genome:local	exon	600882	601087	.	+	.	insertions 0 ; deletions 0 ; identity 58.82 ; similarity 86.76
+Hdem.Herato1910	exonerate:protein2genome:local	splice5	601088	601089	.	+	.	intron_id 3 ; splice_site "GT"
+Hdem.Herato1910	exonerate:protein2genome:local	intron	601088	601480	.	+	.	intron_id 3
+Hdem.Herato1910	exonerate:protein2genome:local	splice3	601479	601480	.	+	.	intron_id 2 ; splice_site "AG"
+Hdem.Herato1910	exonerate:protein2genome:local	cds	601481	601892	.	+	.	
+Hdem.Herato1910	exonerate:protein2genome:local	exon	601481	601892	.	+	.	insertions 3 ; deletions 0 ; identity 47.06 ; similarity 63.24
+Hdem.Herato1910	exonerate:protein2genome:local	similarity	514758	601892	721	+	.	alignment_id 0 ; Query tr|F8TIZ4|F8TIZ4_OPEBR ; Align 514758 29 93 ; Align 514854 60 18 ; Align 598754 67 129 ; Align 600882 110 204 ; Align 601482 179 93 ; Align 601578 210 315
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-13
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hdem.Herato0411	exonerate:protein2genome:local	gene	2654010	2658804	473	+	.	gene_id 0 ; sequence tr|F8TIZ4|F8TIZ4_OPEBR ; gene_orientation + ; identity 41.64 ; similarity 60.85
+Hdem.Herato0411	exonerate:protein2genome:local	cds	2654010	2654121	.	+	.	
+Hdem.Herato0411	exonerate:protein2genome:local	exon	2654010	2654121	.	+	.	insertions 0 ; deletions 0 ; identity 29.73 ; similarity 37.84
+Hdem.Herato0411	exonerate:protein2genome:local	splice5	2654122	2654123	.	+	.	intron_id 1 ; splice_site "GT"
+Hdem.Herato0411	exonerate:protein2genome:local	intron	2654122	2656339	.	+	.	intron_id 1
+Hdem.Herato0411	exonerate:protein2genome:local	splice3	2656338	2656339	.	+	.	intron_id 0 ; splice_site "AG"
+Hdem.Herato0411	exonerate:protein2genome:local	cds	2656340	2656468	.	+	.	
+Hdem.Herato0411	exonerate:protein2genome:local	exon	2656340	2656468	.	+	.	insertions 0 ; deletions 1 ; identity 44.19 ; similarity 65.12 ; frameshifts 1
+Hdem.Herato0411	exonerate:protein2genome:local	splice5	2656469	2656470	.	+	.	intron_id 2 ; splice_site "GT"
+Hdem.Herato0411	exonerate:protein2genome:local	intron	2656469	2656949	.	+	.	intron_id 2
+Hdem.Herato0411	exonerate:protein2genome:local	splice3	2656948	2656949	.	+	.	intron_id 1 ; splice_site "AG"
+Hdem.Herato0411	exonerate:protein2genome:local	cds	2656950	2657157	.	+	.	
+Hdem.Herato0411	exonerate:protein2genome:local	exon	2656950	2657157	.	+	.	insertions 0 ; deletions 0 ; identity 52.17 ; similarity 71.01
+Hdem.Herato0411	exonerate:protein2genome:local	splice5	2657158	2657159	.	+	.	intron_id 3 ; splice_site "GT"
+Hdem.Herato0411	exonerate:protein2genome:local	intron	2657158	2657292	.	+	.	intron_id 3
+Hdem.Herato0411	exonerate:protein2genome:local	splice3	2657291	2657292	.	+	.	intron_id 2 ; splice_site "AT"
+Hdem.Herato0411	exonerate:protein2genome:local	cds	2657293	2657476	.	+	.	
+Hdem.Herato0411	exonerate:protein2genome:local	exon	2657293	2657476	.	+	.	insertions 6 ; deletions 0 ; identity 29.31 ; similarity 56.90
+Hdem.Herato0411	exonerate:protein2genome:local	splice5	2657477	2657478	.	+	.	intron_id 4 ; splice_site "GT"
+Hdem.Herato0411	exonerate:protein2genome:local	intron	2657477	2658578	.	+	.	intron_id 4
+Hdem.Herato0411	exonerate:protein2genome:local	splice3	2658577	2658578	.	+	.	intron_id 3 ; splice_site "AG"
+Hdem.Herato0411	exonerate:protein2genome:local	cds	2658579	2658804	.	+	.	
+Hdem.Herato0411	exonerate:protein2genome:local	exon	2658579	2658804	.	+	.	insertions 0 ; deletions 1 ; identity 45.33 ; similarity 62.67
+Hdem.Herato0411	exonerate:protein2genome:local	similarity	2654010	2658804	473	+	.	alignment_id 0 ; Query tr|F8TIZ4|F8TIZ4_OPEBR ; Align 2654010 29 111 ; Align 2656342 67 84 ; Align 2656426 96 3 ; Align 2656430 97 39 ; Align 2656950 110 207 ; Align 2657295 180 39 ; Align 2657337 193 54 ; Align 2657394 211 81 ; Align 2658580 239 117 ; Align 2658697 279 108
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-13
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hdem.Herato0310	exonerate:protein2genome:local	gene	6124783	6127076	397	-	.	gene_id 0 ; sequence tr|F8TIZ4|F8TIZ4_OPEBR ; gene_orientation + ; identity 46.81 ; similarity 65.43
+Hdem.Herato0310	exonerate:protein2genome:local	cds	6126886	6127076	.	-	.	
+Hdem.Herato0310	exonerate:protein2genome:local	exon	6126886	6127076	.	-	.	insertions 0 ; deletions 0 ; identity 61.90 ; similarity 79.37
+Hdem.Herato0310	exonerate:protein2genome:local	splice5	6126884	6126885	.	-	.	intron_id 1 ; splice_site "GT"
+Hdem.Herato0310	exonerate:protein2genome:local	intron	6125730	6126885	.	-	.	intron_id 1
+Hdem.Herato0310	exonerate:protein2genome:local	splice3	6125730	6125731	.	-	.	intron_id 0 ; splice_site "AG"
+Hdem.Herato0310	exonerate:protein2genome:local	cds	6125544	6125729	.	-	.	
+Hdem.Herato0310	exonerate:protein2genome:local	exon	6125544	6125729	.	-	.	insertions 6 ; deletions 0 ; identity 35.59 ; similarity 54.24
+Hdem.Herato0310	exonerate:protein2genome:local	splice5	6125542	6125543	.	-	.	intron_id 2 ; splice_site "GT"
+Hdem.Herato0310	exonerate:protein2genome:local	intron	6124982	6125543	.	-	.	intron_id 2
+Hdem.Herato0310	exonerate:protein2genome:local	splice3	6124982	6124983	.	-	.	intron_id 1 ; splice_site "AG"
+Hdem.Herato0310	exonerate:protein2genome:local	cds	6124783	6124981	.	-	.	
+Hdem.Herato0310	exonerate:protein2genome:local	exon	6124783	6124981	.	-	.	insertions 0 ; deletions 1 ; identity 42.42 ; similarity 62.12
+Hdem.Herato0310	exonerate:protein2genome:local	similarity	6124783	6127076	397	-	.	alignment_id 0 ; Query tr|F8TIZ4|F8TIZ4_OPEBR ; Align 6127077 115 189 ; Align 6125729 179 63 ; Align 6125663 200 30 ; Align 6125630 210 84 ; Align 6124981 239 117 ; Align 6124864 279 81
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-13
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hdem.Herato1202	exonerate:protein2genome:local	gene	15814101	15815098	389	+	.	gene_id 0 ; sequence tr|F8TIZ4|F8TIZ4_OPEBR ; gene_orientation + ; identity 49.02 ; similarity 67.97
+Hdem.Herato1202	exonerate:protein2genome:local	cds	15814101	15814224	.	+	.	
+Hdem.Herato1202	exonerate:protein2genome:local	exon	15814101	15814224	.	+	.	insertions 0 ; deletions 0 ; identity 46.34 ; similarity 70.73
+Hdem.Herato1202	exonerate:protein2genome:local	splice5	15814225	15814226	.	+	.	intron_id 1 ; splice_site "GT"
+Hdem.Herato1202	exonerate:protein2genome:local	intron	15814225	15814310	.	+	.	intron_id 1
+Hdem.Herato1202	exonerate:protein2genome:local	splice3	15814309	15814310	.	+	.	intron_id 0 ; splice_site "AG"
+Hdem.Herato1202	exonerate:protein2genome:local	cds	15814311	15814441	.	+	.	
+Hdem.Herato1202	exonerate:protein2genome:local	exon	15814311	15814441	.	+	.	insertions 0 ; deletions 0 ; identity 43.18 ; similarity 61.36
+Hdem.Herato1202	exonerate:protein2genome:local	splice5	15814442	15814443	.	+	.	intron_id 2 ; splice_site "GT"
+Hdem.Herato1202	exonerate:protein2genome:local	intron	15814442	15814891	.	+	.	intron_id 2
+Hdem.Herato1202	exonerate:protein2genome:local	splice3	15814890	15814891	.	+	.	intron_id 1 ; splice_site "AG"
+Hdem.Herato1202	exonerate:protein2genome:local	cds	15814892	15815098	.	+	.	
+Hdem.Herato1202	exonerate:protein2genome:local	exon	15814892	15815098	.	+	.	insertions 0 ; deletions 0 ; identity 53.62 ; similarity 69.57
+Hdem.Herato1202	exonerate:protein2genome:local	similarity	15814101	15815098	389	+	.	alignment_id 0 ; Query tr|F8TIZ4|F8TIZ4_OPEBR ; Align 15814101 25 123 ; Align 15814313 67 129 ; Align 15814892 110 207
+# --- END OF GFF DUMP ---
+#
+-- completed exonerate analysis

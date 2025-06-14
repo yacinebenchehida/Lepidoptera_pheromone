@@ -1,0 +1,59 @@
+Command line: [exonerate --model protein2genome tr|A0A0L7L2Z9|A0A0L7L2Z9_OPEBR.fa /mnt/scratch/projects/biol-specgen-2018/yacine/Pheromones/Blast/Inputs/Heliconius_sara/Heliconius_sara_genome.fa --querytype protein --bestn 10 --showvulgar no --showtargetgff yes --showalignment no --percent 20]
+Hostname: [node035.viking2.yor.alces.network]
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+17	exonerate:protein2genome:local	gene	17619758	17780513	393	-	.	gene_id 0 ; sequence tr|A0A0L7L2Z9|A0A0L7L2Z9_OPEBR ; gene_orientation + ; identity 51.30 ; similarity 69.48
+17	exonerate:protein2genome:local	cds	17780458	17780513	.	-	.	
+17	exonerate:protein2genome:local	exon	17780458	17780513	.	-	.	insertions 0 ; deletions 0 ; identity 44.44 ; similarity 61.11
+17	exonerate:protein2genome:local	splice5	17780456	17780457	.	-	.	intron_id 1 ; splice_site "CT"
+17	exonerate:protein2genome:local	intron	17620170	17780457	.	-	.	intron_id 1
+17	exonerate:protein2genome:local	splice3	17620170	17620171	.	-	.	intron_id 0 ; splice_site "AG"
+17	exonerate:protein2genome:local	cds	17619758	17620169	.	-	.	
+17	exonerate:protein2genome:local	exon	17619758	17620169	.	-	.	insertions 3 ; deletions 0 ; identity 52.21 ; similarity 70.59
+17	exonerate:protein2genome:local	similarity	17619758	17780513	393	-	.	alignment_id 0 ; Query tr|A0A0L7L2Z9|A0A0L7L2Z9_OPEBR ; Align 17780514 106 54 ; Align 17620169 125 57 ; Align 17620109 144 351
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+19	exonerate:protein2genome:local	gene	16222115	16222519	335	+	.	gene_id 0 ; sequence tr|A0A0L7L2Z9|A0A0L7L2Z9_OPEBR ; gene_orientation . ; identity 50.00 ; similarity 64.93
+19	exonerate:protein2genome:local	cds	16222115	16222519	.	+	.	
+19	exonerate:protein2genome:local	exon	16222115	16222519	.	+	.	insertions 3 ; deletions 0 ; identity 50.00 ; similarity 64.93
+19	exonerate:protein2genome:local	similarity	16222115	16222519	335	+	.	alignment_id 0 ; Query tr|A0A0L7L2Z9|A0A0L7L2Z9_OPEBR ; Align 16222115 127 87 ; Align 16222205 156 315
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+19	exonerate:protein2genome:local	gene	14542706	14543115	312	-	.	gene_id 0 ; sequence tr|A0A0L7L2Z9|A0A0L7L2Z9_OPEBR ; gene_orientation . ; identity 49.25 ; similarity 69.40
+19	exonerate:protein2genome:local	cds	14542706	14543115	.	-	.	
+19	exonerate:protein2genome:local	exon	14542706	14543115	.	-	.	insertions 6 ; deletions 0 ; identity 49.25 ; similarity 69.40 ; frameshifts 2
+19	exonerate:protein2genome:local	similarity	14542706	14543115	312	-	.	alignment_id 0 ; Query tr|A0A0L7L2Z9|A0A0L7L2Z9_OPEBR ; Align 14543116 127 51 ; Align 14543062 144 36 ; Align 14543023 156 237 ; Align 14542784 235 78
+# --- END OF GFF DUMP ---
+#
+-- completed exonerate analysis

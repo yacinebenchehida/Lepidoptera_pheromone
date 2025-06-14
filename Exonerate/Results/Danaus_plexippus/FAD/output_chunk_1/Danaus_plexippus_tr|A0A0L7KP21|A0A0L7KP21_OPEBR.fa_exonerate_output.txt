@@ -1,0 +1,139 @@
+Command line: [exonerate --model protein2genome tr|A0A0L7KP21|A0A0L7KP21_OPEBR.fa /mnt/scratch/projects/biol-specgen-2018/yacine/Pheromones/Blast/Inputs/Danaus_plexippus/Danaus_plexippus_genome.fa --querytype protein --bestn 10 --showvulgar no --showtargetgff yes --showalignment no --percent 20]
+Hostname: [node032.viking2.yor.alces.network]
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+JAEQBL010000033.1	exonerate:protein2genome:local	gene	832391	832558	187	-	.	gene_id 0 ; sequence tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; gene_orientation . ; identity 55.36 ; similarity 76.79
+JAEQBL010000033.1	exonerate:protein2genome:local	cds	832391	832558	.	-	.	
+JAEQBL010000033.1	exonerate:protein2genome:local	exon	832391	832558	.	-	.	insertions 0 ; deletions 0 ; identity 55.36 ; similarity 76.79
+JAEQBL010000033.1	exonerate:protein2genome:local	similarity	832391	832558	187	-	.	alignment_id 0 ; Query tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; Align 832559 1 168
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+19	exonerate:protein2genome:local	gene	4637770	4637886	133	-	.	gene_id 0 ; sequence tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; gene_orientation . ; identity 56.41 ; similarity 79.49
+19	exonerate:protein2genome:local	cds	4637770	4637886	.	-	.	
+19	exonerate:protein2genome:local	exon	4637770	4637886	.	-	.	insertions 0 ; deletions 0 ; identity 56.41 ; similarity 79.49
+19	exonerate:protein2genome:local	similarity	4637770	4637886	133	-	.	alignment_id 0 ; Query tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; Align 4637887 1 117
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+4	exonerate:protein2genome:local	gene	2948856	2949002	131	+	.	gene_id 0 ; sequence tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; gene_orientation . ; identity 42.86 ; similarity 67.35
+4	exonerate:protein2genome:local	cds	2948856	2949002	.	+	.	
+4	exonerate:protein2genome:local	exon	2948856	2949002	.	+	.	insertions 0 ; deletions 0 ; identity 42.86 ; similarity 67.35
+4	exonerate:protein2genome:local	similarity	2948856	2949002	131	+	.	alignment_id 0 ; Query tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; Align 2948856 3 147
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+4	exonerate:protein2genome:local	gene	4514849	4514950	125	+	.	gene_id 0 ; sequence tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; gene_orientation . ; identity 61.76 ; similarity 85.29
+4	exonerate:protein2genome:local	cds	4514849	4514950	.	+	.	
+4	exonerate:protein2genome:local	exon	4514849	4514950	.	+	.	insertions 0 ; deletions 0 ; identity 61.76 ; similarity 85.29
+4	exonerate:protein2genome:local	similarity	4514849	4514950	125	+	.	alignment_id 0 ; Query tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; Align 4514849 1 102
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+4	exonerate:protein2genome:local	gene	3032544	3032645	117	+	.	gene_id 0 ; sequence tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; gene_orientation . ; identity 58.82 ; similarity 82.35
+4	exonerate:protein2genome:local	cds	3032544	3032645	.	+	.	
+4	exonerate:protein2genome:local	exon	3032544	3032645	.	+	.	insertions 0 ; deletions 0 ; identity 58.82 ; similarity 82.35
+4	exonerate:protein2genome:local	similarity	3032544	3032645	117	+	.	alignment_id 0 ; Query tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; Align 3032544 1 102
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+4	exonerate:protein2genome:local	gene	2861447	2861545	117	-	.	gene_id 0 ; sequence tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; gene_orientation . ; identity 57.58 ; similarity 78.79
+4	exonerate:protein2genome:local	cds	2861447	2861545	.	-	.	
+4	exonerate:protein2genome:local	exon	2861447	2861545	.	-	.	insertions 0 ; deletions 0 ; identity 57.58 ; similarity 78.79
+4	exonerate:protein2genome:local	similarity	2861447	2861545	117	-	.	alignment_id 0 ; Query tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; Align 2861546 7 99
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+4	exonerate:protein2genome:local	gene	2917259	2917342	108	-	.	gene_id 0 ; sequence tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; gene_orientation . ; identity 67.86 ; similarity 82.14
+4	exonerate:protein2genome:local	cds	2917259	2917342	.	-	.	
+4	exonerate:protein2genome:local	exon	2917259	2917342	.	-	.	insertions 0 ; deletions 0 ; identity 67.86 ; similarity 82.14
+4	exonerate:protein2genome:local	similarity	2917259	2917342	108	-	.	alignment_id 0 ; Query tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; Align 2917343 7 84
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+JAEQBL010000005.1	exonerate:protein2genome:local	gene	3239390	3239491	104	-	.	gene_id 0 ; sequence tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; gene_orientation . ; identity 52.94 ; similarity 79.41
+JAEQBL010000005.1	exonerate:protein2genome:local	cds	3239390	3239491	.	-	.	
+JAEQBL010000005.1	exonerate:protein2genome:local	exon	3239390	3239491	.	-	.	insertions 0 ; deletions 0 ; identity 52.94 ; similarity 79.41
+JAEQBL010000005.1	exonerate:protein2genome:local	similarity	3239390	3239491	104	-	.	alignment_id 0 ; Query tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; Align 3239492 1 102
+# --- END OF GFF DUMP ---
+#
+-- completed exonerate analysis

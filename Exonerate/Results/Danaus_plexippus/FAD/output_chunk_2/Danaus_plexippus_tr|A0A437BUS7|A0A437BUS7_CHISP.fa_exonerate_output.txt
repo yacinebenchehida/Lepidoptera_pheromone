@@ -1,0 +1,232 @@
+Command line: [exonerate --model protein2genome tr|A0A437BUS7|A0A437BUS7_CHISP.fa /mnt/scratch/projects/biol-specgen-2018/yacine/Pheromones/Blast/Inputs/Danaus_plexippus/Danaus_plexippus_genome.fa --querytype protein --bestn 10 --showvulgar no --showtargetgff yes --showalignment no --percent 20]
+Hostname: [node013.viking2.yor.alces.network]
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+4	exonerate:protein2genome:local	gene	4325810	4519667	936	+	.	gene_id 0 ; sequence tr|A0A437BUS7|A0A437BUS7_CHISP ; gene_orientation + ; identity 61.46 ; similarity 79.86
+4	exonerate:protein2genome:local	cds	4325810	4325885	.	+	.	
+4	exonerate:protein2genome:local	exon	4325810	4325885	.	+	.	insertions 0 ; deletions 0 ; identity 32.00 ; similarity 56.00
+4	exonerate:protein2genome:local	splice5	4325886	4325887	.	+	.	intron_id 1 ; splice_site "CT"
+4	exonerate:protein2genome:local	intron	4325886	4514828	.	+	.	intron_id 1
+4	exonerate:protein2genome:local	splice3	4514827	4514828	.	+	.	intron_id 0 ; splice_site "AA"
+4	exonerate:protein2genome:local	cds	4514829	4514971	.	+	.	
+4	exonerate:protein2genome:local	exon	4514829	4514971	.	+	.	insertions 0 ; deletions 0 ; identity 56.25 ; similarity 85.42
+4	exonerate:protein2genome:local	splice5	4514972	4514973	.	+	.	intron_id 2 ; splice_site "GT"
+4	exonerate:protein2genome:local	intron	4514972	4518710	.	+	.	intron_id 2
+4	exonerate:protein2genome:local	splice3	4518709	4518710	.	+	.	intron_id 1 ; splice_site "AG"
+4	exonerate:protein2genome:local	cds	4518711	4518916	.	+	.	
+4	exonerate:protein2genome:local	exon	4518711	4518916	.	+	.	insertions 0 ; deletions 0 ; identity 61.76 ; similarity 86.76
+4	exonerate:protein2genome:local	splice5	4518917	4518918	.	+	.	intron_id 3 ; splice_site "GT"
+4	exonerate:protein2genome:local	intron	4518917	4519216	.	+	.	intron_id 3
+4	exonerate:protein2genome:local	splice3	4519215	4519216	.	+	.	intron_id 2 ; splice_site "AG"
+4	exonerate:protein2genome:local	cds	4519217	4519667	.	+	.	
+4	exonerate:protein2genome:local	exon	4519217	4519667	.	+	.	insertions 6 ; deletions 0 ; identity 67.57 ; similarity 79.05
+4	exonerate:protein2genome:local	similarity	4325810	4519667	936	+	.	alignment_id 0 ; Query tr|A0A437BUS7|A0A437BUS7_CHISP ; Align 4325810 38 75 ; Align 4514831 64 141 ; Align 4518711 111 204 ; Align 4519218 180 93 ; Align 4519314 211 324 ; Align 4519641 319 27
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+JAEQBL010000033.1	exonerate:protein2genome:local	gene	829219	832576	930	-	.	gene_id 0 ; sequence tr|A0A437BUS7|A0A437BUS7_CHISP ; gene_orientation + ; identity 62.55 ; similarity 82.63
+JAEQBL010000033.1	exonerate:protein2genome:local	cds	832392	832576	.	-	.	
+JAEQBL010000033.1	exonerate:protein2genome:local	exon	832392	832576	.	-	.	insertions 0 ; deletions 0 ; identity 60.66 ; similarity 85.25
+JAEQBL010000033.1	exonerate:protein2genome:local	splice5	832390	832391	.	-	.	intron_id 1 ; splice_site "GT"
+JAEQBL010000033.1	exonerate:protein2genome:local	intron	830994	832391	.	-	.	intron_id 1
+JAEQBL010000033.1	exonerate:protein2genome:local	splice3	830994	830995	.	-	.	intron_id 0 ; splice_site "AG"
+JAEQBL010000033.1	exonerate:protein2genome:local	cds	830832	830993	.	-	.	
+JAEQBL010000033.1	exonerate:protein2genome:local	exon	830832	830993	.	-	.	insertions 0 ; deletions 0 ; identity 69.81 ; similarity 86.79
+JAEQBL010000033.1	exonerate:protein2genome:local	splice5	830830	830831	.	-	.	intron_id 2 ; splice_site "GT"
+JAEQBL010000033.1	exonerate:protein2genome:local	intron	829655	830831	.	-	.	intron_id 2
+JAEQBL010000033.1	exonerate:protein2genome:local	splice3	829655	829656	.	-	.	intron_id 1 ; splice_site "AG"
+JAEQBL010000033.1	exonerate:protein2genome:local	cds	829219	829654	.	-	.	
+JAEQBL010000033.1	exonerate:protein2genome:local	exon	829219	829654	.	-	.	insertions 0 ; deletions 0 ; identity 60.69 ; similarity 80.00
+JAEQBL010000033.1	exonerate:protein2genome:local	similarity	829219	832576	930	-	.	alignment_id 0 ; Query tr|A0A437BUS7|A0A437BUS7_CHISP ; Align 832577 64 183 ; Align 830993 126 159 ; Align 829654 180 435
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+4	exonerate:protein2genome:local	gene	3032541	3035559	822	+	.	gene_id 0 ; sequence tr|A0A437BUS7|A0A437BUS7_CHISP ; gene_orientation + ; identity 61.94 ; similarity 79.76
+4	exonerate:protein2genome:local	cds	3032541	3032666	.	+	.	
+4	exonerate:protein2genome:local	exon	3032541	3032666	.	+	.	insertions 0 ; deletions 0 ; identity 62.79 ; similarity 88.37
+4	exonerate:protein2genome:local	splice5	3032667	3032668	.	+	.	intron_id 1 ; splice_site "GT"
+4	exonerate:protein2genome:local	intron	3032667	3034359	.	+	.	intron_id 1
+4	exonerate:protein2genome:local	splice3	3034358	3034359	.	+	.	intron_id 0 ; splice_site "AG"
+4	exonerate:protein2genome:local	cds	3034360	3034565	.	+	.	
+4	exonerate:protein2genome:local	exon	3034360	3034565	.	+	.	insertions 0 ; deletions 0 ; identity 66.18 ; similarity 86.76
+4	exonerate:protein2genome:local	splice5	3034566	3034567	.	+	.	intron_id 2 ; splice_site "GT"
+4	exonerate:protein2genome:local	intron	3034566	3035144	.	+	.	intron_id 2
+4	exonerate:protein2genome:local	splice3	3035143	3035144	.	+	.	intron_id 1 ; splice_site "AG"
+4	exonerate:protein2genome:local	cds	3035145	3035559	.	+	.	
+4	exonerate:protein2genome:local	exon	3035145	3035559	.	+	.	insertions 3 ; deletions 1 ; identity 59.12 ; similarity 73.72
+4	exonerate:protein2genome:local	similarity	3032541	3035559	822	+	.	alignment_id 0 ; Query tr|A0A437BUS7|A0A437BUS7_CHISP ; Align 3032541 69 126 ; Align 3034360 111 204 ; Align 3035146 180 57 ; Align 3035203 200 33 ; Align 3035239 211 321
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+JAEQBL010000005.1	exonerate:protein2genome:local	gene	3237952	3239684	778	-	.	gene_id 0 ; sequence tr|A0A437BUS7|A0A437BUS7_CHISP ; gene_orientation + ; identity 53.00 ; similarity 72.67
+JAEQBL010000005.1	exonerate:protein2genome:local	cds	3239573	3239684	.	-	.	
+JAEQBL010000005.1	exonerate:protein2genome:local	exon	3239573	3239684	.	-	.	insertions 0 ; deletions 0 ; identity 45.95 ; similarity 78.38
+JAEQBL010000005.1	exonerate:protein2genome:local	splice5	3239571	3239572	.	-	.	intron_id 1 ; splice_site "GT"
+JAEQBL010000005.1	exonerate:protein2genome:local	intron	3239500	3239572	.	-	.	intron_id 1
+JAEQBL010000005.1	exonerate:protein2genome:local	splice3	3239500	3239501	.	-	.	intron_id 0 ; splice_site "AG"
+JAEQBL010000005.1	exonerate:protein2genome:local	cds	3239369	3239499	.	-	.	
+JAEQBL010000005.1	exonerate:protein2genome:local	exon	3239369	3239499	.	-	.	insertions 0 ; deletions 0 ; identity 52.27 ; similarity 79.55
+JAEQBL010000005.1	exonerate:protein2genome:local	splice5	3239367	3239368	.	-	.	intron_id 2 ; splice_site "GT"
+JAEQBL010000005.1	exonerate:protein2genome:local	intron	3239278	3239368	.	-	.	intron_id 2
+JAEQBL010000005.1	exonerate:protein2genome:local	splice3	3239278	3239279	.	-	.	intron_id 1 ; splice_site "AG"
+JAEQBL010000005.1	exonerate:protein2genome:local	cds	3239072	3239277	.	-	.	
+JAEQBL010000005.1	exonerate:protein2genome:local	exon	3239072	3239277	.	-	.	insertions 0 ; deletions 0 ; identity 61.76 ; similarity 77.94
+JAEQBL010000005.1	exonerate:protein2genome:local	splice5	3239070	3239071	.	-	.	intron_id 3 ; splice_site "GC"
+JAEQBL010000005.1	exonerate:protein2genome:local	intron	3238996	3239071	.	-	.	intron_id 3
+JAEQBL010000005.1	exonerate:protein2genome:local	splice3	3238996	3238997	.	-	.	intron_id 2 ; splice_site "AG"
+JAEQBL010000005.1	exonerate:protein2genome:local	cds	3238810	3238995	.	-	.	
+JAEQBL010000005.1	exonerate:protein2genome:local	exon	3238810	3238995	.	-	.	insertions 3 ; deletions 0 ; identity 46.67 ; similarity 66.67
+JAEQBL010000005.1	exonerate:protein2genome:local	splice5	3238808	3238809	.	-	.	intron_id 4 ; splice_site "GT"
+JAEQBL010000005.1	exonerate:protein2genome:local	intron	3238660	3238809	.	-	.	intron_id 4
+JAEQBL010000005.1	exonerate:protein2genome:local	splice3	3238660	3238661	.	-	.	intron_id 3 ; splice_site "AG"
+JAEQBL010000005.1	exonerate:protein2genome:local	cds	3238503	3238659	.	-	.	
+JAEQBL010000005.1	exonerate:protein2genome:local	exon	3238503	3238659	.	-	.	insertions 3 ; deletions 1 ; identity 48.08 ; similarity 61.54
+JAEQBL010000005.1	exonerate:protein2genome:local	splice5	3238501	3238502	.	-	.	intron_id 5 ; splice_site "GT"
+JAEQBL010000005.1	exonerate:protein2genome:local	intron	3238078	3238502	.	-	.	intron_id 5
+JAEQBL010000005.1	exonerate:protein2genome:local	splice3	3238078	3238079	.	-	.	intron_id 4 ; splice_site "AG"
+JAEQBL010000005.1	exonerate:protein2genome:local	cds	3237952	3238077	.	-	.	
+JAEQBL010000005.1	exonerate:protein2genome:local	exon	3237952	3238077	.	-	.	insertions 3 ; deletions 0 ; identity 60.98 ; similarity 75.61
+JAEQBL010000005.1	exonerate:protein2genome:local	similarity	3237952	3239684	778	-	.	alignment_id 0 ; Query tr|A0A437BUS7|A0A437BUS7_CHISP ; Align 3239685 30 111 ; Align 3239498 68 129 ; Align 3239278 111 204 ; Align 3238995 180 75 ; Align 3238917 205 105 ; Align 3238659 241 45 ; Align 3238614 257 60 ; Align 3238551 277 48 ; Align 3238078 293 75 ; Align 3238000 318 48
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+4	exonerate:protein2genome:local	gene	2948739	2950882	729	+	.	gene_id 0 ; sequence tr|A0A437BUS7|A0A437BUS7_CHISP ; gene_orientation + ; identity 46.84 ; similarity 65.45
+4	exonerate:protein2genome:local	cds	2948739	2949004	.	+	.	
+4	exonerate:protein2genome:local	exon	2948739	2949004	.	+	.	insertions 0 ; deletions 0 ; identity 37.50 ; similarity 55.68
+4	exonerate:protein2genome:local	splice5	2949005	2949006	.	+	.	intron_id 1 ; splice_site "GT"
+4	exonerate:protein2genome:local	intron	2949005	2949428	.	+	.	intron_id 1
+4	exonerate:protein2genome:local	splice3	2949427	2949428	.	+	.	intron_id 0 ; splice_site "AG"
+4	exonerate:protein2genome:local	cds	2949429	2949602	.	+	.	
+4	exonerate:protein2genome:local	exon	2949429	2949602	.	+	.	insertions 0 ; deletions 0 ; identity 54.39 ; similarity 82.46
+4	exonerate:protein2genome:local	splice5	2949603	2949604	.	+	.	intron_id 2 ; splice_site "GT"
+4	exonerate:protein2genome:local	intron	2949603	2949822	.	+	.	intron_id 2
+4	exonerate:protein2genome:local	splice3	2949821	2949822	.	+	.	intron_id 1 ; splice_site "AG"
+4	exonerate:protein2genome:local	cds	2949823	2950008	.	+	.	
+4	exonerate:protein2genome:local	exon	2949823	2950008	.	+	.	insertions 3 ; deletions 0 ; identity 51.67 ; similarity 73.33
+4	exonerate:protein2genome:local	splice5	2950009	2950010	.	+	.	intron_id 3 ; splice_site "GT"
+4	exonerate:protein2genome:local	intron	2950009	2950409	.	+	.	intron_id 3
+4	exonerate:protein2genome:local	splice3	2950408	2950409	.	+	.	intron_id 2 ; splice_site "AG"
+4	exonerate:protein2genome:local	cds	2950410	2950570	.	+	.	
+4	exonerate:protein2genome:local	exon	2950410	2950570	.	+	.	insertions 0 ; deletions 0 ; identity 52.83 ; similarity 64.15
+4	exonerate:protein2genome:local	splice5	2950571	2950572	.	+	.	intron_id 4 ; splice_site "GT"
+4	exonerate:protein2genome:local	intron	2950571	2950751	.	+	.	intron_id 4
+4	exonerate:protein2genome:local	splice3	2950750	2950751	.	+	.	intron_id 3 ; splice_site "AG"
+4	exonerate:protein2genome:local	cds	2950752	2950882	.	+	.	
+4	exonerate:protein2genome:local	exon	2950752	2950882	.	+	.	insertions 0 ; deletions 0 ; identity 41.86 ; similarity 53.49
+4	exonerate:protein2genome:local	similarity	2948739	2950882	729	+	.	alignment_id 0 ; Query tr|A0A437BUS7|A0A437BUS7_CHISP ; Align 2948739 33 264 ; Align 2949430 122 171 ; Align 2949824 180 93 ; Align 2949920 211 87 ; Align 2950411 241 159 ; Align 2950754 295 129
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+4	exonerate:protein2genome:local	gene	2859307	2861572	682	-	.	gene_id 0 ; sequence tr|A0A437BUS7|A0A437BUS7_CHISP ; gene_orientation + ; identity 54.07 ; similarity 71.95
+4	exonerate:protein2genome:local	cds	2861441	2861572	.	-	.	
+4	exonerate:protein2genome:local	exon	2861441	2861572	.	-	.	insertions 0 ; deletions 0 ; identity 55.56 ; similarity 73.33
+4	exonerate:protein2genome:local	splice5	2861439	2861440	.	-	.	intron_id 1 ; splice_site "GT"
+4	exonerate:protein2genome:local	intron	2860461	2861440	.	-	.	intron_id 1
+4	exonerate:protein2genome:local	splice3	2860461	2860462	.	-	.	intron_id 0 ; splice_site "AG"
+4	exonerate:protein2genome:local	cds	2860255	2860460	.	-	.	
+4	exonerate:protein2genome:local	exon	2860255	2860460	.	-	.	insertions 0 ; deletions 0 ; identity 55.88 ; similarity 79.41
+4	exonerate:protein2genome:local	splice5	2860253	2860254	.	-	.	intron_id 2 ; splice_site "GT"
+4	exonerate:protein2genome:local	intron	2860059	2860254	.	-	.	intron_id 2
+4	exonerate:protein2genome:local	splice3	2860059	2860060	.	-	.	intron_id 1 ; splice_site "AG"
+4	exonerate:protein2genome:local	cds	2859876	2860058	.	-	.	
+4	exonerate:protein2genome:local	exon	2859876	2860058	.	-	.	insertions 0 ; deletions 0 ; identity 53.33 ; similarity 65.00
+4	exonerate:protein2genome:local	splice5	2859874	2859875	.	-	.	intron_id 3 ; splice_site "GT"
+4	exonerate:protein2genome:local	intron	2859530	2859875	.	-	.	intron_id 3
+4	exonerate:protein2genome:local	splice3	2859530	2859531	.	-	.	intron_id 2 ; splice_site "AG"
+4	exonerate:protein2genome:local	cds	2859307	2859529	.	-	.	
+4	exonerate:protein2genome:local	exon	2859307	2859529	.	-	.	insertions 0 ; deletions 1 ; identity 52.70 ; similarity 70.27
+4	exonerate:protein2genome:local	similarity	2859307	2861572	682	-	.	alignment_id 0 ; Query tr|A0A437BUS7|A0A437BUS7_CHISP ; Align 2861573 67 132 ; Align 2860461 111 204 ; Align 2860058 180 180 ; Align 2859529 241 108 ; Align 2859421 278 114
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+5	exonerate:protein2genome:local	gene	6627417	6628461	629	-	.	gene_id 0 ; sequence tr|A0A437BUS7|A0A437BUS7_CHISP ; gene_orientation + ; identity 48.33 ; similarity 65.80
+5	exonerate:protein2genome:local	cds	6628237	6628461	.	-	.	
+5	exonerate:protein2genome:local	exon	6628237	6628461	.	-	.	insertions 0 ; deletions 0 ; identity 32.89 ; similarity 55.26
+5	exonerate:protein2genome:local	splice5	6628235	6628236	.	-	.	intron_id 1 ; splice_site "GT"
+5	exonerate:protein2genome:local	intron	6628165	6628236	.	-	.	intron_id 1
+5	exonerate:protein2genome:local	splice3	6628165	6628166	.	-	.	intron_id 0 ; splice_site "AG"
+5	exonerate:protein2genome:local	cds	6627959	6628164	.	-	.	
+5	exonerate:protein2genome:local	exon	6627959	6628164	.	-	.	insertions 0 ; deletions 0 ; identity 63.24 ; similarity 76.47
+5	exonerate:protein2genome:local	splice5	6627957	6627958	.	-	.	intron_id 2 ; splice_site "GT"
+5	exonerate:protein2genome:local	intron	6627891	6627958	.	-	.	intron_id 2
+5	exonerate:protein2genome:local	splice3	6627891	6627892	.	-	.	intron_id 1 ; splice_site "AG"
+5	exonerate:protein2genome:local	cds	6627705	6627890	.	-	.	
+5	exonerate:protein2genome:local	exon	6627705	6627890	.	-	.	insertions 3 ; deletions 0 ; identity 45.00 ; similarity 63.33
+5	exonerate:protein2genome:local	splice5	6627703	6627704	.	-	.	intron_id 3 ; splice_site "GT"
+5	exonerate:protein2genome:local	intron	6627616	6627704	.	-	.	intron_id 3
+5	exonerate:protein2genome:local	splice3	6627616	6627617	.	-	.	intron_id 2 ; splice_site "AG"
+5	exonerate:protein2genome:local	cds	6627417	6627615	.	-	.	
+5	exonerate:protein2genome:local	exon	6627417	6627615	.	-	.	insertions 0 ; deletions 1 ; identity 54.55 ; similarity 69.70
+5	exonerate:protein2genome:local	similarity	6627417	6628461	629	-	.	alignment_id 0 ; Query tr|A0A437BUS7|A0A437BUS7_CHISP ; Align 6628462 36 225 ; Align 6628165 111 204 ; Align 6627890 180 87 ; Align 6627800 209 93 ; Align 6627615 241 114 ; Align 6627501 280 84
+# --- END OF GFF DUMP ---
+#
+-- completed exonerate analysis

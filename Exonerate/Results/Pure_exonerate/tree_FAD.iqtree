@@ -1,0 +1,421 @@
+IQ-TREE 2.3.6 built Dec 10 2024
+
+Input file name: trimal_aligned_combined_FAD_multisp_genes.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 445155
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 43 sequences with 97 amino-acid sites
+Number of constant sites: 0 (= 0% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 0 (= 0% of all sites)
+Number of parsimony informative sites: 94
+Number of distinct site patterns: 97
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: PMB+R4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+PMB+R4            -4917.214   10012.429 +     0.98   12301.000 - 2.84e-209   10241.578 +    0.787
+PMB+R3            -4923.098   10020.196 -   0.0202   11721.529 - 1.92e-83   10244.196 +    0.213
+Blosum62+R4       -4938.082   10054.163 - 8.48e-10   12342.735 - 2.46e-218   10283.312 - 6.82e-10
+Blosum62+R3       -4943.884   10061.768 - 1.89e-11   11763.101 - 1.81e-92   10285.768 -    2e-10
+VT+R4             -4942.143   10062.286 - 1.46e-11   12350.858 - 4.24e-220   10291.436 - 1.17e-11
+VT+R3             -4946.817   10067.634 - 1.01e-12   11768.968 - 9.61e-94   10291.634 - 1.06e-11
+cpREV+R3          -4948.095   10070.190 - 2.81e-13   11771.524 - 2.68e-94   10294.190 - 2.96e-12
+cpREV+R4          -4944.629   10067.257 - 1.22e-12   12355.828 - 3.53e-221   10296.406 - 9.78e-13
+Q.pfam+R4         -4964.811   10107.623 - 2.09e-21   12396.194 - 6.06e-230   10336.772 - 1.68e-21
+Q.pfam+R3         -4969.709   10113.417 - 1.15e-22   11814.751 - 1.1e-103   10337.417 - 1.22e-21
+LG+R3             -4978.362   10130.724 - 2.01e-26   11832.058 - 1.92e-107   10354.724 - 2.12e-25
+WAG+R3            -4980.541   10135.082 - 2.28e-27   11836.415 - 2.17e-108   10359.082 -  2.4e-26
+VT+F+R4           -4933.375   10082.749 - 5.26e-16   33626.749 -        0   10360.818 - 1.01e-26
+VT+F+R3           -4938.830   10089.659 - 1.66e-17   32773.659 -        0   10362.579 - 4.18e-27
+LG+R4             -4978.287   10134.574 - 2.93e-27   12423.146 - 8.51e-236   10363.724 - 2.36e-27
+JTT+R4            -4978.347   10134.695 - 2.76e-27   12423.266 - 8.01e-236   10363.844 - 2.22e-27
+JTT+R3            -4982.986   10139.973 - 1.97e-28   11841.306 - 1.88e-109   10363.973 - 2.08e-27
+JTTDCMut+R4       -4978.657   10135.314 - 2.03e-27   12423.885 - 5.88e-236   10364.463 - 1.63e-27
+JTTDCMut+R3       -4983.398   10140.795 - 1.31e-28   11842.129 - 1.25e-109   10364.795 - 1.38e-27
+LG+G4             -4991.304   10150.608 - 9.68e-31   11340.608 +        1   10366.883 - 4.86e-28
+PMB+F+R4          -4936.518   10089.036 - 2.27e-17   33633.036 -        0   10367.105 - 4.35e-28
+WAG+R4            -4980.523   10139.047 - 3.14e-28   12427.618 - 9.09e-237   10368.196 - 2.52e-28
+Q.insect+R4       -4981.551   10141.103 - 1.12e-28   12429.674 - 3.25e-237   10370.252 - 9.01e-29
+PMB+F+R3          -4943.366   10098.732 - 1.78e-19   32782.732 -        0   10371.651 - 4.48e-29
+Q.insect+R3       -4987.511   10149.022 - 2.14e-30   11850.356 - 2.04e-111   10373.022 - 2.26e-29
+LG+R2             -4995.581   10161.163 - 4.94e-33   11490.254 -  3.2e-33   10380.013 - 6.84e-31
+Blosum62+F+R4     -4943.782   10103.564 - 1.59e-20   33647.564 -        0   10381.632 - 3.05e-31
+Blosum62+F+R3     -4950.315   10112.630 - 1.71e-22   32796.630 -        0   10385.549 -  4.3e-32
+cpREV+F+R4        -4947.408   10110.816 - 4.23e-22   33654.816 -        0   10388.884 - 8.11e-33
+cpREV+F+R3        -4952.238   10116.477 -  2.5e-23   32800.477 -        0   10389.396 - 6.28e-33
+Q.pfam+F+R4       -4957.266   10130.532 - 2.21e-26   33674.532 -        0   10408.601 - 4.24e-37
+Q.pfam+F+R3       -4963.488   10138.976 - 3.25e-28   32822.976 -        0   10411.895 - 8.17e-38
+WAG+F+R3          -4964.829   10141.658 -  8.5e-29   32825.658 -        0   10414.577 - 2.14e-38
+Q.plant+R4        -5004.381   10186.762 - 1.36e-38   12475.334 - 3.96e-247   10415.911 -  1.1e-38
+Q.yeast+R4        -5005.374   10188.748 - 5.06e-39   12477.319 - 1.47e-247   10417.897 - 4.06e-39
+Q.plant+R3        -5010.634   10195.268 - 1.94e-40   11896.601 - 1.85e-121   10419.268 - 2.05e-39
+Q.yeast+R3        -5010.726   10195.452 - 1.77e-40   11896.785 - 1.69e-121   10419.452 - 1.87e-39
+rtREV+R4          -5006.169   10190.338 - 2.28e-39   12478.909 - 6.62e-248   10419.487 - 1.84e-39
+rtREV+R3          -5012.385   10198.769 - 3.37e-41   11900.103 - 3.22e-122   10422.769 - 3.56e-40
+WAG+F+R4          -4964.883   10145.767 - 1.09e-29   33689.767 -        0   10423.835 - 2.09e-40
+rtREV+F+R4        -4965.404   10146.809 - 6.47e-30   33690.809 -        0   10424.877 - 1.24e-40
+JTT+F+R4          -4967.654   10151.307 - 6.82e-31   33695.307 -        0   10429.376 - 1.31e-41
+rtREV+F+R3        -4972.232   10156.464 - 5.18e-32   32840.464 -        0   10429.383 -  1.3e-41
+Q.mammal+R4       -5011.186   10200.371 - 1.51e-41   12488.943 - 4.39e-250   10429.521 - 1.22e-41
+JTTDCMut+F+R4     -4968.292   10152.585 -  3.6e-31   33696.585 -        0   10430.653 -  6.9e-42
+Q.yeast+F+R4      -4968.373   10152.745 - 3.33e-31   33696.745 -        0   10430.814 - 6.37e-42
+JTT+F+R3          -4973.456   10158.912 - 1.52e-32   32842.912 -        0   10431.831 - 3.83e-42
+JTTDCMut+F+R3     -4974.294   10160.589 - 6.59e-33   32844.589 -        0   10433.508 - 1.66e-42
+Q.yeast+F+R3      -4974.531   10161.062 -  5.2e-33   32845.062 -        0   10433.981 - 1.31e-42
+LG+F+R3           -4976.865   10165.731 - 5.04e-34   32849.731 -        0   10438.650 - 1.27e-43
+Q.insect+F+R4     -4973.716   10163.432 - 1.59e-33   33707.432 -        0   10441.501 - 3.04e-44
+Q.mammal+R3       -5022.421   10218.842 - 1.48e-45   11920.175 - 1.41e-126   10442.841 - 1.56e-44
+Q.insect+F+R3     -4980.610   10173.220 - 1.19e-35   32857.220 -        0   10446.140 - 2.99e-45
+LG+F+R4           -4976.869   10169.738 - 6.79e-35   33713.738 -        0   10447.807 -  1.3e-45
+mtInv+F+R4        -4977.431   10170.861 - 3.87e-35   33714.861 -        0   10448.930 - 7.42e-46
+mtInv+F+R3        -4984.257   10180.514 -  3.1e-37   32864.514 -        0   10453.433 - 7.81e-47
+DCMut+R3          -5032.492   10238.983 - 6.24e-50   11940.317 - 5.95e-131   10462.983 - 6.59e-49
+Dayhoff+R3        -5033.094   10240.189 - 3.42e-50   11941.522 - 3.26e-131   10464.189 -  3.6e-49
+DCMut+R4          -5030.189   10238.377 - 8.45e-50   12526.948 - 2.45e-258   10467.526 - 6.79e-50
+Dayhoff+R4        -5030.757   10239.515 - 4.79e-50   12528.086 - 1.39e-258   10468.664 - 3.85e-50
+Q.plant+F+R4      -4997.543   10211.085 - 7.13e-44   33755.085 -        0   10489.154 - 1.37e-54
+Q.mammal+F+R4     -5000.434   10216.868 - 3.96e-45   33760.868 -        0   10494.937 - 7.59e-56
+Q.plant+F+R3      -5005.617   10223.234 - 1.64e-46   32907.234 -        0   10496.153 - 4.13e-56
+DCMut+F+R3        -5005.638   10223.275 - 1.61e-46   32907.275 -        0   10496.194 - 4.04e-56
+Dayhoff+F+R3      -5006.231   10224.462 - 8.89e-47   32908.462 -        0   10497.381 - 2.23e-56
+DCMut+F+R4        -5002.947   10221.894 - 3.21e-46   33765.894 -        0   10499.963 - 6.15e-57
+Dayhoff+F+R4      -5003.531   10223.062 - 1.79e-46   33767.062 -        0   10501.131 - 3.43e-57
+Q.bird+R4         -5050.550   10279.100 - 1.21e-58   12567.671 - 3.52e-267   10508.249 - 9.76e-59
+Q.mammal+F+R3     -5011.844   10235.687 - 3.25e-49   32919.687 -        0   10508.606 - 8.16e-59
+Q.bird+R3         -5062.134   10298.267 - 8.36e-63   11999.600 - 7.97e-144   10522.267 - 8.82e-62
+mtMet+F+R4        -5015.141   10246.282 - 1.62e-51   33790.282 -        0   10524.351 - 3.11e-62
+mtZOA+F+R4        -5016.108   10248.215 - 6.18e-52   33792.215 -        0   10526.284 - 1.18e-62
+mtZOA+F+R3        -5022.946   10257.892 - 4.89e-54   32941.892 -        0   10530.812 - 1.23e-63
+mtMet+F+R3        -5023.085   10258.171 - 4.26e-54   32942.171 -        0   10531.090 - 1.07e-63
+HIVb+R4           -5071.831   10321.662 - 6.95e-68   12610.234 - 2.01e-276   10550.812 - 5.58e-68
+HIVb+R3           -5077.152   10328.304 - 2.51e-69   12029.637 - 2.39e-150   10552.304 - 2.65e-68
+mtREV+F+R4        -5035.742   10287.484 - 1.84e-60   33831.484 -        0   10565.552 - 3.52e-71
+mtREV+F+R3        -5043.544   10299.088 - 5.55e-63   32983.088 -        0   10572.007 - 1.39e-72
+Q.bird+F+R4       -5040.879   10297.759 - 1.08e-62   33841.759 -        0   10575.828 - 2.06e-73
+Q.bird+F+R3       -5052.403   10316.806 - 7.88e-67   33000.806 -        0   10589.725 - 1.98e-76
+FLU+R4            -5095.925   10369.850 - 2.39e-78   12658.422 - 6.92e-287   10598.999 - 1.92e-78
+FLU+R3            -5101.583   10377.167 - 6.16e-80   12078.500 - 5.87e-161   10601.167 - 6.49e-79
+mtART+F+R4        -5056.289   10328.578 - 2.19e-69   33872.578 -        0   10606.646 - 4.19e-80
+mtZOA+R4          -5100.919   10379.839 - 1.62e-80   12668.410 - 4.69e-289   10608.988 -  1.3e-80
+HIVb+F+R4         -5062.246   10340.492 - 5.66e-72   33884.492 -        0   10618.561 - 1.08e-82
+mtZOA+R3          -5110.539   10395.078 - 7.94e-84   12096.411 - 7.57e-165   10619.078 - 8.38e-83
+mtART+F+R3        -5067.802   10347.603 - 1.62e-73   33031.603 -        0   10620.522 - 4.07e-83
+FLU+F+R4          -5063.846   10343.692 - 1.14e-72   33887.692 -        0   10621.761 - 2.19e-83
+FLU+F+R3          -5070.489   10352.978 -  1.1e-74   33036.978 -        0   10625.897 - 2.77e-84
+HIVb+F+R3         -5070.683   10353.366 - 9.07e-75   33037.366 -        0   10626.285 - 2.28e-84
+LG                -5149.632   10465.264 - 4.56e-99   11537.879 - 1.46e-43   10678.965 -  8.3e-96
+mtVer+F+R4        -5109.899   10435.799 - 1.14e-92   33979.799 -        0   10713.867 - 2.19e-103
+mtMet+R4          -5154.457   10486.913 - 9.08e-104   12775.484 - 2.63e-312   10716.062 - 7.3e-104
+mtREV+R4          -5156.645   10491.289 - 1.02e-104   12779.861 - 2.95e-313   10720.439 - 8.18e-105
+mtVer+F+R3        -5118.804   10449.609 - 1.14e-95   33133.609 -        0   10722.528 - 2.88e-105
+mtMet+R3          -5162.368   10498.735 - 2.46e-106   12200.069 - 2.35e-187   10722.735 - 2.6e-105
+FLAVI+R4          -5159.415   10496.829 - 6.38e-106   12785.401 - 1.85e-314   10725.979 - 5.13e-106
+mtREV+R3          -5167.387   10508.774 - 1.63e-108   12210.107 - 1.55e-189   10732.774 - 1.72e-107
+FLAVI+R3          -5168.462   10510.924 - 5.55e-109   12212.258 - 5.29e-190   10734.924 - 5.85e-108
+mtInv+R4          -5169.337   10516.675 - 3.13e-110   12805.246 - 9.07e-319   10745.824 - 2.51e-110
+mtInv+R3          -5175.991   10525.983 - 2.98e-112   12227.316 - 2.84e-193   10749.983 - 3.14e-111
+mtMAM+F+R4        -5140.637   10497.275 - 5.11e-106   34041.275 -        0   10775.343 - 9.78e-117
+FLAVI+F+R4        -5142.385   10500.770 - 8.9e-107   34044.770 -        0   10778.839 - 1.7e-117
+FLAVI+F+R3        -5152.359   10516.718 - 3.06e-110   33200.718 -        0   10789.638 - 7.7e-120
+mtMAM+F+R3        -5153.102   10518.205 - 1.46e-110   33202.205 -        0   10791.124 - 3.66e-120
+mtART+R4          -5199.648   10577.296 - 2.15e-123   12865.868 -        0   10806.446 - 1.72e-123
+mtART+R3          -5213.124   10600.249 - 2.23e-128   12301.582 - 2.12e-209   10824.249 - 2.35e-127
+HIVw+F+R4         -5186.002   10588.004 - 1.02e-125   34132.004 -        0   10866.073 - 1.94e-136
+HIVw+F+R3         -5191.839   10595.677 - 2.19e-127   33279.677 -        0   10868.596 - 5.51e-137
+mtVer+R4          -5247.814   10673.627 - 2.59e-144   12962.199 -        0   10902.776 - 2.08e-144
+mtVer+R3          -5256.131   10686.261 - 4.68e-147   12387.594 - 4.46e-228   10910.261 - 4.94e-146
+mtMAM+R4          -5281.987   10741.975 - 3.73e-159   13030.546 -        0   10971.124 -   3e-159
+HIVw+R4           -5287.354   10752.708 - 1.74e-161   13041.279 -        0   10981.857 - 1.4e-161
+HIVw+R3           -5292.727   10759.453 - 5.98e-163   12460.786 - 5.71e-244   10983.453 - 6.31e-162
+mtMAM+R3          -5294.833   10763.666 - 7.28e-164   12464.999 - 6.94e-245   10987.666 - 7.68e-163
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: PMB+R4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: FreeRate with 4 categories
+Site proportion and rates:  (0.3284,0.3407) (0.4519,0.7031) (0.1838,1.9843) (0.0358,5.7433)
+
+ Category  Relative_rate  Proportion
+  1         0.3407         0.3284
+  2         0.7031         0.4519
+  3         1.9843         0.1838
+  4         5.7433         0.0358
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -4913.1559 (s.e. 172.4599)
+Unconstrained log-likelihood (without tree): -443.7470
+Number of free parameters (#branches + #model parameters): 89
+Akaike information criterion (AIC) score: 10004.3118
+Corrected Akaike information criterion (AICc) score: 12292.8832
+Bayesian information criterion (BIC) score: 10233.4611
+
+Total tree length (sum of branch lengths): 23.2645
+Sum of internal branch lengths: 9.8472 (42.3271% of tree length)
+
+WARNING: 2 near-zero internal branches (<0.0103) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Hmel203003o_7514658_7515355_Heliconius_melpomene_Heliconius_melpomene' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++---Hmel203003o_7514658_7515355_Heliconius_melpomene_Heliconius_melpomene
+|
++-----Hdem.Herato0310_6125543_6127103_Heliconius_erato_Heliconius_erato
+|
+|                                 +----5_6627228_6628458_Danaus_plexippus_Danaus_plexippus
+|                           +-----| (100)
+|                           |     +--3_9907807_9909865_Heliconius_sara_Heliconius_sara
+|                        +--| (77)
+|                        |  |     +---4_2910901_2917348_Danaus_plexippus_Danaus_plexippus
+|                        |  |  +--| (95)
+|                        |  |  |  +--Hmel219001o_12794124_12797499_Heliconius_melpomene_Heliconius_melpomene
+|                        |  +--| (99)
+|                        |     +--Hdem.Herato1910_471485_475096_Heliconius_erato_Heliconius_erato
+|                     +--| (62)
+|                     |  |           +--9_11893838_11906109_Bicyclus_anynana_Bicyclus_anynana
+|                     |  |        +--| (44)
+|                     |  |        |  |  +--4_3035137_3035556_Danaus_plexippus_Danaus_plexippus
+|                     |  |        |  +--| (83)
+|                     |  |        |     +--9_11911587_11959553_Bicyclus_anynana_Bicyclus_anynana
+|                     |  |     +--| (75)
+|                     |  |     |  |         +**19_16088965_16222519_Heliconius_sara_Heliconius_sara
+|                     |  |     |  +---------| (100)
+|                     |  |     |            |                      +----------Hmel219001o_12473769_12791778_Heliconius_melpomene_Heliconius_melpomene
+|                     |  |     |            |                  +---| (98)
+|                     |  |     |            |                  |   +--Hdem.Herato1910_447828_521981_Heliconius_erato_Heliconius_erato
+|                     |  |     |            |               +--| (57)
+|                     |  |     |            |               |  |  +----------17_9940091_10139416_Bicyclus_anynana_Bicyclus_anynana
+|                     |  |     |            |               |  +--| (93)
+|                     |  |     |            |               |     |        +-----Hmel204001o_5259657_5261873_Heliconius_melpomene_Heliconius_melpomene
+|                     |  |     |            |               |     |     +--| (98)
+|                     |  |     |            |               |     |     |  +--Hdem.Herato0411_2654010_2658804_Heliconius_erato_Heliconius_erato
+|                     |  |     |            |               |     |  +--| (99)
+|                     |  |     |            |               |     |  |  +**4_7088664_7091110_Heliconius_sara_Heliconius_sara
+|                     |  |     |            |               |     +--| (93)
+|                     |  |     |            |               |        +--17_10136128_10138102_Bicyclus_anynana_Bicyclus_anynana
+|                     |  |     |            |            +--| (73)
+|                     |  |     |            |            |  +-----25_5192027_5193183_Bicyclus_anynana_Bicyclus_anynana
+|                     |  |     |            |         +--| (78)
+|                     |  |     |            |         |  |     +-----10_4647969_4650067_Bicyclus_anynana_Bicyclus_anynana
+|                     |  |     |            |         |  |  +--| (90)
+|                     |  |     |            |         |  |  |  |        +--14_9790506_9795341_Bicyclus_anynana_Bicyclus_anynana
+|                     |  |     |            |         |  |  |  |     +--| (79)
+|                     |  |     |            |         |  |  |  |     |  +--12_15302160_15303779_Heliconius_sara_Heliconius_sara
+|                     |  |     |            |         |  |  |  |  +--| (79)
+|                     |  |     |            |         |  |  |  |  |  +--Hmel212001o_12442158_12444063_Heliconius_melpomene_Heliconius_melpomene
+|                     |  |     |            |         |  |  |  +--| (98)
+|                     |  |     |            |         |  |  |     +**Hdem.Herato1202_15814310_15816301_Heliconius_erato_Heliconius_erato
+|                     |  |     |            |         |  +--| (59)
+|                     |  |     |            |         |     +---4_2949442_2950575_Danaus_plexippus_Danaus_plexippus
+|                     |  |     |            +---------| (100)
+|                     |  |     |                      |  +---4_4514840_4519652_Danaus_plexippus_Danaus_plexippus
+|                     |  |     |                      +--| (88)
+|                     |  |     |                         |     +**19_16219686_16222573_Heliconius_sara_Heliconius_sara
+|                     |  |     |                         |  +--| (96)
+|                     |  |     |                         |  |  +----Hmel219001o_12886927_12890226_Heliconius_melpomene_Heliconius_melpomene
+|                     |  |     |                         +--| (96)
+|                     |  |     |                            +**Hdem.Herato1910_598751_601898_Heliconius_erato_Heliconius_erato
+|                     |  |  +--| (87)
+|                     |  |  |  +--9_11976956_11979833_Bicyclus_anynana_Bicyclus_anynana
+|                     |  +--| (95)
+|                     |     |        +---19_14542867_14544187_Heliconius_sara_Heliconius_sara
+|                     |     |     +--| (80)
+|                     |     |     |  +**Hdem.Herato1908_1594398_1597449_Heliconius_erato_Heliconius_erato
+|                     |     |  +--| (83)
+|                     |     |  |  +**9_9009342_9017866_Bicyclus_anynana_Bicyclus_anynana
+|                     |     +--| (98)
+|                     |        +**Hmel219001o_11482073_11485032_Heliconius_melpomene_Heliconius_melpomene
+|                  +--| (42)
+|                  |  +--26_1782282_1782689_Bicyclus_anynana_Bicyclus_anynana
+|               +--| (37)
+|               |  |  +--26_1761318_1761704_Bicyclus_anynana_Bicyclus_anynana
+|               |  +--| (100)
+|               |     +**26_1770472_1770858_Bicyclus_anynana_Bicyclus_anynana
+|            +--| (53)
+|            |  |        +--Hmel219001o_9225653_9226926_Heliconius_melpomene_Heliconius_melpomene
+|            |  |     +**| (61)
+|            |  |     |  +--Hmel217001o_13896244_13900156_Heliconius_melpomene_Heliconius_melpomene
+|            |  |  +**| (53)
+|            |  |  |  +--17_17619722_17623137_Heliconius_sara_Heliconius_sara
+|            |  +--| (68)
+|            |     |  +--Hdem.Herato1905_119138_121616_Heliconius_erato_Heliconius_erato
+|            |     +--| (70)
+|            |        +--Hdem.Herato1708_1468951_1476399_Heliconius_erato_Heliconius_erato
++------------| (100)
+             +--JAEQBL010000033.1_829243_833250_Danaus_plexippus_Danaus_plexippus
+
+Tree in newick format:
+
+(Hmel203003o_7514658_7515355_Heliconius_melpomene_Heliconius_melpomene:0.5523215914,Hdem.Herato0310_6125543_6127103_Heliconius_erato_Heliconius_erato:0.8285190296,(((((((5_6627228_6628458_Danaus_plexippus_Danaus_plexippus:0.5992012861,3_9907807_9909865_Heliconius_sara_Heliconius_sara:0.2673087723)100:0.8273148658,((4_2910901_2917348_Danaus_plexippus_Danaus_plexippus:0.4944671313,Hmel219001o_12794124_12797499_Heliconius_melpomene_Heliconius_melpomene:0.1671669237)95:0.0516929061,Hdem.Herato1910_471485_475096_Heliconius_erato_Heliconius_erato:0.3546091676)99:0.4619970741)77:0.1086045565,((((9_11893838_11906109_Bicyclus_anynana_Bicyclus_anynana:0.4453092131,(4_3035137_3035556_Danaus_plexippus_Danaus_plexippus:0.0451803122,9_11911587_11959553_Bicyclus_anynana_Bicyclus_anynana:0.0316802540)83:0.0228025584)44:0.0140829894,(19_16088965_16222519_Heliconius_sara_Heliconius_sara:0.0000022404,(((((Hmel219001o_12473769_12791778_Heliconius_melpomene_Heliconius_melpomene:1.4117104555,Hdem.Herato1910_447828_521981_Heliconius_erato_Heliconius_erato:0.0434510778)98:0.4986660069,(17_9940091_10139416_Bicyclus_anynana_Bicyclus_anynana:1.3635423764,(((Hmel204001o_5259657_5261873_Heliconius_melpomene_Heliconius_melpomene:0.7702242209,Hdem.Herato0411_2654010_2658804_Heliconius_erato_Heliconius_erato:0.0559745655)98:0.0415020723,4_7088664_7091110_Heliconius_sara_Heliconius_sara:0.0000024805)99:0.2940686745,17_10136128_10138102_Bicyclus_anynana_Bicyclus_anynana:0.2288420012)93:0.1806961197)93:0.1858267944)57:0.0895938365,25_5192027_5193183_Bicyclus_anynana_Bicyclus_anynana:0.7465344015)73:0.2454070688,((10_4647969_4650067_Bicyclus_anynana_Bicyclus_anynana:0.7205651528,(((14_9790506_9795341_Bicyclus_anynana_Bicyclus_anynana:0.4192748450,12_15302160_15303779_Heliconius_sara_Heliconius_sara:0.0324330971)79:0.0595553766,Hmel212001o_12442158_12444063_Heliconius_melpomene_Heliconius_melpomene:0.3980855512)79:0.0282540968,Hdem.Herato1202_15814310_15816301_Heliconius_erato_Heliconius_erato:0.0000026122)98:0.4697681614)90:0.1431876136,4_2949442_2950575_Danaus_plexippus_Danaus_plexippus:0.5555021744)59:0.1729566200)78:0.2891057820,(4_4514840_4519652_Danaus_plexippus_Danaus_plexippus:0.5375036262,((19_16219686_16222573_Heliconius_sara_Heliconius_sara:0.0000028630,Hmel219001o_12886927_12890226_Heliconius_melpomene_Heliconius_melpomene:0.6564770864)96:0.0351901337,Hdem.Herato1910_598751_601898_Heliconius_erato_Heliconius_erato:0.0000029384)96:0.2006477262)88:0.0447963661)100:1.2376780590)100:1.2110290930)75:0.0251283785,9_11976956_11979833_Bicyclus_anynana_Bicyclus_anynana:0.2218815166)87:0.1218150372,(((19_14542867_14544187_Heliconius_sara_Heliconius_sara:0.5685191999,Hdem.Herato1908_1594398_1597449_Heliconius_erato_Heliconius_erato:0.0000020980)80:0.1578563977,9_9009342_9017866_Bicyclus_anynana_Bicyclus_anynana:0.0000028853)83:0.0125322826,Hmel219001o_11482073_11485032_Heliconius_melpomene_Heliconius_melpomene:0.0073855066)98:0.1119870935)95:0.1178791955)62:0.0745615327,26_1782282_1782689_Bicyclus_anynana_Bicyclus_anynana:0.2991903904)42:0.0403332594,(26_1761318_1761704_Bicyclus_anynana_Bicyclus_anynana:0.0110676857,26_1770472_1770858_Bicyclus_anynana_Bicyclus_anynana:0.0000010004)100:0.1924183363)37:0.0861434002,(((Hmel219001o_9225653_9226926_Heliconius_melpomene_Heliconius_melpomene:0.1647959440,Hmel217001o_13896244_13900156_Heliconius_melpomene_Heliconius_melpomene:0.0493394885)61:0.0000028700,17_17619722_17623137_Heliconius_sara_Heliconius_sara:0.0875003561)53:0.0000025967,(Hdem.Herato1905_119138_121616_Heliconius_erato_Heliconius_erato:0.1641083198,Hdem.Herato1708_1468951_1476399_Heliconius_erato_Heliconius_erato:0.0276853316)70:0.1761949820)68:0.1519635012)53:0.1126337428,JAEQBL010000033.1_829243_833250_Danaus_plexippus_Danaus_plexippus:0.0899180969)100:1.5513042310);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -4913.155872
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++---Hmel203003o_7514658_7515355_Heliconius_melpomene_Heliconius_melpomene
+|
++-----Hdem.Herato0310_6125543_6127103_Heliconius_erato_Heliconius_erato
+|
+|                                 +----5_6627228_6628458_Danaus_plexippus_Danaus_plexippus
+|                           +-----| (100)
+|                           |     +--3_9907807_9909865_Heliconius_sara_Heliconius_sara
+|                        +--| (77)
+|                        |  |     +---4_2910901_2917348_Danaus_plexippus_Danaus_plexippus
+|                        |  |  +--| (95)
+|                        |  |  |  +--Hmel219001o_12794124_12797499_Heliconius_melpomene_Heliconius_melpomene
+|                        |  +--| (99)
+|                        |     +--Hdem.Herato1910_471485_475096_Heliconius_erato_Heliconius_erato
+|                     +--| (62)
+|                     |  |           +--9_11893838_11906109_Bicyclus_anynana_Bicyclus_anynana
+|                     |  |        +--| (44)
+|                     |  |        |  |  +--4_3035137_3035556_Danaus_plexippus_Danaus_plexippus
+|                     |  |        |  +--| (83)
+|                     |  |        |     +--9_11911587_11959553_Bicyclus_anynana_Bicyclus_anynana
+|                     |  |     +--| (75)
+|                     |  |     |  |         +--19_16088965_16222519_Heliconius_sara_Heliconius_sara
+|                     |  |     |  +---------| (100)
+|                     |  |     |            |                      +----------Hmel219001o_12473769_12791778_Heliconius_melpomene_Heliconius_melpomene
+|                     |  |     |            |                  +---| (98)
+|                     |  |     |            |                  |   +--Hdem.Herato1910_447828_521981_Heliconius_erato_Heliconius_erato
+|                     |  |     |            |               +--| (57)
+|                     |  |     |            |               |  |  +----------17_9940091_10139416_Bicyclus_anynana_Bicyclus_anynana
+|                     |  |     |            |               |  +--| (93)
+|                     |  |     |            |               |     |        +-----Hmel204001o_5259657_5261873_Heliconius_melpomene_Heliconius_melpomene
+|                     |  |     |            |               |     |     +--| (98)
+|                     |  |     |            |               |     |     |  +--Hdem.Herato0411_2654010_2658804_Heliconius_erato_Heliconius_erato
+|                     |  |     |            |               |     |  +--| (99)
+|                     |  |     |            |               |     |  |  +--4_7088664_7091110_Heliconius_sara_Heliconius_sara
+|                     |  |     |            |               |     +--| (93)
+|                     |  |     |            |               |        +--17_10136128_10138102_Bicyclus_anynana_Bicyclus_anynana
+|                     |  |     |            |            +--| (73)
+|                     |  |     |            |            |  +-----25_5192027_5193183_Bicyclus_anynana_Bicyclus_anynana
+|                     |  |     |            |         +--| (78)
+|                     |  |     |            |         |  |     +-----10_4647969_4650067_Bicyclus_anynana_Bicyclus_anynana
+|                     |  |     |            |         |  |  +--| (90)
+|                     |  |     |            |         |  |  |  |        +--14_9790506_9795341_Bicyclus_anynana_Bicyclus_anynana
+|                     |  |     |            |         |  |  |  |     +--| (79)
+|                     |  |     |            |         |  |  |  |     |  +--12_15302160_15303779_Heliconius_sara_Heliconius_sara
+|                     |  |     |            |         |  |  |  |  +--| (79)
+|                     |  |     |            |         |  |  |  |  |  +--Hmel212001o_12442158_12444063_Heliconius_melpomene_Heliconius_melpomene
+|                     |  |     |            |         |  |  |  +--| (98)
+|                     |  |     |            |         |  |  |     +--Hdem.Herato1202_15814310_15816301_Heliconius_erato_Heliconius_erato
+|                     |  |     |            |         |  +--| (59)
+|                     |  |     |            |         |     +---4_2949442_2950575_Danaus_plexippus_Danaus_plexippus
+|                     |  |     |            +---------| (100)
+|                     |  |     |                      |  +---4_4514840_4519652_Danaus_plexippus_Danaus_plexippus
+|                     |  |     |                      +--| (88)
+|                     |  |     |                         |     +--19_16219686_16222573_Heliconius_sara_Heliconius_sara
+|                     |  |     |                         |  +--| (96)
+|                     |  |     |                         |  |  +----Hmel219001o_12886927_12890226_Heliconius_melpomene_Heliconius_melpomene
+|                     |  |     |                         +--| (96)
+|                     |  |     |                            +--Hdem.Herato1910_598751_601898_Heliconius_erato_Heliconius_erato
+|                     |  |  +--| (87)
+|                     |  |  |  +--9_11976956_11979833_Bicyclus_anynana_Bicyclus_anynana
+|                     |  +--| (95)
+|                     |     |        +---19_14542867_14544187_Heliconius_sara_Heliconius_sara
+|                     |     |     +--| (80)
+|                     |     |     |  +--Hdem.Herato1908_1594398_1597449_Heliconius_erato_Heliconius_erato
+|                     |     |  +--| (83)
+|                     |     |  |  +--9_9009342_9017866_Bicyclus_anynana_Bicyclus_anynana
+|                     |     +--| (98)
+|                     |        +--Hmel219001o_11482073_11485032_Heliconius_melpomene_Heliconius_melpomene
+|                  +--| (42)
+|                  |  +--26_1782282_1782689_Bicyclus_anynana_Bicyclus_anynana
+|               +--| (37)
+|               |  |  +--26_1761318_1761704_Bicyclus_anynana_Bicyclus_anynana
+|               |  +--| (100)
+|               |     +--26_1770472_1770858_Bicyclus_anynana_Bicyclus_anynana
+|            +--| (53)
+|            |  |        +--Hmel219001o_9225653_9226926_Heliconius_melpomene_Heliconius_melpomene
+|            |  |     +--| (61)
+|            |  |     |  +--Hmel217001o_13896244_13900156_Heliconius_melpomene_Heliconius_melpomene
+|            |  |  +--| (53)
+|            |  |  |  +--17_17619722_17623137_Heliconius_sara_Heliconius_sara
+|            |  +--| (68)
+|            |     |  +--Hdem.Herato1905_119138_121616_Heliconius_erato_Heliconius_erato
+|            |     +--| (70)
+|            |        +--Hdem.Herato1708_1468951_1476399_Heliconius_erato_Heliconius_erato
++------------| (100)
+             +--JAEQBL010000033.1_829243_833250_Danaus_plexippus_Danaus_plexippus
+
+
+Consensus tree in newick format: 
+
+(Hmel203003o_7514658_7515355_Heliconius_melpomene_Heliconius_melpomene:0.5524251826,Hdem.Herato0310_6125543_6127103_Heliconius_erato_Heliconius_erato:0.8285185508,(((((((5_6627228_6628458_Danaus_plexippus_Danaus_plexippus:0.5992752684,3_9907807_9909865_Heliconius_sara_Heliconius_sara:0.2673299758)100:0.8273920756,((4_2910901_2917348_Danaus_plexippus_Danaus_plexippus:0.4945263432,Hmel219001o_12794124_12797499_Heliconius_melpomene_Heliconius_melpomene:0.1671827966)95:0.0517052233,Hdem.Herato1910_471485_475096_Heliconius_erato_Heliconius_erato:0.3546192013)99:0.4620464436)77:0.1085819239,((((9_11893838_11906109_Bicyclus_anynana_Bicyclus_anynana:0.4453468315,(4_3035137_3035556_Danaus_plexippus_Danaus_plexippus:0.0451855822,9_11911587_11959553_Bicyclus_anynana_Bicyclus_anynana:0.0316830388)83:0.0228187705)44:0.0142911418,(19_16088965_16222519_Heliconius_sara_Heliconius_sara:0.0000020141,(((((Hmel219001o_12473769_12791778_Heliconius_melpomene_Heliconius_melpomene:1.4120313550,Hdem.Herato1910_447828_521981_Heliconius_erato_Heliconius_erato:0.0433216636)98:0.4985789514,(17_9940091_10139416_Bicyclus_anynana_Bicyclus_anynana:1.3636435466,(((Hmel204001o_5259657_5261873_Heliconius_melpomene_Heliconius_melpomene:0.7702918780,Hdem.Herato0411_2654010_2658804_Heliconius_erato_Heliconius_erato:0.0560102629)98:0.0414887270,4_7088664_7091110_Heliconius_sara_Heliconius_sara:0.0000026641)99:0.2938403136,17_10136128_10138102_Bicyclus_anynana_Bicyclus_anynana:0.2291354496)93:0.1806519942)93:0.1856864422)57:0.0908786960,25_5192027_5193183_Bicyclus_anynana_Bicyclus_anynana:0.7469095312)73:0.2444400291,((10_4647969_4650067_Bicyclus_anynana_Bicyclus_anynana:0.7206266120,(((14_9790506_9795341_Bicyclus_anynana_Bicyclus_anynana:0.4193655796,12_15302160_15303779_Heliconius_sara_Heliconius_sara:0.0324126446)79:0.0595689676,Hmel212001o_12442158_12444063_Heliconius_melpomene_Heliconius_melpomene:0.3981572066)79:0.0282576562,Hdem.Herato1202_15814310_15816301_Heliconius_erato_Heliconius_erato:0.0000022723)98:0.4698203851)90:0.1431829939,4_2949442_2950575_Danaus_plexippus_Danaus_plexippus:0.5556464175)59:0.1730730728)78:0.2891054652,(4_4514840_4519652_Danaus_plexippus_Danaus_plexippus:0.5375911827,((19_16219686_16222573_Heliconius_sara_Heliconius_sara:0.0000022535,Hmel219001o_12886927_12890226_Heliconius_melpomene_Heliconius_melpomene:0.6565470424)96:0.0351915437,Hdem.Herato1910_598751_601898_Heliconius_erato_Heliconius_erato:0.0000022723)96:0.2006559502)88:0.0448281732)100:1.2377844554)100:1.2110959906)75:0.0250006335,9_11976956_11979833_Bicyclus_anynana_Bicyclus_anynana:0.2218734629)87:0.1218079819,(((19_14542867_14544187_Heliconius_sara_Heliconius_sara:0.5685796684,Hdem.Herato1908_1594398_1597449_Heliconius_erato_Heliconius_erato:0.0000023590)80:0.1578756342,9_9009342_9017866_Bicyclus_anynana_Bicyclus_anynana:0.0000022723)83:0.0125341603,Hmel219001o_11482073_11485032_Heliconius_melpomene_Heliconius_melpomene:0.0073868931)98:0.1120094854)95:0.1178776117)62:0.0745669486,26_1782282_1782689_Bicyclus_anynana_Bicyclus_anynana:0.2992242461)42:0.0403369545,(26_1761318_1761704_Bicyclus_anynana_Bicyclus_anynana:0.0110688729,26_1770472_1770858_Bicyclus_anynana_Bicyclus_anynana:0.0000022723)100:0.1924376209)37:0.0861271063,(((Hmel219001o_9225653_9226926_Heliconius_melpomene_Heliconius_melpomene:0.1648080567,Hmel217001o_13896244_13900156_Heliconius_melpomene_Heliconius_melpomene:0.0493450425)61:0.0000020289,17_17619722_17623137_Heliconius_sara_Heliconius_sara:0.0875087309)53:0.0000021925,(Hdem.Herato1905_119138_121616_Heliconius_erato_Heliconius_erato:0.1641064388,Hdem.Herato1708_1468951_1476399_Heliconius_erato_Heliconius_erato:0.0276923753)70:0.1761974640)68:0.1519685412)53:0.1129357830,JAEQBL010000033.1_829243_833250_Danaus_plexippus_Danaus_plexippus:0.0897429475)100:1.5513379664);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t tree_FAD.treefile -m "PMB+R4{0.328449,0.340741,0.451924,0.703104,0.18384,1.98432,0.035787,5.74331}" --length 97
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s trimal_aligned_combined_FAD_multisp_genes.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s trimal_aligned_combined_FAD_multisp_genes.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Fri Jun 13 19:47:45 2025
+Total CPU time used: 86.75139 seconds (0h:1m:26s)
+Total wall-clock time used: 89.75767051 seconds (0h:1m:29s)
+

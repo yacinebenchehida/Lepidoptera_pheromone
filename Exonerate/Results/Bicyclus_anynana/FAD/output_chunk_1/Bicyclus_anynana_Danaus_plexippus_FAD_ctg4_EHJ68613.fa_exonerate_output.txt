@@ -1,0 +1,259 @@
+Command line: [exonerate --model protein2genome Danaus_plexippus_FAD_ctg4_EHJ68613.fa /mnt/scratch/projects/biol-specgen-2018/yacine/Pheromones/Blast/Inputs/Bicyclus_anynana/Bicyclus_anynana_genome.fa --querytype protein --bestn 10 --showvulgar no --showtargetgff yes --showalignment no --percent 20]
+Hostname: [node032.viking2.yor.alces.network]
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+14	exonerate:protein2genome:local	gene	9788486	9795404	1680	+	.	gene_id 0 ; sequence Danaus_plexippus_FAD_ctg4_EHJ68613 ; gene_orientation + ; identity 87.21 ; similarity 94.19
+14	exonerate:protein2genome:local	cds	9788486	9788711	.	+	.	
+14	exonerate:protein2genome:local	exon	9788486	9788711	.	+	.	insertions 0 ; deletions 0 ; identity 82.67 ; similarity 88.00
+14	exonerate:protein2genome:local	splice5	9788712	9788713	.	+	.	intron_id 1 ; splice_site "GT"
+14	exonerate:protein2genome:local	intron	9788712	9790506	.	+	.	intron_id 1
+14	exonerate:protein2genome:local	splice3	9790505	9790506	.	+	.	intron_id 0 ; splice_site "AG"
+14	exonerate:protein2genome:local	cds	9790507	9790637	.	+	.	
+14	exonerate:protein2genome:local	exon	9790507	9790637	.	+	.	insertions 0 ; deletions 0 ; identity 84.09 ; similarity 93.18
+14	exonerate:protein2genome:local	splice5	9790638	9790639	.	+	.	intron_id 2 ; splice_site "GT"
+14	exonerate:protein2genome:local	intron	9790638	9791342	.	+	.	intron_id 2
+14	exonerate:protein2genome:local	splice3	9791341	9791342	.	+	.	intron_id 1 ; splice_site "AG"
+14	exonerate:protein2genome:local	cds	9791343	9791548	.	+	.	
+14	exonerate:protein2genome:local	exon	9791343	9791548	.	+	.	insertions 0 ; deletions 0 ; identity 91.18 ; similarity 97.06
+14	exonerate:protein2genome:local	splice5	9791549	9791550	.	+	.	intron_id 3 ; splice_site "GT"
+14	exonerate:protein2genome:local	intron	9791549	9793126	.	+	.	intron_id 3
+14	exonerate:protein2genome:local	splice3	9793125	9793126	.	+	.	intron_id 2 ; splice_site "AG"
+14	exonerate:protein2genome:local	cds	9793127	9793312	.	+	.	
+14	exonerate:protein2genome:local	exon	9793127	9793312	.	+	.	insertions 0 ; deletions 0 ; identity 86.89 ; similarity 96.72
+14	exonerate:protein2genome:local	splice5	9793313	9793314	.	+	.	intron_id 4 ; splice_site "GT"
+14	exonerate:protein2genome:local	intron	9793313	9793793	.	+	.	intron_id 4
+14	exonerate:protein2genome:local	splice3	9793792	9793793	.	+	.	intron_id 3 ; splice_site "AG"
+14	exonerate:protein2genome:local	cds	9793794	9793950	.	+	.	
+14	exonerate:protein2genome:local	exon	9793794	9793950	.	+	.	insertions 0 ; deletions 0 ; identity 90.57 ; similarity 96.23
+14	exonerate:protein2genome:local	splice5	9793951	9793952	.	+	.	intron_id 5 ; splice_site "GT"
+14	exonerate:protein2genome:local	intron	9793951	9795269	.	+	.	intron_id 5
+14	exonerate:protein2genome:local	splice3	9795268	9795269	.	+	.	intron_id 4 ; splice_site "AG"
+14	exonerate:protein2genome:local	cds	9795270	9795404	.	+	.	
+14	exonerate:protein2genome:local	exon	9795270	9795404	.	+	.	insertions 0 ; deletions 0 ; identity 86.67 ; similarity 95.56
+14	exonerate:protein2genome:local	similarity	9788486	9795404	1680	+	.	alignment_id 0 ; Query Danaus_plexippus_FAD_ctg4_EHJ68613 ; Align 9788486 1 225 ; Align 9790509 77 129 ; Align 9791343 120 204 ; Align 9793128 189 183 ; Align 9793795 251 156 ; Align 9795270 303 135
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+9	exonerate:protein2genome:local	gene	9009306	9017953	973	-	.	gene_id 0 ; sequence Danaus_plexippus_FAD_ctg4_EHJ68613 ; gene_orientation + ; identity 55.25 ; similarity 75.62
+9	exonerate:protein2genome:local	cds	9017761	9017953	.	-	.	
+9	exonerate:protein2genome:local	exon	9017761	9017953	.	-	.	insertions 0 ; deletions 2 ; identity 46.88 ; similarity 71.88
+9	exonerate:protein2genome:local	splice5	9017759	9017760	.	-	.	intron_id 1 ; splice_site "GT"
+9	exonerate:protein2genome:local	intron	9014869	9017760	.	-	.	intron_id 1
+9	exonerate:protein2genome:local	splice3	9014869	9014870	.	-	.	intron_id 0 ; splice_site "AG"
+9	exonerate:protein2genome:local	cds	9014738	9014868	.	-	.	
+9	exonerate:protein2genome:local	exon	9014738	9014868	.	-	.	insertions 0 ; deletions 0 ; identity 50.00 ; similarity 81.82
+9	exonerate:protein2genome:local	splice5	9014736	9014737	.	-	.	intron_id 2 ; splice_site "GT"
+9	exonerate:protein2genome:local	intron	9013438	9014737	.	-	.	intron_id 2
+9	exonerate:protein2genome:local	splice3	9013438	9013439	.	-	.	intron_id 1 ; splice_site "AG"
+9	exonerate:protein2genome:local	cds	9013232	9013437	.	-	.	
+9	exonerate:protein2genome:local	exon	9013232	9013437	.	-	.	insertions 0 ; deletions 0 ; identity 60.29 ; similarity 77.94
+9	exonerate:protein2genome:local	splice5	9013230	9013231	.	-	.	intron_id 3 ; splice_site "GT"
+9	exonerate:protein2genome:local	intron	9009757	9013231	.	-	.	intron_id 3
+9	exonerate:protein2genome:local	splice3	9009757	9009758	.	-	.	intron_id 2 ; splice_site "AG"
+9	exonerate:protein2genome:local	cds	9009306	9009756	.	-	.	
+9	exonerate:protein2genome:local	exon	9009306	9009756	.	-	.	insertions 3 ; deletions 1 ; identity 58.39 ; similarity 74.50
+9	exonerate:protein2genome:local	similarity	9009306	9017953	973	-	.	alignment_id 0 ; Query Danaus_plexippus_FAD_ctg4_EHJ68613 ; Align 9017954 10 48 ; Align 9017906 28 144 ; Align 9014867 77 129 ; Align 9013438 120 204 ; Align 9009756 189 231 ; Align 9009522 266 60 ; Align 9009462 287 156
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+9	exonerate:protein2genome:local	gene	11910481	11959583	862	+	.	gene_id 0 ; sequence Danaus_plexippus_FAD_ctg4_EHJ68613 ; gene_orientation + ; identity 52.35 ; similarity 73.83
+9	exonerate:protein2genome:local	cds	11910481	11910604	.	+	.	
+9	exonerate:protein2genome:local	exon	11910481	11910604	.	+	.	insertions 0 ; deletions 0 ; identity 41.46 ; similarity 70.73
+9	exonerate:protein2genome:local	splice5	11910605	11910606	.	+	.	intron_id 1 ; splice_site "GT"
+9	exonerate:protein2genome:local	intron	11910605	11947629	.	+	.	intron_id 1
+9	exonerate:protein2genome:local	splice3	11947628	11947629	.	+	.	intron_id 0 ; splice_site "AG"
+9	exonerate:protein2genome:local	cds	11947630	11947760	.	+	.	
+9	exonerate:protein2genome:local	exon	11947630	11947760	.	+	.	insertions 0 ; deletions 0 ; identity 54.55 ; similarity 77.27
+9	exonerate:protein2genome:local	splice5	11947761	11947762	.	+	.	intron_id 2 ; splice_site "GT"
+9	exonerate:protein2genome:local	intron	11947761	11956866	.	+	.	intron_id 2
+9	exonerate:protein2genome:local	splice3	11956865	11956866	.	+	.	intron_id 1 ; splice_site "AG"
+9	exonerate:protein2genome:local	cds	11956867	11957072	.	+	.	
+9	exonerate:protein2genome:local	exon	11956867	11957072	.	+	.	insertions 0 ; deletions 0 ; identity 60.29 ; similarity 77.94
+9	exonerate:protein2genome:local	splice5	11957073	11957074	.	+	.	intron_id 3 ; splice_site "GT"
+9	exonerate:protein2genome:local	intron	11957073	11959141	.	+	.	intron_id 3
+9	exonerate:protein2genome:local	splice3	11959140	11959141	.	+	.	intron_id 2 ; splice_site "AG"
+9	exonerate:protein2genome:local	cds	11959142	11959583	.	+	.	
+9	exonerate:protein2genome:local	exon	11959142	11959583	.	+	.	insertions 3 ; deletions 2 ; identity 51.37 ; similarity 71.92
+9	exonerate:protein2genome:local	similarity	11910481	11959583	862	+	.	alignment_id 0 ; Query Danaus_plexippus_FAD_ctg4_EHJ68613 ; Align 11910481 35 123 ; Align 11947632 77 129 ; Align 11956867 120 204 ; Align 11959143 189 57 ; Align 11959200 209 171 ; Align 11959374 266 69 ; Align 11959443 290 141
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+9	exonerate:protein2genome:local	gene	11976938	12082810	718	-	.	gene_id 0 ; sequence Danaus_plexippus_FAD_ctg4_EHJ68613 ; gene_orientation + ; identity 53.82 ; similarity 73.09
+9	exonerate:protein2genome:local	cds	12082671	12082810	.	-	.	
+9	exonerate:protein2genome:local	exon	12082671	12082810	.	-	.	insertions 0 ; deletions 0 ; identity 58.70 ; similarity 78.26
+9	exonerate:protein2genome:local	splice5	12082669	12082670	.	-	.	intron_id 1 ; splice_site "GT"
+9	exonerate:protein2genome:local	intron	12081130	12082670	.	-	.	intron_id 1
+9	exonerate:protein2genome:local	splice3	12081130	12081131	.	-	.	intron_id 0 ; splice_site "AG"
+9	exonerate:protein2genome:local	cds	12080956	12081129	.	-	.	
+9	exonerate:protein2genome:local	exon	12080956	12081129	.	-	.	insertions 0 ; deletions 0 ; identity 61.40 ; similarity 77.19
+9	exonerate:protein2genome:local	splice5	12080954	12080955	.	-	.	intron_id 2 ; splice_site "GT"
+9	exonerate:protein2genome:local	intron	12078194	12080955	.	-	.	intron_id 2
+9	exonerate:protein2genome:local	splice3	12078194	12078195	.	-	.	intron_id 1 ; splice_site "AG"
+9	exonerate:protein2genome:local	cds	12078008	12078193	.	-	.	
+9	exonerate:protein2genome:local	exon	12078008	12078193	.	-	.	insertions 0 ; deletions 0 ; identity 42.62 ; similarity 63.93
+9	exonerate:protein2genome:local	splice5	12078006	12078007	.	-	.	intron_id 3 ; splice_site "GT"
+9	exonerate:protein2genome:local	intron	11977197	12078007	.	-	.	intron_id 3
+9	exonerate:protein2genome:local	splice3	11977197	11977198	.	-	.	intron_id 2 ; splice_site "AA"
+9	exonerate:protein2genome:local	cds	11976938	11977196	.	-	.	
+9	exonerate:protein2genome:local	exon	11976938	11977196	.	-	.	insertions 3 ; deletions 1 ; identity 54.12 ; similarity 74.12
+9	exonerate:protein2genome:local	similarity	11976938	12082810	718	-	.	alignment_id 0 ; Query Danaus_plexippus_FAD_ctg4_EHJ68613 ; Align 12082811 84 138 ; Align 12081129 131 171 ; Align 12078193 189 183 ; Align 11977196 251 30 ; Align 11977163 261 84 ; Align 11977079 290 141
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+25	exonerate:protein2genome:local	gene	5189143	5193231	676	+	.	gene_id 0 ; sequence Danaus_plexippus_FAD_ctg4_EHJ68613 ; gene_orientation + ; identity 45.64 ; similarity 66.55
+25	exonerate:protein2genome:local	cds	5189143	5189260	.	+	.	
+25	exonerate:protein2genome:local	exon	5189143	5189260	.	+	.	insertions 0 ; deletions 0 ; identity 43.59 ; similarity 74.36
+25	exonerate:protein2genome:local	splice5	5189261	5189262	.	+	.	intron_id 1 ; splice_site "GT"
+25	exonerate:protein2genome:local	intron	5189261	5190490	.	+	.	intron_id 1
+25	exonerate:protein2genome:local	splice3	5190489	5190490	.	+	.	intron_id 0 ; splice_site "AG"
+25	exonerate:protein2genome:local	cds	5190491	5190665	.	+	.	
+25	exonerate:protein2genome:local	exon	5190491	5190665	.	+	.	insertions 0 ; deletions 0 ; identity 45.61 ; similarity 68.42
+25	exonerate:protein2genome:local	splice5	5190666	5190667	.	+	.	intron_id 2 ; splice_site "GT"
+25	exonerate:protein2genome:local	intron	5190666	5192028	.	+	.	intron_id 2
+25	exonerate:protein2genome:local	splice3	5192027	5192028	.	+	.	intron_id 1 ; splice_site "AG"
+25	exonerate:protein2genome:local	cds	5192029	5192190	.	+	.	
+25	exonerate:protein2genome:local	exon	5192029	5192190	.	+	.	insertions 0 ; deletions 0 ; identity 52.83 ; similarity 71.70
+25	exonerate:protein2genome:local	splice5	5192191	5192192	.	+	.	intron_id 3 ; splice_site "GT"
+25	exonerate:protein2genome:local	intron	5192191	5192813	.	+	.	intron_id 3
+25	exonerate:protein2genome:local	splice3	5192812	5192813	.	+	.	intron_id 2 ; splice_site "AG"
+25	exonerate:protein2genome:local	cds	5192814	5193231	.	+	.	
+25	exonerate:protein2genome:local	exon	5192814	5193231	.	+	.	insertions 3 ; deletions 2 ; identity 43.48 ; similarity 61.59
+25	exonerate:protein2genome:local	similarity	5189143	5193231	676	+	.	alignment_id 0 ; Query Danaus_plexippus_FAD_ctg4_EHJ68613 ; Align 5189143 37 117 ; Align 5190493 77 171 ; Align 5192030 135 159 ; Align 5192815 189 96 ; Align 5192911 222 132 ; Align 5193046 266 60 ; Align 5193106 287 126
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+26	exonerate:protein2genome:local	gene	1734157	1782695	669	+	.	gene_id 0 ; sequence Danaus_plexippus_FAD_ctg4_EHJ68613 ; gene_orientation + ; identity 52.23 ; similarity 73.68
+26	exonerate:protein2genome:local	cds	1734157	1734326	.	+	.	
+26	exonerate:protein2genome:local	exon	1734157	1734326	.	+	.	insertions 0 ; deletions 0 ; identity 50.00 ; similarity 75.00
+26	exonerate:protein2genome:local	splice5	1734327	1734328	.	+	.	intron_id 1 ; splice_site "GT"
+26	exonerate:protein2genome:local	intron	1734327	1759629	.	+	.	intron_id 1
+26	exonerate:protein2genome:local	splice3	1759628	1759629	.	+	.	intron_id 0 ; splice_site "AG"
+26	exonerate:protein2genome:local	cds	1759630	1759791	.	+	.	
+26	exonerate:protein2genome:local	exon	1759630	1759791	.	+	.	insertions 0 ; deletions 0 ; identity 64.15 ; similarity 81.13
+26	exonerate:protein2genome:local	splice5	1759792	1759793	.	+	.	intron_id 2 ; splice_site "GT"
+26	exonerate:protein2genome:local	intron	1759792	1782277	.	+	.	intron_id 2
+26	exonerate:protein2genome:local	splice3	1782276	1782277	.	+	.	intron_id 1 ; splice_site "AG"
+26	exonerate:protein2genome:local	cds	1782278	1782695	.	+	.	
+26	exonerate:protein2genome:local	exon	1782278	1782695	.	+	.	insertions 3 ; deletions 2 ; identity 48.55 ; similarity 70.29
+26	exonerate:protein2genome:local	similarity	1734157	1782695	669	+	.	alignment_id 0 ; Query Danaus_plexippus_FAD_ctg4_EHJ68613 ; Align 1734157 78 168 ; Align 1759631 135 159 ; Align 1782279 189 96 ; Align 1782375 222 132 ; Align 1782510 266 60 ; Align 1782570 287 126
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+9	exonerate:protein2genome:local	gene	11871994	11895670	663	+	.	gene_id 0 ; sequence Danaus_plexippus_FAD_ctg4_EHJ68613 ; gene_orientation + ; identity 47.83 ; similarity 69.57
+9	exonerate:protein2genome:local	cds	11871994	11872072	.	+	.	
+9	exonerate:protein2genome:local	exon	11871994	11872072	.	+	.	insertions 0 ; deletions 0 ; identity 30.77 ; similarity 50.00
+9	exonerate:protein2genome:local	splice5	11872073	11872074	.	+	.	intron_id 1 ; splice_site "GT"
+9	exonerate:protein2genome:local	intron	11872073	11893805	.	+	.	intron_id 1
+9	exonerate:protein2genome:local	splice3	11893804	11893805	.	+	.	intron_id 0 ; splice_site "AG"
+9	exonerate:protein2genome:local	cds	11893806	11893936	.	+	.	
+9	exonerate:protein2genome:local	exon	11893806	11893936	.	+	.	insertions 0 ; deletions 0 ; identity 50.00 ; similarity 79.55
+9	exonerate:protein2genome:local	splice5	11893937	11893938	.	+	.	intron_id 2 ; splice_site "GT"
+9	exonerate:protein2genome:local	intron	11893937	11894313	.	+	.	intron_id 2
+9	exonerate:protein2genome:local	splice3	11894312	11894313	.	+	.	intron_id 1 ; splice_site "AG"
+9	exonerate:protein2genome:local	cds	11894314	11894519	.	+	.	
+9	exonerate:protein2genome:local	exon	11894314	11894519	.	+	.	insertions 0 ; deletions 0 ; identity 60.29 ; similarity 76.47
+9	exonerate:protein2genome:local	splice5	11894520	11894521	.	+	.	intron_id 3 ; splice_site "GT"
+9	exonerate:protein2genome:local	intron	11894520	11895249	.	+	.	intron_id 3
+9	exonerate:protein2genome:local	splice3	11895248	11895249	.	+	.	intron_id 2 ; splice_site "AG"
+9	exonerate:protein2genome:local	cds	11895250	11895670	.	+	.	
+9	exonerate:protein2genome:local	exon	11895250	11895670	.	+	.	insertions 3 ; deletions 2 ; identity 44.60 ; similarity 66.91
+9	exonerate:protein2genome:local	similarity	11871994	11895670	663	+	.	alignment_id 0 ; Query Danaus_plexippus_FAD_ctg4_EHJ68613 ; Align 11871994 50 78 ; Align 11893808 77 129 ; Align 11894314 120 204 ; Align 11895251 189 57 ; Align 11895308 209 171 ; Align 11895482 266 66 ; Align 11895548 289 123
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+17	exonerate:protein2genome:local	gene	10119134	10120254	430	+	.	gene_id 0 ; sequence Danaus_plexippus_FAD_ctg4_EHJ68613 ; gene_orientation + ; identity 44.25 ; similarity 68.39
+17	exonerate:protein2genome:local	cds	10119134	10119265	.	+	.	
+17	exonerate:protein2genome:local	exon	10119134	10119265	.	+	.	insertions 0 ; deletions 0 ; identity 42.22 ; similarity 71.11
+17	exonerate:protein2genome:local	splice5	10119266	10119267	.	+	.	intron_id 1 ; splice_site "GT"
+17	exonerate:protein2genome:local	intron	10119266	10119744	.	+	.	intron_id 1
+17	exonerate:protein2genome:local	splice3	10119743	10119744	.	+	.	intron_id 0 ; splice_site "AG"
+17	exonerate:protein2genome:local	cds	10119745	10119950	.	+	.	
+17	exonerate:protein2genome:local	exon	10119745	10119950	.	+	.	insertions 0 ; deletions 0 ; identity 54.41 ; similarity 79.41
+17	exonerate:protein2genome:local	splice5	10119951	10119952	.	+	.	intron_id 2 ; splice_site "GT"
+17	exonerate:protein2genome:local	intron	10119951	10120067	.	+	.	intron_id 2
+17	exonerate:protein2genome:local	splice3	10120066	10120067	.	+	.	intron_id 1 ; splice_site "AG"
+17	exonerate:protein2genome:local	cds	10120068	10120254	.	+	.	
+17	exonerate:protein2genome:local	exon	10120068	10120254	.	+	.	insertions 0 ; deletions 0 ; identity 33.87 ; similarity 54.84
+17	exonerate:protein2genome:local	similarity	10119134	10120254	430	+	.	alignment_id 0 ; Query Danaus_plexippus_FAD_ctg4_EHJ68613 ; Align 10119134 76 132 ; Align 10119745 120 204 ; Align 10120069 189 186
+# --- END OF GFF DUMP ---
+#
+-- completed exonerate analysis

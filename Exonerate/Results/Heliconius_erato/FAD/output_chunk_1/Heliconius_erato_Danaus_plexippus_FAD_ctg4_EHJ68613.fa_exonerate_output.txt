@@ -1,0 +1,200 @@
+Command line: [exonerate --model protein2genome Danaus_plexippus_FAD_ctg4_EHJ68613.fa /mnt/scratch/projects/biol-specgen-2018/yacine/Pheromones/Blast/Inputs/Heliconius_erato/Heliconius_erato_genome.fa --querytype protein --bestn 10 --showvulgar no --showtargetgff yes --showalignment no --percent 20]
+Hostname: [node032.viking2.yor.alces.network]
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hdem.Herato1202	exonerate:protein2genome:local	gene	15813999	15816388	1649	+	.	gene_id 0 ; sequence Danaus_plexippus_FAD_ctg4_EHJ68613 ; gene_orientation + ; identity 86.65 ; similarity 92.05
+Hdem.Herato1202	exonerate:protein2genome:local	cds	15813999	15814224	.	+	.	
+Hdem.Herato1202	exonerate:protein2genome:local	exon	15813999	15814224	.	+	.	insertions 0 ; deletions 0 ; identity 86.67 ; similarity 90.67
+Hdem.Herato1202	exonerate:protein2genome:local	splice5	15814225	15814226	.	+	.	intron_id 1 ; splice_site "GT"
+Hdem.Herato1202	exonerate:protein2genome:local	intron	15814225	15814310	.	+	.	intron_id 1
+Hdem.Herato1202	exonerate:protein2genome:local	splice3	15814309	15814310	.	+	.	intron_id 0 ; splice_site "AG"
+Hdem.Herato1202	exonerate:protein2genome:local	cds	15814311	15814441	.	+	.	
+Hdem.Herato1202	exonerate:protein2genome:local	exon	15814311	15814441	.	+	.	insertions 0 ; deletions 0 ; identity 86.36 ; similarity 90.91
+Hdem.Herato1202	exonerate:protein2genome:local	splice5	15814442	15814443	.	+	.	intron_id 2 ; splice_site "GT"
+Hdem.Herato1202	exonerate:protein2genome:local	intron	15814442	15814891	.	+	.	intron_id 2
+Hdem.Herato1202	exonerate:protein2genome:local	splice3	15814890	15814891	.	+	.	intron_id 1 ; splice_site "AG"
+Hdem.Herato1202	exonerate:protein2genome:local	cds	15814892	15815097	.	+	.	
+Hdem.Herato1202	exonerate:protein2genome:local	exon	15814892	15815097	.	+	.	insertions 0 ; deletions 0 ; identity 91.18 ; similarity 95.59
+Hdem.Herato1202	exonerate:protein2genome:local	splice5	15815098	15815099	.	+	.	intron_id 3 ; splice_site "GT"
+Hdem.Herato1202	exonerate:protein2genome:local	intron	15815098	15815174	.	+	.	intron_id 3
+Hdem.Herato1202	exonerate:protein2genome:local	splice3	15815173	15815174	.	+	.	intron_id 2 ; splice_site "AG"
+Hdem.Herato1202	exonerate:protein2genome:local	cds	15815175	15815360	.	+	.	
+Hdem.Herato1202	exonerate:protein2genome:local	exon	15815175	15815360	.	+	.	insertions 0 ; deletions 0 ; identity 85.25 ; similarity 91.80
+Hdem.Herato1202	exonerate:protein2genome:local	splice5	15815361	15815362	.	+	.	intron_id 4 ; splice_site "GT"
+Hdem.Herato1202	exonerate:protein2genome:local	intron	15815361	15815756	.	+	.	intron_id 4
+Hdem.Herato1202	exonerate:protein2genome:local	splice3	15815755	15815756	.	+	.	intron_id 3 ; splice_site "AG"
+Hdem.Herato1202	exonerate:protein2genome:local	cds	15815757	15815913	.	+	.	
+Hdem.Herato1202	exonerate:protein2genome:local	exon	15815757	15815913	.	+	.	insertions 0 ; deletions 0 ; identity 90.57 ; similarity 94.34
+Hdem.Herato1202	exonerate:protein2genome:local	splice5	15815914	15815915	.	+	.	intron_id 5 ; splice_site "GT"
+Hdem.Herato1202	exonerate:protein2genome:local	intron	15815914	15816229	.	+	.	intron_id 5
+Hdem.Herato1202	exonerate:protein2genome:local	splice3	15816228	15816229	.	+	.	intron_id 4 ; splice_site "AG"
+Hdem.Herato1202	exonerate:protein2genome:local	cds	15816230	15816388	.	+	.	
+Hdem.Herato1202	exonerate:protein2genome:local	exon	15816230	15816388	.	+	.	insertions 0 ; deletions 0 ; identity 77.36 ; similarity 88.68
+Hdem.Herato1202	exonerate:protein2genome:local	similarity	15813999	15816388	1649	+	.	alignment_id 0 ; Query Danaus_plexippus_FAD_ctg4_EHJ68613 ; Align 15813999 1 225 ; Align 15814313 77 129 ; Align 15814892 120 204 ; Align 15815176 189 183 ; Align 15815758 251 156 ; Align 15816230 303 159
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hdem.Herato1908	exonerate:protein2genome:local	gene	1594362	1599282	948	-	.	gene_id 0 ; sequence Danaus_plexippus_FAD_ctg4_EHJ68613 ; gene_orientation + ; identity 53.70 ; similarity 75.62
+Hdem.Herato1908	exonerate:protein2genome:local	cds	1599090	1599282	.	-	.	
+Hdem.Herato1908	exonerate:protein2genome:local	exon	1599090	1599282	.	-	.	insertions 0 ; deletions 2 ; identity 46.88 ; similarity 70.31
+Hdem.Herato1908	exonerate:protein2genome:local	splice5	1599088	1599089	.	-	.	intron_id 1 ; splice_site "GT"
+Hdem.Herato1908	exonerate:protein2genome:local	intron	1597482	1599089	.	-	.	intron_id 1
+Hdem.Herato1908	exonerate:protein2genome:local	splice3	1597482	1597483	.	-	.	intron_id 0 ; splice_site "AG"
+Hdem.Herato1908	exonerate:protein2genome:local	cds	1597351	1597481	.	-	.	
+Hdem.Herato1908	exonerate:protein2genome:local	exon	1597351	1597481	.	-	.	insertions 0 ; deletions 0 ; identity 47.73 ; similarity 81.82
+Hdem.Herato1908	exonerate:protein2genome:local	splice5	1597349	1597350	.	-	.	intron_id 2 ; splice_site "GT"
+Hdem.Herato1908	exonerate:protein2genome:local	intron	1595555	1597350	.	-	.	intron_id 2
+Hdem.Herato1908	exonerate:protein2genome:local	splice3	1595555	1595556	.	-	.	intron_id 1 ; splice_site "AG"
+Hdem.Herato1908	exonerate:protein2genome:local	cds	1595349	1595554	.	-	.	
+Hdem.Herato1908	exonerate:protein2genome:local	exon	1595349	1595554	.	-	.	insertions 0 ; deletions 0 ; identity 60.29 ; similarity 79.41
+Hdem.Herato1908	exonerate:protein2genome:local	splice5	1595347	1595348	.	-	.	intron_id 3 ; splice_site "GT"
+Hdem.Herato1908	exonerate:protein2genome:local	intron	1594813	1595348	.	-	.	intron_id 3
+Hdem.Herato1908	exonerate:protein2genome:local	splice3	1594813	1594814	.	-	.	intron_id 2 ; splice_site "AG"
+Hdem.Herato1908	exonerate:protein2genome:local	cds	1594362	1594812	.	-	.	
+Hdem.Herato1908	exonerate:protein2genome:local	exon	1594362	1594812	.	-	.	insertions 3 ; deletions 1 ; identity 55.70 ; similarity 74.50
+Hdem.Herato1908	exonerate:protein2genome:local	similarity	1594362	1599282	948	-	.	alignment_id 0 ; Query Danaus_plexippus_FAD_ctg4_EHJ68613 ; Align 1599283 10 48 ; Align 1599235 28 144 ; Align 1597480 77 129 ; Align 1595555 120 204 ; Align 1594812 189 231 ; Align 1594578 266 60 ; Align 1594518 287 156
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hdem.Herato1910	exonerate:protein2genome:local	gene	598751	601922	747	+	.	gene_id 0 ; sequence Danaus_plexippus_FAD_ctg4_EHJ68613 ; gene_orientation + ; identity 52.71 ; similarity 73.26
+Hdem.Herato1910	exonerate:protein2genome:local	cds	598751	598882	.	+	.	
+Hdem.Herato1910	exonerate:protein2genome:local	exon	598751	598882	.	+	.	insertions 0 ; deletions 0 ; identity 60.00 ; similarity 80.00
+Hdem.Herato1910	exonerate:protein2genome:local	splice5	598883	598884	.	+	.	intron_id 1 ; splice_site "GT"
+Hdem.Herato1910	exonerate:protein2genome:local	intron	598883	600881	.	+	.	intron_id 1
+Hdem.Herato1910	exonerate:protein2genome:local	splice3	600880	600881	.	+	.	intron_id 0 ; splice_site "AG"
+Hdem.Herato1910	exonerate:protein2genome:local	cds	600882	601087	.	+	.	
+Hdem.Herato1910	exonerate:protein2genome:local	exon	600882	601087	.	+	.	insertions 0 ; deletions 0 ; identity 58.82 ; similarity 77.94
+Hdem.Herato1910	exonerate:protein2genome:local	splice5	601088	601089	.	+	.	intron_id 2 ; splice_site "GT"
+Hdem.Herato1910	exonerate:protein2genome:local	intron	601088	601480	.	+	.	intron_id 2
+Hdem.Herato1910	exonerate:protein2genome:local	splice3	601479	601480	.	+	.	intron_id 1 ; splice_site "AG"
+Hdem.Herato1910	exonerate:protein2genome:local	cds	601481	601922	.	+	.	
+Hdem.Herato1910	exonerate:protein2genome:local	exon	601481	601922	.	+	.	insertions 3 ; deletions 2 ; identity 47.95 ; similarity 69.18
+Hdem.Herato1910	exonerate:protein2genome:local	similarity	598751	601922	747	+	.	alignment_id 0 ; Query Danaus_plexippus_FAD_ctg4_EHJ68613 ; Align 598751 76 132 ; Align 600882 120 204 ; Align 601482 189 57 ; Align 601539 209 171 ; Align 601713 266 69 ; Align 601782 290 141
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hdem.Herato1905	exonerate:protein2genome:local	gene	119156	121619	678	-	.	gene_id 0 ; sequence Danaus_plexippus_FAD_ctg4_EHJ68613 ; gene_orientation + ; identity 52.02 ; similarity 70.56
+Hdem.Herato1905	exonerate:protein2genome:local	cds	121447	121619	.	-	.	
+Hdem.Herato1905	exonerate:protein2genome:local	exon	121447	121619	.	-	.	insertions 0 ; deletions 0 ; identity 47.37 ; similarity 73.68
+Hdem.Herato1905	exonerate:protein2genome:local	splice5	121445	121446	.	-	.	intron_id 1 ; splice_site "GT"
+Hdem.Herato1905	exonerate:protein2genome:local	intron	120963	121446	.	-	.	intron_id 1
+Hdem.Herato1905	exonerate:protein2genome:local	splice3	120963	120964	.	-	.	intron_id 0 ; splice_site "AG"
+Hdem.Herato1905	exonerate:protein2genome:local	cds	120801	120962	.	-	.	
+Hdem.Herato1905	exonerate:protein2genome:local	exon	120801	120962	.	-	.	insertions 0 ; deletions 0 ; identity 58.49 ; similarity 77.36
+Hdem.Herato1905	exonerate:protein2genome:local	splice5	120799	120800	.	-	.	intron_id 2 ; splice_site "GT"
+Hdem.Herato1905	exonerate:protein2genome:local	intron	119574	120800	.	-	.	intron_id 2
+Hdem.Herato1905	exonerate:protein2genome:local	splice3	119574	119575	.	-	.	intron_id 1 ; splice_site "AG"
+Hdem.Herato1905	exonerate:protein2genome:local	cds	119156	119573	.	-	.	
+Hdem.Herato1905	exonerate:protein2genome:local	exon	119156	119573	.	-	.	insertions 3 ; deletions 2 ; identity 51.45 ; similarity 66.67
+Hdem.Herato1905	exonerate:protein2genome:local	similarity	119156	121619	678	-	.	alignment_id 0 ; Query Danaus_plexippus_FAD_ctg4_EHJ68613 ; Align 121620 77 171 ; Align 120962 135 159 ; Align 119573 189 75 ; Align 119498 215 153 ; Align 119342 266 60 ; Align 119282 287 126
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hdem.Herato1708	exonerate:protein2genome:local	gene	1468954	1475111	673	-	.	gene_id 0 ; sequence Danaus_plexippus_FAD_ctg4_EHJ68613 ; gene_orientation + ; identity 53.23 ; similarity 71.77
+Hdem.Herato1708	exonerate:protein2genome:local	cds	1474939	1475111	.	-	.	
+Hdem.Herato1708	exonerate:protein2genome:local	exon	1474939	1475111	.	-	.	insertions 0 ; deletions 0 ; identity 50.88 ; similarity 73.68
+Hdem.Herato1708	exonerate:protein2genome:local	splice5	1474937	1474938	.	-	.	intron_id 1 ; splice_site "GT"
+Hdem.Herato1708	exonerate:protein2genome:local	intron	1474623	1474938	.	-	.	intron_id 1
+Hdem.Herato1708	exonerate:protein2genome:local	splice3	1474623	1474624	.	-	.	intron_id 0 ; splice_site "AG"
+Hdem.Herato1708	exonerate:protein2genome:local	cds	1474461	1474622	.	-	.	
+Hdem.Herato1708	exonerate:protein2genome:local	exon	1474461	1474622	.	-	.	insertions 0 ; deletions 0 ; identity 60.38 ; similarity 79.25
+Hdem.Herato1708	exonerate:protein2genome:local	splice5	1474459	1474460	.	-	.	intron_id 2 ; splice_site "GT"
+Hdem.Herato1708	exonerate:protein2genome:local	intron	1469372	1474460	.	-	.	intron_id 2
+Hdem.Herato1708	exonerate:protein2genome:local	splice3	1469372	1469373	.	-	.	intron_id 1 ; splice_site "AG"
+Hdem.Herato1708	exonerate:protein2genome:local	cds	1468954	1469371	.	-	.	
+Hdem.Herato1708	exonerate:protein2genome:local	exon	1468954	1469371	.	-	.	insertions 3 ; deletions 2 ; identity 51.45 ; similarity 68.12
+Hdem.Herato1708	exonerate:protein2genome:local	similarity	1468954	1475111	673	-	.	alignment_id 0 ; Query Danaus_plexippus_FAD_ctg4_EHJ68613 ; Align 1475112 77 171 ; Align 1474622 135 159 ; Align 1469371 189 96 ; Align 1469275 222 132 ; Align 1469140 266 60 ; Align 1469080 287 126
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hdem.Herato1910	exonerate:protein2genome:local	gene	447828	522083	614	+	.	gene_id 0 ; sequence Danaus_plexippus_FAD_ctg4_EHJ68613 ; gene_orientation + ; identity 49.81 ; similarity 71.98
+Hdem.Herato1910	exonerate:protein2genome:local	cds	447828	447944	.	+	.	
+Hdem.Herato1910	exonerate:protein2genome:local	exon	447828	447944	.	+	.	insertions 0 ; deletions 0 ; identity 45.00 ; similarity 65.00
+Hdem.Herato1910	exonerate:protein2genome:local	splice5	447945	447946	.	+	.	intron_id 1 ; splice_site "GT"
+Hdem.Herato1910	exonerate:protein2genome:local	intron	447945	463108	.	+	.	intron_id 1
+Hdem.Herato1910	exonerate:protein2genome:local	splice3	463107	463108	.	+	.	intron_id 0 ; splice_site "AG"
+Hdem.Herato1910	exonerate:protein2genome:local	cds	463109	463314	.	+	.	
+Hdem.Herato1910	exonerate:protein2genome:local	exon	463109	463314	.	+	.	insertions 0 ; deletions 0 ; identity 51.47 ; similarity 72.06
+Hdem.Herato1910	exonerate:protein2genome:local	splice5	463315	463316	.	+	.	intron_id 2 ; splice_site "GT"
+Hdem.Herato1910	exonerate:protein2genome:local	intron	463315	463964	.	+	.	intron_id 2
+Hdem.Herato1910	exonerate:protein2genome:local	splice3	463963	463964	.	+	.	intron_id 1 ; splice_site "AG"
+Hdem.Herato1910	exonerate:protein2genome:local	cds	463965	464147	.	+	.	
+Hdem.Herato1910	exonerate:protein2genome:local	exon	463965	464147	.	+	.	insertions 0 ; deletions 1 ; identity 46.67 ; similarity 76.67
+Hdem.Herato1910	exonerate:protein2genome:local	splice5	464148	464149	.	+	.	intron_id 3 ; splice_site "GT"
+Hdem.Herato1910	exonerate:protein2genome:local	intron	464148	464623	.	+	.	intron_id 3
+Hdem.Herato1910	exonerate:protein2genome:local	splice3	464622	464623	.	+	.	intron_id 2 ; splice_site "AG"
+Hdem.Herato1910	exonerate:protein2genome:local	cds	464624	464781	.	+	.	
+Hdem.Herato1910	exonerate:protein2genome:local	exon	464624	464781	.	+	.	insertions 3 ; deletions 2 ; identity 47.06 ; similarity 68.63
+Hdem.Herato1910	exonerate:protein2genome:local	splice5	464782	464783	.	+	.	intron_id 4 ; splice_site "GT"
+Hdem.Herato1910	exonerate:protein2genome:local	intron	464782	521910	.	+	.	intron_id 4
+Hdem.Herato1910	exonerate:protein2genome:local	splice3	521909	521910	.	+	.	intron_id 3 ; splice_site "AG"
+Hdem.Herato1910	exonerate:protein2genome:local	cds	521911	521982	.	+	.	
+Hdem.Herato1910	exonerate:protein2genome:local	exon	521911	521982	.	+	.	insertions 0 ; deletions 0 ; identity 65.22 ; similarity 82.61
+Hdem.Herato1910	exonerate:protein2genome:local	splice5	521983	521984	.	+	.	intron_id 5 ; splice_site "GT"
+Hdem.Herato1910	exonerate:protein2genome:local	intron	521983	522033	.	+	.	intron_id 5
+Hdem.Herato1910	exonerate:protein2genome:local	splice3	522032	522033	.	+	.	intron_id 4 ; splice_site "CG"
+Hdem.Herato1910	exonerate:protein2genome:local	cds	522034	522083	.	+	.	
+Hdem.Herato1910	exonerate:protein2genome:local	exon	522034	522083	.	+	.	insertions 0 ; deletions 0 ; identity 50.00 ; similarity 68.75
+Hdem.Herato1910	exonerate:protein2genome:local	similarity	447828	522083	614	+	.	alignment_id 0 ; Query Danaus_plexippus_FAD_ctg4_EHJ68613 ; Align 447828 81 117 ; Align 463109 120 204 ; Align 463966 189 87 ; Align 464053 219 93 ; Align 464625 251 45 ; Align 464673 266 54 ; Align 464727 286 54 ; Align 521913 305 69 ; Align 522036 329 48
+# --- END OF GFF DUMP ---
+#
+-- completed exonerate analysis

@@ -1,0 +1,143 @@
+Command line: [exonerate --model protein2genome Heliconius_melpomene_FAD_ctg8.fa /mnt/scratch/projects/biol-specgen-2018/yacine/Pheromones/Blast/Inputs/Heliconius_erato/Heliconius_erato_genome.fa --querytype protein --bestn 10 --showvulgar no --showtargetgff yes --showalignment no --percent 20]
+Hostname: [node032.viking2.yor.alces.network]
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hdem.Herato0310	exonerate:protein2genome:local	gene	6124783	6128587	1485	-	.	gene_id 0 ; sequence Heliconius_melpomene_FAD_ctg8 ; gene_orientation + ; identity 91.96 ; similarity 96.14
+Hdem.Herato0310	exonerate:protein2genome:local	cds	6128356	6128587	.	-	.	
+Hdem.Herato0310	exonerate:protein2genome:local	exon	6128356	6128587	.	-	.	insertions 12 ; deletions 0 ; identity 83.56 ; similarity 91.78
+Hdem.Herato0310	exonerate:protein2genome:local	splice5	6128354	6128355	.	-	.	intron_id 1 ; splice_site "GT"
+Hdem.Herato0310	exonerate:protein2genome:local	intron	6127661	6128355	.	-	.	intron_id 1
+Hdem.Herato0310	exonerate:protein2genome:local	splice3	6127661	6127662	.	-	.	intron_id 0 ; splice_site "AG"
+Hdem.Herato0310	exonerate:protein2genome:local	cds	6127530	6127660	.	-	.	
+Hdem.Herato0310	exonerate:protein2genome:local	exon	6127530	6127660	.	-	.	insertions 0 ; deletions 0 ; identity 93.18 ; similarity 97.73
+Hdem.Herato0310	exonerate:protein2genome:local	splice5	6127528	6127529	.	-	.	intron_id 2 ; splice_site "GT"
+Hdem.Herato0310	exonerate:protein2genome:local	intron	6127092	6127529	.	-	.	intron_id 2
+Hdem.Herato0310	exonerate:protein2genome:local	splice3	6127092	6127093	.	-	.	intron_id 1 ; splice_site "AG"
+Hdem.Herato0310	exonerate:protein2genome:local	cds	6126886	6127091	.	-	.	
+Hdem.Herato0310	exonerate:protein2genome:local	exon	6126886	6127091	.	-	.	insertions 0 ; deletions 0 ; identity 97.06 ; similarity 98.53
+Hdem.Herato0310	exonerate:protein2genome:local	splice5	6126884	6126885	.	-	.	intron_id 3 ; splice_site "GT"
+Hdem.Herato0310	exonerate:protein2genome:local	intron	6125730	6126885	.	-	.	intron_id 3
+Hdem.Herato0310	exonerate:protein2genome:local	splice3	6125730	6125731	.	-	.	intron_id 2 ; splice_site "AG"
+Hdem.Herato0310	exonerate:protein2genome:local	cds	6125544	6125729	.	-	.	
+Hdem.Herato0310	exonerate:protein2genome:local	exon	6125544	6125729	.	-	.	insertions 0 ; deletions 0 ; identity 91.80 ; similarity 95.08
+Hdem.Herato0310	exonerate:protein2genome:local	splice5	6125542	6125543	.	-	.	intron_id 4 ; splice_site "GT"
+Hdem.Herato0310	exonerate:protein2genome:local	intron	6124982	6125543	.	-	.	intron_id 4
+Hdem.Herato0310	exonerate:protein2genome:local	splice3	6124982	6124983	.	-	.	intron_id 3 ; splice_site "AG"
+Hdem.Herato0310	exonerate:protein2genome:local	cds	6124783	6124981	.	-	.	
+Hdem.Herato0310	exonerate:protein2genome:local	exon	6124783	6124981	.	-	.	insertions 0 ; deletions 0 ; identity 95.45 ; similarity 98.48
+Hdem.Herato0310	exonerate:protein2genome:local	similarity	6124783	6128587	1485	-	.	alignment_id 0 ; Query Heliconius_melpomene_FAD_ctg8 ; Align 6128588 1 33 ; Align 6128543 12 186 ; Align 6127659 75 129 ; Align 6127092 118 204 ; Align 6125729 187 183 ; Align 6124981 249 198
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hdem.Herato1910	exonerate:protein2genome:local	gene	447822	601877	630	+	.	gene_id 0 ; sequence Heliconius_melpomene_FAD_ctg8 ; gene_orientation + ; identity 50.83 ; similarity 70.00
+Hdem.Herato1910	exonerate:protein2genome:local	cds	447822	447944	.	+	.	
+Hdem.Herato1910	exonerate:protein2genome:local	exon	447822	447944	.	+	.	insertions 0 ; deletions 0 ; identity 35.71 ; similarity 71.43
+Hdem.Herato1910	exonerate:protein2genome:local	splice5	447945	447946	.	+	.	intron_id 1 ; splice_site "GT"
+Hdem.Herato1910	exonerate:protein2genome:local	intron	447945	600881	.	+	.	intron_id 1
+Hdem.Herato1910	exonerate:protein2genome:local	splice3	600880	600881	.	+	.	intron_id 0 ; splice_site "AG"
+Hdem.Herato1910	exonerate:protein2genome:local	cds	600882	601087	.	+	.	
+Hdem.Herato1910	exonerate:protein2genome:local	exon	600882	601087	.	+	.	insertions 0 ; deletions 0 ; identity 61.76 ; similarity 80.88
+Hdem.Herato1910	exonerate:protein2genome:local	splice5	601088	601089	.	+	.	intron_id 2 ; splice_site "GT"
+Hdem.Herato1910	exonerate:protein2genome:local	intron	601088	601480	.	+	.	intron_id 2
+Hdem.Herato1910	exonerate:protein2genome:local	splice3	601479	601480	.	+	.	intron_id 1 ; splice_site "AG"
+Hdem.Herato1910	exonerate:protein2genome:local	cds	601481	601877	.	+	.	
+Hdem.Herato1910	exonerate:protein2genome:local	exon	601481	601877	.	+	.	insertions 3 ; deletions 1 ; identity 49.62 ; similarity 64.12
+Hdem.Herato1910	exonerate:protein2genome:local	similarity	447822	601877	630	+	.	alignment_id 0 ; Query Heliconius_melpomene_FAD_ctg8 ; Align 447822 77 123 ; Align 600882 118 204 ; Align 601482 187 63 ; Align 601545 209 234 ; Align 601782 287 96
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hdem.Herato1905	exonerate:protein2genome:local	gene	119186	121616	621	-	.	gene_id 0 ; sequence Heliconius_melpomene_FAD_ctg8 ; gene_orientation + ; identity 51.05 ; similarity 68.78
+Hdem.Herato1905	exonerate:protein2genome:local	cds	121447	121616	.	-	.	
+Hdem.Herato1905	exonerate:protein2genome:local	exon	121447	121616	.	-	.	insertions 0 ; deletions 0 ; identity 48.21 ; similarity 67.86
+Hdem.Herato1905	exonerate:protein2genome:local	splice5	121445	121446	.	-	.	intron_id 1 ; splice_site "GT"
+Hdem.Herato1905	exonerate:protein2genome:local	intron	120963	121446	.	-	.	intron_id 1
+Hdem.Herato1905	exonerate:protein2genome:local	splice3	120963	120964	.	-	.	intron_id 0 ; splice_site "AG"
+Hdem.Herato1905	exonerate:protein2genome:local	cds	120801	120962	.	-	.	
+Hdem.Herato1905	exonerate:protein2genome:local	exon	120801	120962	.	-	.	insertions 0 ; deletions 0 ; identity 66.04 ; similarity 81.13
+Hdem.Herato1905	exonerate:protein2genome:local	splice5	120799	120800	.	-	.	intron_id 2 ; splice_site "GT"
+Hdem.Herato1905	exonerate:protein2genome:local	intron	119574	120800	.	-	.	intron_id 2
+Hdem.Herato1905	exonerate:protein2genome:local	splice3	119574	119575	.	-	.	intron_id 1 ; splice_site "AG"
+Hdem.Herato1905	exonerate:protein2genome:local	cds	119186	119573	.	-	.	
+Hdem.Herato1905	exonerate:protein2genome:local	exon	119186	119573	.	-	.	insertions 3 ; deletions 1 ; identity 46.09 ; similarity 64.06
+Hdem.Herato1905	exonerate:protein2genome:local	similarity	119186	121616	621	-	.	alignment_id 0 ; Query Heliconius_melpomene_FAD_ctg8 ; Align 121617 76 168 ; Align 120962 133 159 ; Align 119573 187 78 ; Align 119495 214 207 ; Align 119285 283 99
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hdem.Herato1708	exonerate:protein2genome:local	gene	1468984	1475108	613	-	.	gene_id 0 ; sequence Heliconius_melpomene_FAD_ctg8 ; gene_orientation + ; identity 50.63 ; similarity 69.20
+Hdem.Herato1708	exonerate:protein2genome:local	cds	1474939	1475108	.	-	.	
+Hdem.Herato1708	exonerate:protein2genome:local	exon	1474939	1475108	.	-	.	insertions 0 ; deletions 0 ; identity 46.43 ; similarity 67.86
+Hdem.Herato1708	exonerate:protein2genome:local	splice5	1474937	1474938	.	-	.	intron_id 1 ; splice_site "GT"
+Hdem.Herato1708	exonerate:protein2genome:local	intron	1474623	1474938	.	-	.	intron_id 1
+Hdem.Herato1708	exonerate:protein2genome:local	splice3	1474623	1474624	.	-	.	intron_id 0 ; splice_site "AG"
+Hdem.Herato1708	exonerate:protein2genome:local	cds	1474461	1474622	.	-	.	
+Hdem.Herato1708	exonerate:protein2genome:local	exon	1474461	1474622	.	-	.	insertions 0 ; deletions 0 ; identity 67.92 ; similarity 83.02
+Hdem.Herato1708	exonerate:protein2genome:local	splice5	1474459	1474460	.	-	.	intron_id 2 ; splice_site "GT"
+Hdem.Herato1708	exonerate:protein2genome:local	intron	1469372	1474460	.	-	.	intron_id 2
+Hdem.Herato1708	exonerate:protein2genome:local	splice3	1469372	1469373	.	-	.	intron_id 1 ; splice_site "AG"
+Hdem.Herato1708	exonerate:protein2genome:local	cds	1468984	1469371	.	-	.	
+Hdem.Herato1708	exonerate:protein2genome:local	exon	1468984	1469371	.	-	.	insertions 3 ; deletions 1 ; identity 45.31 ; similarity 64.06
+Hdem.Herato1708	exonerate:protein2genome:local	similarity	1468984	1475108	613	-	.	alignment_id 0 ; Query Heliconius_melpomene_FAD_ctg8 ; Align 1475109 76 168 ; Align 1474622 133 159 ; Align 1469371 187 99 ; Align 1469272 221 186 ; Align 1469083 283 99
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hdem.Herato1908	exonerate:protein2genome:local	gene	1594413	1595554	609	-	.	gene_id 0 ; sequence Heliconius_melpomene_FAD_ctg8 ; gene_orientation + ; identity 56.50 ; similarity 72.00
+Hdem.Herato1908	exonerate:protein2genome:local	cds	1595349	1595554	.	-	.	
+Hdem.Herato1908	exonerate:protein2genome:local	exon	1595349	1595554	.	-	.	insertions 0 ; deletions 0 ; identity 63.24 ; similarity 82.35
+Hdem.Herato1908	exonerate:protein2genome:local	splice5	1595347	1595348	.	-	.	intron_id 1 ; splice_site "GT"
+Hdem.Herato1908	exonerate:protein2genome:local	intron	1594813	1595348	.	-	.	intron_id 1
+Hdem.Herato1908	exonerate:protein2genome:local	splice3	1594813	1594814	.	-	.	intron_id 0 ; splice_site "AG"
+Hdem.Herato1908	exonerate:protein2genome:local	cds	1594413	1594812	.	-	.	
+Hdem.Herato1908	exonerate:protein2genome:local	exon	1594413	1594812	.	-	.	insertions 3 ; deletions 0 ; identity 53.03 ; similarity 66.67
+Hdem.Herato1908	exonerate:protein2genome:local	similarity	1594413	1595554	609	-	.	alignment_id 0 ; Query Heliconius_melpomene_FAD_ctg8 ; Align 1595555 118 204 ; Align 1594812 187 288 ; Align 1594521 283 108
+# --- END OF GFF DUMP ---
+#
+-- completed exonerate analysis

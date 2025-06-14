@@ -1,0 +1,71 @@
+Command line: [exonerate --model protein2genome tr|A0A0L7L2Z9|A0A0L7L2Z9_OPEBR.fa /mnt/scratch/projects/biol-specgen-2018/yacine/Pheromones/Blast/Inputs/Heliconius_melpomene/Heliconius_melpomene_genome.fa --querytype protein --bestn 10 --showvulgar no --showtargetgff yes --showalignment no --percent 20]
+Hostname: [node044.viking2.yor.alces.network]
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-13
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hmel217001o	exonerate:protein2genome:local	gene	13896253	13896678	379	-	.	gene_id 0 ; sequence tr|A0A0L7L2Z9|A0A0L7L2Z9_OPEBR ; gene_orientation . ; identity 50.35 ; similarity 68.79
+Hmel217001o	exonerate:protein2genome:local	cds	13896253	13896678	.	-	.	
+Hmel217001o	exonerate:protein2genome:local	exon	13896253	13896678	.	-	.	insertions 3 ; deletions 0 ; identity 50.35 ; similarity 68.79
+Hmel217001o	exonerate:protein2genome:local	similarity	13896253	13896678	379	-	.	alignment_id 0 ; Query tr|A0A0L7L2Z9|A0A0L7L2Z9_OPEBR ; Align 13896679 120 72 ; Align 13896604 144 351
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-13
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hmel219001o	exonerate:protein2genome:local	gene	9225677	9226084	376	-	.	gene_id 0 ; sequence tr|A0A0L7L2Z9|A0A0L7L2Z9_OPEBR ; gene_orientation . ; identity 50.37 ; similarity 71.11
+Hmel219001o	exonerate:protein2genome:local	cds	9225677	9226084	.	-	.	
+Hmel219001o	exonerate:protein2genome:local	exon	9225677	9226084	.	-	.	insertions 3 ; deletions 0 ; identity 50.37 ; similarity 71.11
+Hmel219001o	exonerate:protein2genome:local	similarity	9225677	9226084	376	-	.	alignment_id 0 ; Query tr|A0A0L7L2Z9|A0A0L7L2Z9_OPEBR ; Align 9226085 126 54 ; Align 9226028 144 351
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-13
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hmel219001o	exonerate:protein2genome:local	gene	11482160	11482567	358	-	.	gene_id 0 ; sequence tr|A0A0L7L2Z9|A0A0L7L2Z9_OPEBR ; gene_orientation . ; identity 51.49 ; similarity 71.64
+Hmel219001o	exonerate:protein2genome:local	cds	11482160	11482567	.	-	.	
+Hmel219001o	exonerate:protein2genome:local	exon	11482160	11482567	.	-	.	insertions 6 ; deletions 0 ; identity 51.49 ; similarity 71.64
+Hmel219001o	exonerate:protein2genome:local	similarity	11482160	11482567	358	-	.	alignment_id 0 ; Query tr|A0A0L7L2Z9|A0A0L7L2Z9_OPEBR ; Align 11482568 127 51 ; Align 11482514 144 36 ; Align 11482475 156 315
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-13
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hmel219001o	exonerate:protein2genome:local	gene	12889738	12890223	339	+	.	gene_id 0 ; sequence tr|A0A0L7L2Z9|A0A0L7L2Z9_OPEBR ; gene_orientation . ; identity 45.62 ; similarity 62.50
+Hmel219001o	exonerate:protein2genome:local	cds	12889738	12890223	.	+	.	
+Hmel219001o	exonerate:protein2genome:local	exon	12889738	12890223	.	+	.	insertions 6 ; deletions 0 ; identity 45.62 ; similarity 62.50
+Hmel219001o	exonerate:protein2genome:local	similarity	12889738	12890223	339	+	.	alignment_id 0 ; Query tr|A0A0L7L2Z9|A0A0L7L2Z9_OPEBR ; Align 12889738 101 102 ; Align 12889843 135 63 ; Align 12889909 156 315
+# --- END OF GFF DUMP ---
+#
+-- completed exonerate analysis

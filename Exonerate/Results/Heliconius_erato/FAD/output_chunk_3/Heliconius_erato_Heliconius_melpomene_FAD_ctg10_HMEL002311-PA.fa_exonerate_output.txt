@@ -1,0 +1,57 @@
+Command line: [exonerate --model protein2genome Heliconius_melpomene_FAD_ctg10_HMEL002311-PA.fa /mnt/scratch/projects/biol-specgen-2018/yacine/Pheromones/Blast/Inputs/Heliconius_erato/Heliconius_erato_genome.fa --querytype protein --bestn 10 --showvulgar no --showtargetgff yes --showalignment no --percent 20]
+Hostname: [node032.viking2.yor.alces.network]
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hdem.Herato1910	exonerate:protein2genome:local	gene	447037	753054	570	+	.	gene_id 0 ; sequence Heliconius_melpomene_FAD_ctg10_HMEL002311-PA ; gene_orientation + ; identity 57.36 ; similarity 76.65
+Hdem.Herato1910	exonerate:protein2genome:local	cds	447037	447190	.	+	.	
+Hdem.Herato1910	exonerate:protein2genome:local	exon	447037	447190	.	+	.	insertions 0 ; deletions 0 ; identity 90.20 ; similarity 98.04
+Hdem.Herato1910	exonerate:protein2genome:local	splice5	447191	447192	.	+	.	intron_id 1 ; splice_site "GT"
+Hdem.Herato1910	exonerate:protein2genome:local	intron	447191	447813	.	+	.	intron_id 1
+Hdem.Herato1910	exonerate:protein2genome:local	splice3	447812	447813	.	+	.	intron_id 0 ; splice_site "AG"
+Hdem.Herato1910	exonerate:protein2genome:local	cds	447814	447944	.	+	.	
+Hdem.Herato1910	exonerate:protein2genome:local	exon	447814	447944	.	+	.	insertions 0 ; deletions 0 ; identity 88.64 ; similarity 95.45
+Hdem.Herato1910	exonerate:protein2genome:local	splice5	447945	447946	.	+	.	intron_id 2 ; splice_site "GT"
+Hdem.Herato1910	exonerate:protein2genome:local	intron	447945	600881	.	+	.	intron_id 2
+Hdem.Herato1910	exonerate:protein2genome:local	splice3	600880	600881	.	+	.	intron_id 1 ; splice_site "AG"
+Hdem.Herato1910	exonerate:protein2genome:local	cds	600882	601099	.	+	.	
+Hdem.Herato1910	exonerate:protein2genome:local	exon	600882	601099	.	+	.	insertions 0 ; deletions 0 ; identity 29.17 ; similarity 58.33
+Hdem.Herato1910	exonerate:protein2genome:local	splice5	601100	601101	.	+	.	intron_id 3 ; splice_site "AT"
+Hdem.Herato1910	exonerate:protein2genome:local	intron	601100	752960	.	+	.	intron_id 3
+Hdem.Herato1910	exonerate:protein2genome:local	splice3	752959	752960	.	+	.	intron_id 2 ; splice_site "AG"
+Hdem.Herato1910	exonerate:protein2genome:local	cds	752961	753054	.	+	.	
+Hdem.Herato1910	exonerate:protein2genome:local	exon	752961	753054	.	+	.	insertions 0 ; deletions 0 ; identity 22.58 ; similarity 54.84
+Hdem.Herato1910	exonerate:protein2genome:local	similarity	447037	753054	570	+	.	alignment_id 0 ; Query Heliconius_melpomene_FAD_ctg10_HMEL002311-PA ; Align 447037 1 153 ; Align 447816 53 129 ; Align 600882 96 216 ; Align 752962 169 93
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hdem.Herato1910	exonerate:protein2genome:local	gene	448577	449907	525	+	.	gene_id 0 ; sequence Heliconius_melpomene_FAD_ctg10_HMEL002311-PA ; gene_orientation + ; identity 82.05 ; similarity 88.89
+Hdem.Herato1910	exonerate:protein2genome:local	cds	448577	448824	.	+	.	
+Hdem.Herato1910	exonerate:protein2genome:local	exon	448577	448824	.	+	.	insertions 0 ; deletions 0 ; identity 74.39 ; similarity 84.15
+Hdem.Herato1910	exonerate:protein2genome:local	splice5	448825	448826	.	+	.	intron_id 1 ; splice_site "GT"
+Hdem.Herato1910	exonerate:protein2genome:local	intron	448825	449801	.	+	.	intron_id 1
+Hdem.Herato1910	exonerate:protein2genome:local	splice3	449800	449801	.	+	.	intron_id 0 ; splice_site "AG"
+Hdem.Herato1910	exonerate:protein2genome:local	cds	449802	449907	.	+	.	
+Hdem.Herato1910	exonerate:protein2genome:local	exon	449802	449907	.	+	.	insertions 0 ; deletions 0 ; identity 100.00 ; similarity 100.00
+Hdem.Herato1910	exonerate:protein2genome:local	similarity	448577	449907	525	+	.	alignment_id 0 ; Query Heliconius_melpomene_FAD_ctg10_HMEL002311-PA ; Align 448577 144 246 ; Align 449803 227 105
+# --- END OF GFF DUMP ---
+#
+-- completed exonerate analysis

@@ -1,0 +1,139 @@
+Command line: [exonerate --model protein2genome tr|A0A0L7KP21|A0A0L7KP21_OPEBR.fa /mnt/scratch/projects/biol-specgen-2018/yacine/Pheromones/Blast/Inputs/Heliconius_sara/Heliconius_sara_genome.fa --querytype protein --bestn 10 --showvulgar no --showtargetgff yes --showalignment no --percent 20]
+Hostname: [node035.viking2.yor.alces.network]
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+17	exonerate:protein2genome:local	gene	17622967	17623134	195	-	.	gene_id 0 ; sequence tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; gene_orientation . ; identity 58.93 ; similarity 76.79
+17	exonerate:protein2genome:local	cds	17622967	17623134	.	-	.	
+17	exonerate:protein2genome:local	exon	17622967	17623134	.	-	.	insertions 0 ; deletions 0 ; identity 58.93 ; similarity 76.79
+17	exonerate:protein2genome:local	similarity	17622967	17623134	195	-	.	alignment_id 0 ; Query tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; Align 17623135 1 168
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+4	exonerate:protein2genome:local	gene	7088673	7088846	147	+	.	gene_id 0 ; sequence tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; gene_orientation . ; identity 46.55 ; similarity 68.97
+4	exonerate:protein2genome:local	cds	7088673	7088846	.	+	.	
+4	exonerate:protein2genome:local	exon	7088673	7088846	.	+	.	insertions 0 ; deletions 0 ; identity 46.55 ; similarity 68.97
+4	exonerate:protein2genome:local	similarity	7088673	7088846	147	+	.	alignment_id 0 ; Query tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; Align 7088673 1 174
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+19	exonerate:protein2genome:local	gene	16144796	16144942	133	+	.	gene_id 0 ; sequence tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; gene_orientation . ; identity 44.90 ; similarity 67.35
+19	exonerate:protein2genome:local	cds	16144796	16144942	.	+	.	
+19	exonerate:protein2genome:local	exon	16144796	16144942	.	+	.	insertions 0 ; deletions 0 ; identity 44.90 ; similarity 67.35
+19	exonerate:protein2genome:local	similarity	16144796	16144942	133	+	.	alignment_id 0 ; Query tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; Align 16144796 3 147
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+19	exonerate:protein2genome:local	gene	14544936	14545037	126	-	.	gene_id 0 ; sequence tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; gene_orientation . ; identity 64.71 ; similarity 85.29
+19	exonerate:protein2genome:local	cds	14544936	14545037	.	-	.	
+19	exonerate:protein2genome:local	exon	14544936	14545037	.	-	.	insertions 0 ; deletions 0 ; identity 64.71 ; similarity 85.29
+19	exonerate:protein2genome:local	similarity	14544936	14545037	126	-	.	alignment_id 0 ; Query tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; Align 14545038 1 102
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+19	exonerate:protein2genome:local	gene	16219701	16219802	121	+	.	gene_id 0 ; sequence tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; gene_orientation . ; identity 61.76 ; similarity 82.35
+19	exonerate:protein2genome:local	cds	16219701	16219802	.	+	.	
+19	exonerate:protein2genome:local	exon	16219701	16219802	.	+	.	insertions 0 ; deletions 0 ; identity 61.76 ; similarity 82.35
+19	exonerate:protein2genome:local	similarity	16219701	16219802	121	+	.	alignment_id 0 ; Query tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; Align 16219701 1 102
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+19	exonerate:protein2genome:local	gene	16088950	16089030	114	+	.	gene_id 0 ; sequence tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; gene_orientation . ; identity 70.37 ; similarity 85.19
+19	exonerate:protein2genome:local	cds	16088950	16089030	.	+	.	
+19	exonerate:protein2genome:local	exon	16088950	16089030	.	+	.	insertions 0 ; deletions 0 ; identity 70.37 ; similarity 85.19
+19	exonerate:protein2genome:local	similarity	16088950	16089030	114	+	.	alignment_id 0 ; Query tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; Align 16088950 7 81
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+19	exonerate:protein2genome:local	gene	16103557	16103640	107	-	.	gene_id 0 ; sequence tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; gene_orientation . ; identity 64.29 ; similarity 85.71
+19	exonerate:protein2genome:local	cds	16103557	16103640	.	-	.	
+19	exonerate:protein2genome:local	exon	16103557	16103640	.	-	.	insertions 0 ; deletions 0 ; identity 64.29 ; similarity 85.71
+19	exonerate:protein2genome:local	similarity	16103557	16103640	107	-	.	alignment_id 0 ; Query tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; Align 16103641 7 84
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+12	exonerate:protein2genome:local	gene	15302169	15302270	103	+	.	gene_id 0 ; sequence tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; gene_orientation . ; identity 50.00 ; similarity 79.41
+12	exonerate:protein2genome:local	cds	15302169	15302270	.	+	.	
+12	exonerate:protein2genome:local	exon	15302169	15302270	.	+	.	insertions 0 ; deletions 0 ; identity 50.00 ; similarity 79.41
+12	exonerate:protein2genome:local	similarity	15302169	15302270	103	+	.	alignment_id 0 ; Query tr|A0A0L7KP21|A0A0L7KP21_OPEBR ; Align 15302169 1 102
+# --- END OF GFF DUMP ---
+#
+-- completed exonerate analysis

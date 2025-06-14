@@ -1,0 +1,71 @@
+Command line: [exonerate --model protein2genome tr|A0A0L7L2Z9|A0A0L7L2Z9_OPEBR.fa /mnt/scratch/projects/biol-specgen-2018/yacine/Pheromones/Blast/Inputs/Heliconius_erato/Heliconius_erato_genome.fa --querytype protein --bestn 10 --showvulgar no --showtargetgff yes --showalignment no --percent 20]
+Hostname: [node032.viking2.yor.alces.network]
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hdem.Herato1708	exonerate:protein2genome:local	gene	1468960	1469385	399	-	.	gene_id 0 ; sequence tr|A0A0L7L2Z9|A0A0L7L2Z9_OPEBR ; gene_orientation . ; identity 53.90 ; similarity 70.21
+Hdem.Herato1708	exonerate:protein2genome:local	cds	1468960	1469385	.	-	.	
+Hdem.Herato1708	exonerate:protein2genome:local	exon	1468960	1469385	.	-	.	insertions 3 ; deletions 0 ; identity 53.90 ; similarity 70.21
+Hdem.Herato1708	exonerate:protein2genome:local	similarity	1468960	1469385	399	-	.	alignment_id 0 ; Query tr|A0A0L7L2Z9|A0A0L7L2Z9_OPEBR ; Align 1469386 120 72 ; Align 1469311 144 351
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hdem.Herato1905	exonerate:protein2genome:local	gene	119162	119587	373	-	.	gene_id 0 ; sequence tr|A0A0L7L2Z9|A0A0L7L2Z9_OPEBR ; gene_orientation . ; identity 50.35 ; similarity 69.50
+Hdem.Herato1905	exonerate:protein2genome:local	cds	119162	119587	.	-	.	
+Hdem.Herato1905	exonerate:protein2genome:local	exon	119162	119587	.	-	.	insertions 3 ; deletions 0 ; identity 50.35 ; similarity 69.50
+Hdem.Herato1905	exonerate:protein2genome:local	similarity	119162	119587	373	-	.	alignment_id 0 ; Query tr|A0A0L7L2Z9|A0A0L7L2Z9_OPEBR ; Align 119588 120 72 ; Align 119513 144 351
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hdem.Herato1908	exonerate:protein2genome:local	gene	1594398	1594820	363	-	.	gene_id 0 ; sequence tr|A0A0L7L2Z9|A0A0L7L2Z9_OPEBR ; gene_orientation . ; identity 51.08 ; similarity 69.78
+Hdem.Herato1908	exonerate:protein2genome:local	cds	1594398	1594820	.	-	.	
+Hdem.Herato1908	exonerate:protein2genome:local	exon	1594398	1594820	.	-	.	insertions 6 ; deletions 0 ; identity 51.08 ; similarity 69.78
+Hdem.Herato1908	exonerate:protein2genome:local	similarity	1594398	1594820	363	-	.	alignment_id 0 ; Query tr|A0A0L7L2Z9|A0A0L7L2Z9_OPEBR ; Align 1594821 122 66 ; Align 1594752 144 36 ; Align 1594713 156 315
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hdem.Herato1910	exonerate:protein2genome:local	gene	601488	601892	341	+	.	gene_id 0 ; sequence tr|A0A0L7L2Z9|A0A0L7L2Z9_OPEBR ; gene_orientation . ; identity 50.75 ; similarity 65.67
+Hdem.Herato1910	exonerate:protein2genome:local	cds	601488	601892	.	+	.	
+Hdem.Herato1910	exonerate:protein2genome:local	exon	601488	601892	.	+	.	insertions 3 ; deletions 0 ; identity 50.75 ; similarity 65.67
+Hdem.Herato1910	exonerate:protein2genome:local	similarity	601488	601892	341	+	.	alignment_id 0 ; Query tr|A0A0L7L2Z9|A0A0L7L2Z9_OPEBR ; Align 601488 127 87 ; Align 601578 156 315
+# --- END OF GFF DUMP ---
+#
+-- completed exonerate analysis

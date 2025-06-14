@@ -1,0 +1,291 @@
+Command line: [exonerate --model protein2genome tr|A0A5Q0V425|A0A5Q0V425_CHISP.fa /mnt/scratch/projects/biol-specgen-2018/yacine/Pheromones/Blast/Inputs/Heliconius_melpomene/Heliconius_melpomene_genome.fa --querytype protein --bestn 10 --showvulgar no --showtargetgff yes --showalignment no --percent 20]
+Hostname: [node032.viking2.yor.alces.network]
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hmel219001o	exonerate:protein2genome:local	gene	11482073	11485032	1739	-	.	gene_id 0 ; sequence tr|A0A5Q0V425|A0A5Q0V425_CHISP ; gene_orientation + ; identity 88.95 ; similarity 95.47
+Hmel219001o	exonerate:protein2genome:local	cds	11484807	11485032	.	-	.	
+Hmel219001o	exonerate:protein2genome:local	exon	11484807	11485032	.	-	.	insertions 0 ; deletions 0 ; identity 80.00 ; similarity 89.33
+Hmel219001o	exonerate:protein2genome:local	splice5	11484805	11484806	.	-	.	intron_id 1 ; splice_site "GT"
+Hmel219001o	exonerate:protein2genome:local	intron	11483905	11484806	.	-	.	intron_id 1
+Hmel219001o	exonerate:protein2genome:local	splice3	11483905	11483906	.	-	.	intron_id 0 ; splice_site "AG"
+Hmel219001o	exonerate:protein2genome:local	cds	11483774	11483904	.	-	.	
+Hmel219001o	exonerate:protein2genome:local	exon	11483774	11483904	.	-	.	insertions 0 ; deletions 0 ; identity 93.18 ; similarity 97.73
+Hmel219001o	exonerate:protein2genome:local	splice5	11483772	11483773	.	-	.	intron_id 2 ; splice_site "GT"
+Hmel219001o	exonerate:protein2genome:local	intron	11483054	11483773	.	-	.	intron_id 2
+Hmel219001o	exonerate:protein2genome:local	splice3	11483054	11483055	.	-	.	intron_id 1 ; splice_site "AG"
+Hmel219001o	exonerate:protein2genome:local	cds	11482848	11483053	.	-	.	
+Hmel219001o	exonerate:protein2genome:local	exon	11482848	11483053	.	-	.	insertions 0 ; deletions 0 ; identity 98.53 ; similarity 100.00
+Hmel219001o	exonerate:protein2genome:local	splice5	11482846	11482847	.	-	.	intron_id 3 ; splice_site "GT"
+Hmel219001o	exonerate:protein2genome:local	intron	11482575	11482847	.	-	.	intron_id 3
+Hmel219001o	exonerate:protein2genome:local	splice3	11482575	11482576	.	-	.	intron_id 2 ; splice_site "AG"
+Hmel219001o	exonerate:protein2genome:local	cds	11482073	11482574	.	-	.	
+Hmel219001o	exonerate:protein2genome:local	exon	11482073	11482574	.	-	.	insertions 0 ; deletions 0 ; identity 88.02 ; similarity 95.81
+Hmel219001o	exonerate:protein2genome:local	similarity	11482073	11485032	1739	-	.	alignment_id 0 ; Query tr|A0A5Q0V425|A0A5Q0V425_CHISP ; Align 11485033 17 225 ; Align 11483903 93 129 ; Align 11483054 136 204 ; Align 11482574 205 501
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hmel219001o	exonerate:protein2genome:local	gene	12886332	12890274	1150	+	.	gene_id 0 ; sequence tr|A0A5Q0V425|A0A5Q0V425_CHISP ; gene_orientation + ; identity 67.97 ; similarity 80.72
+Hmel219001o	exonerate:protein2genome:local	cds	12886332	12886455	.	+	.	
+Hmel219001o	exonerate:protein2genome:local	exon	12886332	12886455	.	+	.	insertions 0 ; deletions 0 ; identity 53.66 ; similarity 63.41
+Hmel219001o	exonerate:protein2genome:local	splice5	12886456	12886457	.	+	.	intron_id 1 ; splice_site "GT"
+Hmel219001o	exonerate:protein2genome:local	intron	12886456	12886936	.	+	.	intron_id 1
+Hmel219001o	exonerate:protein2genome:local	splice3	12886935	12886936	.	+	.	intron_id 0 ; splice_site "AG"
+Hmel219001o	exonerate:protein2genome:local	cds	12886937	12887067	.	+	.	
+Hmel219001o	exonerate:protein2genome:local	exon	12886937	12887067	.	+	.	insertions 0 ; deletions 0 ; identity 77.27 ; similarity 88.64
+Hmel219001o	exonerate:protein2genome:local	splice5	12887068	12887069	.	+	.	intron_id 2 ; splice_site "GT"
+Hmel219001o	exonerate:protein2genome:local	intron	12887068	12889204	.	+	.	intron_id 2
+Hmel219001o	exonerate:protein2genome:local	splice3	12889203	12889204	.	+	.	intron_id 1 ; splice_site "AG"
+Hmel219001o	exonerate:protein2genome:local	cds	12889205	12889410	.	+	.	
+Hmel219001o	exonerate:protein2genome:local	exon	12889205	12889410	.	+	.	insertions 0 ; deletions 0 ; identity 82.35 ; similarity 94.12
+Hmel219001o	exonerate:protein2genome:local	splice5	12889411	12889412	.	+	.	intron_id 3 ; splice_site "GT"
+Hmel219001o	exonerate:protein2genome:local	intron	12889411	12889811	.	+	.	intron_id 3
+Hmel219001o	exonerate:protein2genome:local	splice3	12889810	12889811	.	+	.	intron_id 2 ; splice_site "AG"
+Hmel219001o	exonerate:protein2genome:local	cds	12889812	12890274	.	+	.	
+Hmel219001o	exonerate:protein2genome:local	exon	12889812	12890274	.	+	.	insertions 0 ; deletions 1 ; identity 62.99 ; similarity 77.27
+Hmel219001o	exonerate:protein2genome:local	similarity	12886332	12890274	1150	+	.	alignment_id 0 ; Query tr|A0A5Q0V425|A0A5Q0V425_CHISP ; Align 12886332 51 123 ; Align 12886939 93 129 ; Align 12889205 136 204 ; Align 12889813 205 57 ; Align 12889870 225 405
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hmel217001o	exonerate:protein2genome:local	gene	13896247	13898837	917	-	.	gene_id 0 ; sequence tr|A0A5Q0V425|A0A5Q0V425_CHISP ; gene_orientation + ; identity 65.48 ; similarity 84.13
+Hmel217001o	exonerate:protein2genome:local	cds	13898656	13898837	.	-	.	
+Hmel217001o	exonerate:protein2genome:local	exon	13898656	13898837	.	-	.	insertions 0 ; deletions 0 ; identity 61.67 ; similarity 81.67
+Hmel217001o	exonerate:protein2genome:local	splice5	13898654	13898655	.	-	.	intron_id 1 ; splice_site "GT"
+Hmel217001o	exonerate:protein2genome:local	intron	13898400	13898655	.	-	.	intron_id 1
+Hmel217001o	exonerate:protein2genome:local	splice3	13898400	13898401	.	-	.	intron_id 0 ; splice_site "AG"
+Hmel217001o	exonerate:protein2genome:local	cds	13898238	13898399	.	-	.	
+Hmel217001o	exonerate:protein2genome:local	exon	13898238	13898399	.	-	.	insertions 0 ; deletions 0 ; identity 77.36 ; similarity 96.23
+Hmel217001o	exonerate:protein2genome:local	splice5	13898236	13898237	.	-	.	intron_id 2 ; splice_site "GT"
+Hmel217001o	exonerate:protein2genome:local	intron	13896665	13898237	.	-	.	intron_id 2
+Hmel217001o	exonerate:protein2genome:local	splice3	13896665	13896666	.	-	.	intron_id 1 ; splice_site "AG"
+Hmel217001o	exonerate:protein2genome:local	cds	13896247	13896664	.	-	.	
+Hmel217001o	exonerate:protein2genome:local	exon	13896247	13896664	.	-	.	insertions 0 ; deletions 1 ; identity 62.59 ; similarity 80.58
+Hmel217001o	exonerate:protein2genome:local	similarity	13896247	13898837	917	-	.	alignment_id 0 ; Query tr|A0A5Q0V425|A0A5Q0V425_CHISP ; Align 13898838 90 180 ; Align 13898399 151 159 ; Align 13896664 205 105 ; Align 13896559 241 312
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hmel219001o	exonerate:protein2genome:local	gene	9225668	9226926	904	-	.	gene_id 0 ; sequence tr|A0A5Q0V425|A0A5Q0V425_CHISP ; gene_orientation + ; identity 65.06 ; similarity 83.53
+Hmel219001o	exonerate:protein2genome:local	cds	9226757	9226926	.	-	.	
+Hmel219001o	exonerate:protein2genome:local	exon	9226757	9226926	.	-	.	insertions 0 ; deletions 0 ; identity 62.50 ; similarity 87.50
+Hmel219001o	exonerate:protein2genome:local	splice5	9226755	9226756	.	-	.	intron_id 1 ; splice_site "GT"
+Hmel219001o	exonerate:protein2genome:local	intron	9226484	9226756	.	-	.	intron_id 1
+Hmel219001o	exonerate:protein2genome:local	splice3	9226484	9226485	.	-	.	intron_id 0 ; splice_site "AG"
+Hmel219001o	exonerate:protein2genome:local	cds	9226322	9226483	.	-	.	
+Hmel219001o	exonerate:protein2genome:local	exon	9226322	9226483	.	-	.	insertions 0 ; deletions 0 ; identity 75.47 ; similarity 96.23
+Hmel219001o	exonerate:protein2genome:local	splice5	9226320	9226321	.	-	.	intron_id 2 ; splice_site "GT"
+Hmel219001o	exonerate:protein2genome:local	intron	9226089	9226321	.	-	.	intron_id 2
+Hmel219001o	exonerate:protein2genome:local	splice3	9226089	9226090	.	-	.	intron_id 1 ; splice_site "AG"
+Hmel219001o	exonerate:protein2genome:local	cds	9225668	9226088	.	-	.	
+Hmel219001o	exonerate:protein2genome:local	exon	9225668	9226088	.	-	.	insertions 0 ; deletions 1 ; identity 62.14 ; similarity 77.14
+Hmel219001o	exonerate:protein2genome:local	similarity	9225668	9226926	904	-	.	alignment_id 0 ; Query tr|A0A5Q0V425|A0A5Q0V425_CHISP ; Align 9226927 94 168 ; Align 9226483 151 159 ; Align 9226088 205 105 ; Align 9225983 241 315
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hmel219001o	exonerate:protein2genome:local	gene	12828148	12837098	900	+	.	gene_id 0 ; sequence tr|A0A5Q0V425|A0A5Q0V425_CHISP ; gene_orientation + ; identity 59.44 ; similarity 75.17
+Hmel219001o	exonerate:protein2genome:local	cds	12828148	12828256	.	+	.	
+Hmel219001o	exonerate:protein2genome:local	exon	12828148	12828256	.	+	.	insertions 3 ; deletions 0 ; identity 48.57 ; similarity 65.71
+Hmel219001o	exonerate:protein2genome:local	splice5	12828257	12828258	.	+	.	intron_id 1 ; splice_site "GT"
+Hmel219001o	exonerate:protein2genome:local	intron	12828257	12830429	.	+	.	intron_id 1
+Hmel219001o	exonerate:protein2genome:local	splice3	12830428	12830429	.	+	.	intron_id 0 ; splice_site "AG"
+Hmel219001o	exonerate:protein2genome:local	cds	12830430	12830592	.	+	.	
+Hmel219001o	exonerate:protein2genome:local	exon	12830430	12830592	.	+	.	insertions 0 ; deletions 0 ; identity 58.49 ; similarity 73.58
+Hmel219001o	exonerate:protein2genome:local	splice5	12830593	12830594	.	+	.	intron_id 2 ; splice_site "GT"
+Hmel219001o	exonerate:protein2genome:local	intron	12830593	12831388	.	+	.	intron_id 2
+Hmel219001o	exonerate:protein2genome:local	splice3	12831387	12831388	.	+	.	intron_id 1 ; splice_site "AG"
+Hmel219001o	exonerate:protein2genome:local	cds	12831389	12831562	.	+	.	
+Hmel219001o	exonerate:protein2genome:local	exon	12831389	12831562	.	+	.	insertions 0 ; deletions 0 ; identity 70.18 ; similarity 85.96
+Hmel219001o	exonerate:protein2genome:local	splice5	12831563	12831564	.	+	.	intron_id 3 ; splice_site "GT"
+Hmel219001o	exonerate:protein2genome:local	intron	12831563	12833457	.	+	.	intron_id 3
+Hmel219001o	exonerate:protein2genome:local	splice3	12833456	12833457	.	+	.	intron_id 2 ; splice_site "AG"
+Hmel219001o	exonerate:protein2genome:local	cds	12833458	12833643	.	+	.	
+Hmel219001o	exonerate:protein2genome:local	exon	12833458	12833643	.	+	.	insertions 0 ; deletions 0 ; identity 55.74 ; similarity 73.77
+Hmel219001o	exonerate:protein2genome:local	splice5	12833644	12833645	.	+	.	intron_id 4 ; splice_site "GT"
+Hmel219001o	exonerate:protein2genome:local	intron	12833644	12836270	.	+	.	intron_id 4
+Hmel219001o	exonerate:protein2genome:local	splice3	12836269	12836270	.	+	.	intron_id 3 ; splice_site "AG"
+Hmel219001o	exonerate:protein2genome:local	cds	12836271	12836431	.	+	.	
+Hmel219001o	exonerate:protein2genome:local	exon	12836271	12836431	.	+	.	insertions 0 ; deletions 0 ; identity 56.60 ; similarity 69.81
+Hmel219001o	exonerate:protein2genome:local	splice5	12836432	12836433	.	+	.	intron_id 5 ; splice_site "GT"
+Hmel219001o	exonerate:protein2genome:local	intron	12836432	12837015	.	+	.	intron_id 5
+Hmel219001o	exonerate:protein2genome:local	splice3	12837014	12837015	.	+	.	intron_id 4 ; splice_site "AG"
+Hmel219001o	exonerate:protein2genome:local	cds	12837016	12837098	.	+	.	
+Hmel219001o	exonerate:protein2genome:local	exon	12837016	12837098	.	+	.	insertions 0 ; deletions 0 ; identity 66.67 ; similarity 81.48
+Hmel219001o	exonerate:protein2genome:local	similarity	12828148	12837098	900	+	.	alignment_id 0 ; Query tr|A0A5Q0V425|A0A5Q0V425_CHISP ; Align 12828148 57 90 ; Align 12828241 87 15 ; Align 12830432 93 159 ; Align 12831390 147 171 ; Align 12833459 205 183 ; Align 12836272 267 159 ; Align 12837018 321 81
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hmel212001o	exonerate:protein2genome:local	gene	12441874	12444078	893	+	.	gene_id 0 ; sequence tr|A0A5Q0V425|A0A5Q0V425_CHISP ; gene_orientation + ; identity 53.87 ; similarity 73.37
+Hmel212001o	exonerate:protein2genome:local	cds	12441874	12442072	.	+	.	
+Hmel212001o	exonerate:protein2genome:local	exon	12441874	12442072	.	+	.	insertions 6 ; deletions 0 ; identity 46.88 ; similarity 64.06
+Hmel212001o	exonerate:protein2genome:local	splice5	12442073	12442074	.	+	.	intron_id 1 ; splice_site "GT"
+Hmel212001o	exonerate:protein2genome:local	intron	12442073	12442158	.	+	.	intron_id 1
+Hmel212001o	exonerate:protein2genome:local	splice3	12442157	12442158	.	+	.	intron_id 0 ; splice_site "AG"
+Hmel212001o	exonerate:protein2genome:local	cds	12442159	12442289	.	+	.	
+Hmel212001o	exonerate:protein2genome:local	exon	12442159	12442289	.	+	.	insertions 0 ; deletions 0 ; identity 50.00 ; similarity 77.27
+Hmel212001o	exonerate:protein2genome:local	splice5	12442290	12442291	.	+	.	intron_id 2 ; splice_site "GT"
+Hmel212001o	exonerate:protein2genome:local	intron	12442290	12442658	.	+	.	intron_id 2
+Hmel212001o	exonerate:protein2genome:local	splice3	12442657	12442658	.	+	.	intron_id 1 ; splice_site "AG"
+Hmel212001o	exonerate:protein2genome:local	cds	12442659	12442864	.	+	.	
+Hmel212001o	exonerate:protein2genome:local	exon	12442659	12442864	.	+	.	insertions 0 ; deletions 0 ; identity 60.29 ; similarity 79.41
+Hmel212001o	exonerate:protein2genome:local	splice5	12442865	12442866	.	+	.	intron_id 3 ; splice_site "GT"
+Hmel212001o	exonerate:protein2genome:local	intron	12442865	12443222	.	+	.	intron_id 3
+Hmel212001o	exonerate:protein2genome:local	splice3	12443221	12443222	.	+	.	intron_id 2 ; splice_site "AG"
+Hmel212001o	exonerate:protein2genome:local	cds	12443223	12443408	.	+	.	
+Hmel212001o	exonerate:protein2genome:local	exon	12443223	12443408	.	+	.	insertions 0 ; deletions 0 ; identity 54.10 ; similarity 77.05
+Hmel212001o	exonerate:protein2genome:local	splice5	12443409	12443410	.	+	.	intron_id 4 ; splice_site "GT"
+Hmel212001o	exonerate:protein2genome:local	intron	12443409	12443684	.	+	.	intron_id 4
+Hmel212001o	exonerate:protein2genome:local	splice3	12443683	12443684	.	+	.	intron_id 3 ; splice_site "AG"
+Hmel212001o	exonerate:protein2genome:local	cds	12443685	12443841	.	+	.	
+Hmel212001o	exonerate:protein2genome:local	exon	12443685	12443841	.	+	.	insertions 3 ; deletions 1 ; identity 53.85 ; similarity 65.38
+Hmel212001o	exonerate:protein2genome:local	splice5	12443842	12443843	.	+	.	intron_id 5 ; splice_site "GT"
+Hmel212001o	exonerate:protein2genome:local	intron	12443842	12443970	.	+	.	intron_id 5
+Hmel212001o	exonerate:protein2genome:local	splice3	12443969	12443970	.	+	.	intron_id 4 ; splice_site "AG"
+Hmel212001o	exonerate:protein2genome:local	cds	12443971	12444078	.	+	.	
+Hmel212001o	exonerate:protein2genome:local	exon	12443971	12444078	.	+	.	insertions 0 ; deletions 0 ; identity 61.11 ; similarity 80.56
+Hmel212001o	exonerate:protein2genome:local	similarity	12441874	12444078	893	+	.	alignment_id 0 ; Query tr|A0A5Q0V425|A0A5Q0V425_CHISP ; Align 12441874 28 54 ; Align 12441934 46 138 ; Align 12442161 93 129 ; Align 12442659 136 204 ; Align 12443224 205 183 ; Align 12443686 267 45 ; Align 12443731 283 60 ; Align 12443794 303 48 ; Align 12443971 319 108
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hmel219001o	exonerate:protein2genome:local	gene	12774718	12791829	686	+	.	gene_id 0 ; sequence tr|A0A5Q0V425|A0A5Q0V425_CHISP ; gene_orientation + ; identity 51.41 ; similarity 71.08
+Hmel219001o	exonerate:protein2genome:local	cds	12774718	12774858	.	+	.	
+Hmel219001o	exonerate:protein2genome:local	exon	12774718	12774858	.	+	.	insertions 0 ; deletions 0 ; identity 43.75 ; similarity 66.67
+Hmel219001o	exonerate:protein2genome:local	splice5	12774859	12774860	.	+	.	intron_id 1 ; splice_site "GT"
+Hmel219001o	exonerate:protein2genome:local	intron	12774859	12790451	.	+	.	intron_id 1
+Hmel219001o	exonerate:protein2genome:local	splice3	12790450	12790451	.	+	.	intron_id 0 ; splice_site "AG"
+Hmel219001o	exonerate:protein2genome:local	cds	12790452	12790657	.	+	.	
+Hmel219001o	exonerate:protein2genome:local	exon	12790452	12790657	.	+	.	insertions 0 ; deletions 0 ; identity 51.47 ; similarity 76.47
+Hmel219001o	exonerate:protein2genome:local	splice5	12790658	12790659	.	+	.	intron_id 2 ; splice_site "GT"
+Hmel219001o	exonerate:protein2genome:local	intron	12790658	12791181	.	+	.	intron_id 2
+Hmel219001o	exonerate:protein2genome:local	splice3	12791180	12791181	.	+	.	intron_id 1 ; splice_site "AG"
+Hmel219001o	exonerate:protein2genome:local	cds	12791182	12791364	.	+	.	
+Hmel219001o	exonerate:protein2genome:local	exon	12791182	12791364	.	+	.	insertions 0 ; deletions 1 ; identity 50.00 ; similarity 70.00
+Hmel219001o	exonerate:protein2genome:local	splice5	12791365	12791366	.	+	.	intron_id 3 ; splice_site "GT"
+Hmel219001o	exonerate:protein2genome:local	intron	12791365	12791606	.	+	.	intron_id 3
+Hmel219001o	exonerate:protein2genome:local	splice3	12791605	12791606	.	+	.	intron_id 2 ; splice_site "AG"
+Hmel219001o	exonerate:protein2genome:local	cds	12791607	12791829	.	+	.	
+Hmel219001o	exonerate:protein2genome:local	exon	12791607	12791829	.	+	.	insertions 0 ; deletions 1 ; identity 56.76 ; similarity 70.27
+Hmel219001o	exonerate:protein2genome:local	similarity	12774718	12791829	686	+	.	alignment_id 0 ; Query tr|A0A5Q0V425|A0A5Q0V425_CHISP ; Align 12774718 89 141 ; Align 12790452 136 204 ; Align 12791183 205 75 ; Align 12791258 231 105 ; Align 12791608 267 108 ; Align 12791716 304 114
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hmel203003o	exonerate:protein2genome:local	gene	7514253	7515355	584	-	.	gene_id 0 ; sequence tr|A0A5Q0V425|A0A5Q0V425_CHISP ; gene_orientation + ; identity 52.88 ; similarity 69.71
+Hmel203003o	exonerate:protein2genome:local	cds	7515114	7515355	.	-	.	
+Hmel203003o	exonerate:protein2genome:local	exon	7515114	7515355	.	-	.	insertions 0 ; deletions 0 ; identity 56.25 ; similarity 75.00
+Hmel203003o	exonerate:protein2genome:local	splice5	7515112	7515113	.	-	.	intron_id 1 ; splice_site "GT"
+Hmel203003o	exonerate:protein2genome:local	intron	7514845	7515113	.	-	.	intron_id 1
+Hmel203003o	exonerate:protein2genome:local	splice3	7514845	7514846	.	-	.	intron_id 0 ; splice_site "AG"
+Hmel203003o	exonerate:protein2genome:local	cds	7514659	7514844	.	-	.	
+Hmel203003o	exonerate:protein2genome:local	exon	7514659	7514844	.	-	.	insertions 0 ; deletions 0 ; identity 47.54 ; similarity 60.66
+Hmel203003o	exonerate:protein2genome:local	splice5	7514657	7514658	.	-	.	intron_id 2 ; splice_site "GT"
+Hmel203003o	exonerate:protein2genome:local	intron	7514455	7514658	.	-	.	intron_id 2
+Hmel203003o	exonerate:protein2genome:local	splice3	7514455	7514456	.	-	.	intron_id 1 ; splice_site "AG"
+Hmel203003o	exonerate:protein2genome:local	cds	7514253	7514454	.	-	.	
+Hmel203003o	exonerate:protein2genome:local	exon	7514253	7514454	.	-	.	insertions 0 ; deletions 1 ; identity 53.73 ; similarity 71.64
+Hmel203003o	exonerate:protein2genome:local	similarity	7514253	7515355	584	-	.	alignment_id 0 ; Query tr|A0A5Q0V425|A0A5Q0V425_CHISP ; Align 7515356 124 240 ; Align 7514844 205 183 ; Align 7514454 267 102 ; Align 7514352 302 99
+# --- END OF GFF DUMP ---
+#
+# --- START OF GFF DUMP ---
+#
+#
+##gff-version 2
+##source-version exonerate:protein2genome:local 2.4.0
+##date 2025-06-14
+##type DNA
+#
+#
+# seqname source feature start end score strand frame attributes
+#
+Hmel204001o	exonerate:protein2genome:local	gene	5259639	5260806	415	+	.	gene_id 0 ; sequence tr|A0A5Q0V425|A0A5Q0V425_CHISP ; gene_orientation + ; identity 49.03 ; similarity 67.74
+Hmel204001o	exonerate:protein2genome:local	cds	5259639	5259768	.	+	.	
+Hmel204001o	exonerate:protein2genome:local	exon	5259639	5259768	.	+	.	insertions 0 ; deletions 0 ; identity 32.56 ; similarity 46.51
+Hmel204001o	exonerate:protein2genome:local	splice5	5259769	5259770	.	+	.	intron_id 1 ; splice_site "GT"
+Hmel204001o	exonerate:protein2genome:local	intron	5259769	5260187	.	+	.	intron_id 1
+Hmel204001o	exonerate:protein2genome:local	splice3	5260186	5260187	.	+	.	intron_id 0 ; splice_site "AG"
+Hmel204001o	exonerate:protein2genome:local	cds	5260188	5260318	.	+	.	
+Hmel204001o	exonerate:protein2genome:local	exon	5260188	5260318	.	+	.	insertions 0 ; deletions 0 ; identity 56.82 ; similarity 70.45
+Hmel204001o	exonerate:protein2genome:local	splice5	5260319	5260320	.	+	.	intron_id 2 ; splice_site "GT"
+Hmel204001o	exonerate:protein2genome:local	intron	5260319	5260599	.	+	.	intron_id 2
+Hmel204001o	exonerate:protein2genome:local	splice3	5260598	5260599	.	+	.	intron_id 1 ; splice_site "AG"
+Hmel204001o	exonerate:protein2genome:local	cds	5260600	5260806	.	+	.	
+Hmel204001o	exonerate:protein2genome:local	exon	5260600	5260806	.	+	.	insertions 0 ; deletions 0 ; identity 53.62 ; similarity 79.71
+Hmel204001o	exonerate:protein2genome:local	similarity	5259639	5260806	415	+	.	alignment_id 0 ; Query tr|A0A5Q0V425|A0A5Q0V425_CHISP ; Align 5259639 49 129 ; Align 5260190 93 129 ; Align 5260600 136 207
+# --- END OF GFF DUMP ---
+#
+-- completed exonerate analysis
