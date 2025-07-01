@@ -1,4 +1,4 @@
-This repository describes how the analyses for the Lepidoptera pheromone paper were performed. 
+<img src="Exonerate/Exonerate_pipeline.png" width="90%" height="90%"/>
 
 # blast
 
