@@ -1,1 +1,1 @@
-<img src="Exonerate/Exonerate_pipeline" width="90%" height="90%"/>
+<img src="Exonerate/Exonerate_pipeline.png" width="90%" height="90%"/>
