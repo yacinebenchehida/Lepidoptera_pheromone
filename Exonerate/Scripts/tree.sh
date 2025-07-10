@@ -36,12 +36,19 @@ for i in "${SPECIES[@]}"
     if [ -f "${i}/${PHE}/${i}_kept_gene_to_plot.txt" ]; then
         rm ${i}/${PHE}/${i}_kept_gene_to_plot.txt
     fi
+    # Extract genes that passed filters
     touch ${i}/${PHE}/${i}_kept_gene_to_plot.txt
-    (cat $i/${PHE}/unique_${i}_${PHE}_combined_genes.fasta|grep ">"|perl -pe 's/>//g'|while read line; do grep $line $i/${PHE}/ID_protein.txt|awk '{print $3"\t"$4"\t"$5"\t"$2}'); done >> ${i}/${PHE}/${i}_kept_gene_to_plot.txt
+    (cat $i/${PHE}/unique_${i}_${PHE}_combined_genes.fasta|grep ">"|perl -pe 's/>//g'|cut -f 2 -d "_"|while read line; do grep $line ${i}/${PHE}/ID_protein.txt|awk '{print $3"\t"$4"\t"$5"\t"$2}'; done) >> ${i}/${PHE}/${i}_kept_gene_to_plot.txt
+
+    # Needed script and input in the working directory
     cp $SCRIPT/Plot_chromosome.R ${i}/${PHE}
+    cp ${i}/${PHE}/scaffold_size_information.txt ./
+
+    # perform the plot
     Rscript ${i}/${PHE}/Plot_chromosome.R ${i} ${i}/${PHE}/${i}_kept_gene_to_plot.txt ${i}/${PHE}/${i}_${PHE}_final_location.pdf
     rm ${i}/${PHE}/Plot_chromosome.R
-    echo GENE $i PLOTTED
+    rm scaffold_size_information.txt
+    echo GENE ${i} PLOTTED
 done
 
 # Align with muscle
