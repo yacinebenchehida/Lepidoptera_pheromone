@@ -30,6 +30,20 @@ for i in "${SPECIES[@]}"
    do cat $i/${PHE}/unique_${i}_${PHE}_combined_genes.fasta >> $RESULTS/trees/${PHE}/$FILE
 done
 
+# Plot final FAD/FAR gene location on ideogram
+for i in "${SPECIES[@]}"
+    do echo $i
+    if [ -f "${i}/${PHE}/${i}_kept_gene_to_plot.txt" ]; then
+        rm ${i}/${PHE}/${i}_kept_gene_to_plot.txt
+    fi
+    touch ${i}/${PHE}/${i}_kept_gene_to_plot.txt
+    (cat $i/${PHE}/unique_${i}_${PHE}_combined_genes.fasta|grep ">"|perl -pe 's/>//g'|while read line; do grep $line $i/${PHE}/ID_protein.txt|awk '{print $3"\t"$4"\t"$5"\t"$2}'); done >> ${i}/${PHE}/${i}_kept_gene_to_plot.txt
+    cp $SCRIPT/Plot_chromosome.R ${i}/${PHE}
+    Rscript ${i}/${PHE}/Plot_chromosome.R ${i} ${i}/${PHE}/${i}_kept_gene_to_plot.txt ${i}/${PHE}/${i}_${PHE}_final_location.pdf
+    rm ${i}/${PHE}/Plot_chromosome.R
+    echo GENE $i PLOTTED
+done
+
 # Align with muscle
 module load MUSCLE/3.8.1551-GCC-9.3.0
 pwd
@@ -64,3 +78,4 @@ Rscript $SCRIPT/plot_tree.R --tree $RESULTS/trees/${PHE}/tree_${PHE}.treefile --
 
 
 
+#sbatch ./tree.sh Bicyclus_anynana Bombyx_mori Ceraclea_dissimilis Danaus_plexippus Drosophila_simulans Heliconius_erato Heliconius_melpomene Heliconius_sapho Heliconius_sara FAR
