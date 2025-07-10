@@ -3,12 +3,14 @@
 #################
 library(ggchicklet)
 library(ggplot2)
+library(viridis)
 
 ##########################
 # Read genome size files #
 ##########################
 dat = commandArgs(trailingOnly=TRUE)
 SPECIES=dat[1]
+getwd()
 Karytype = read.table("scaffold_size_information.txt",sep = "\t")
 #Karytype$V1 = gsub(x = Karytype$V1, pattern = "Hmel2(\\d{2})(.+)",replacement = "\\1",perl = TRUE)
 colnames(Karytype) = c("Chr","Start","End")
@@ -88,27 +90,34 @@ colnames(Karytype) = c("Start","End","Chr")
 print("start plotting")
 
 if (length(dat) == 2){
-  outfile = paste(SPECIES, "_Location.pdf", sep = "")
-  pdf(outfile, 7, dim(Karytype)[1] / 4)
-  ggplot(data = Karytype, aes(xmin = (0-200000)/1000000, xmax = (End+50000)/1000000,ymin = 0, ymax = 0.5)) +
-    ggchicklet:::geom_rrect(fill = "white", colour = "black",) + guides(color = 'none') + theme_bw() + 
-    facet_grid(Chr~., switch= "y", drop =TRUE,labeller = label_parsed, scales = "free", space = "free") +
-    theme(axis.ticks.y = element_blank(), strip.placement = "outside", axis.text.y = element_blank(), panel.spacing = unit(0, "lines")) +
-    xlab("Position (Mb)") + ylab("Chromosome") + 
-    geom_rect(data = anno_files, aes(xmin = (Start/1000000)-5000/1000000, xmax = (End/1000000)+5000/1000000, ymin = 0, ymax = 0.5, fill = "Cluster")) +
-    ggtitle(SPECIES) + theme(plot.title = element_text(hjust = 0.5))
+outfile = paste(SPECIES, "_Location.pdf", sep = "")
+
+pdf(outfile, 7, max(3, dim(Karytype)[1] / 4))
+p <- ggplot(data = Karytype, aes(xmin = (0-200000)/1000000, xmax = (End+50000)/1000000, ymin = 0, ymax = 0.5)) +
+  ggchicklet:::geom_rrect(fill = "white", colour = "black") + guides(color = 'none') + theme_bw() +
+  facet_grid(Chr~., switch= "y", drop = TRUE, labeller = label_parsed, scales = "free", space = "free") +
+  theme(axis.ticks.y = element_blank(), strip.placement = "outside", axis.text.y = element_blank(), panel.spacing = unit(0, "lines")) +
+  xlab("Position (Mb)") + ylab("Chromosome") +
+  geom_rect(data = anno_files, fill="red",aes(xmin = (Start/1000000)-3000/1000000, xmax = (End/1000000)+3000/1000000, ymin = 0, ymax = 0.5))
+  ggtitle(SPECIES) + theme(plot.title = element_text(hjust = 0.5))
+print(p)
 dev.off()
 }else{
   outfile = dat[3]
   pdf(outfile, 7, dim(Karytype)[1] / 4)
-  ggplot(data = Karytype, aes(xmin = (0-200000)/1000000, xmax = (End+50000)/1000000,ymin = 0, ymax = 0.5)) +
+  library(gtools)
+  anno_files$Cluster <- factor(anno_files$Cluster, 
+                             levels = mixedsort(unique(anno_files$Cluster)))
+  p <- ggplot(data = Karytype, aes(xmin = (0-200000)/1000000, xmax = (End+50000)/1000000,ymin = 0, ymax = 0.5)) +
   ggchicklet:::geom_rrect(fill = "white", colour = "black",) + guides(color = 'none') + theme_bw() + 
   facet_grid(Chr~., switch= "y", drop =TRUE,labeller = label_parsed, scales = "free", space = "free") +
   theme(axis.ticks.y = element_blank(), strip.placement = "outside", axis.text.y = element_blank(), panel.spacing = unit(0, "lines")) +
   xlab("Position (Mb)") + ylab("Chromosome") + 
-  geom_rect(data = anno_files, aes(xmin = (Start/1000000)-5000/1000000, xmax = (End/1000000)+5000/1000000, ymin = 0, ymax = 0.5, fill = cluster)) +
+  geom_rect(data = anno_files, aes(xmin = (Start/1000000)-3000/1000000, xmax = (End/1000000)+3000/1000000, ymin = 0, ymax = 0.5, fill = Cluster)) +
+  scale_fill_viridis_d(option = "magma") +
   ggtitle(SPECIES) + theme(plot.title = element_text(hjust = 0.5))
-  dev.off()
+print(p)
+dev.off()
 }
 
 
